@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="811" delta="new" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\dataProcessor\DATA_PROCESSOR\tb_dataConsume_unsigned.vhd" Line 81: Synthesis ignores all but the first waveform
+</msg>
+
+<msg type="error" file="HDLCompiler" num="926" delta="new" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\dataProcessor\DATA_PROCESSOR\tb_dataConsume_unsigned.vhd" Line 91: Multiple wait statements in one process are not supported in this case.
+</msg>
+
+</messages>
+
