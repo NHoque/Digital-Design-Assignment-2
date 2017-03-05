@@ -1,0 +1,17 @@
+CxlResult:C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\fullSystem\FULL_SYSTEM/unisim/.cxl.vhdl.unisim.unisim.nt.rpt =
+	ExecutionPlatform = nt ,
+	SourceLibrary = unisim ,
+	SourcePath = E:/Program Files/Xilinx ISE/14.7/ISE_DS/ISE/vhdl/src/unisims ,
+	Simulator = mti_pe ,
+	SimulatorVersion = 10.4a ,
+	CompiledLibrary = unisim ,
+	CompiledPath = C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\fullSystem\FULL_SYSTEM/unisim ,
+	Timestamp = Tue Feb 28 18:47:46 2017 ,
+	Time = 1488307666 ,
+	Language = vhdl ,
+	XilinxBuildNumber = P.20131013 ,
+	XilinxVersion = 14.7 ,
+	LogFile = C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\fullSystem\FULL_SYSTEM/unisim/.cxl.vhdl.unisim.unisim.nt.log ,
+	NumOfErrors = 0 ,
+	NumOfWarnings = 4 ,
+
