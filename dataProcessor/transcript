@@ -350,3 +350,4 @@ run 500ns
 #    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.

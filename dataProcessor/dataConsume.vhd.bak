@@ -86,13 +86,15 @@ begin
   outputData : process(start)
   begin
     if start = '1' then
-      dataReady <= '1';
       byte_reg <= data_reg;
+      dataReady <= '1';      
     else
-      dataReady <= '0';
       byte_reg <= byte_reg;
+      dataReady <= '0';      
     end if;
   end process;
+
+  --YOLO
 
   reg_ctrlIn : process(clk)
   begin
