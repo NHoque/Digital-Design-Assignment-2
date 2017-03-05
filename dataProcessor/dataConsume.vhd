@@ -94,13 +94,10 @@ begin
     end if;
   end process;
 
-
-  -- Simply allows the ctrlIn_edge to be detected.
-  reg_ctrlIn_data : process(clk)     
+  reg_ctrlIn : process(clk)
   begin
     if RISING_EDGE(clk) then
       ctrlIn_reg <= ctrlIn;
-      numWords_reg <= numWords_bcd;
     end if;
   end process;
 
@@ -108,7 +105,7 @@ begin
 
   -- On reset, all outputs are set to zero.
   -- Else, data sent to a signal, and index updated.
-  run_system: process(clk, reset)
+  reset_system: process(clk, reset)
   begin
     if RISING_EDGE(clk) then
       if reset = '1' then
@@ -120,14 +117,15 @@ begin
         seqDone <= '0';
       else
         if ctrlIn_edge = '1' then
-  	  ctrlOut_reg <= not ctrlOut_reg;
+          ctrlOut_reg <= NOT ctrlOut_reg;
           data_reg <= UNSIGNED(data);
-  	  index <= index + 1;
+          index <= index + 1;
         end if;
       end if;
     end if;
   end process;
 
+  
   ctrlOut <= ctrlOut_reg;
   byte <= STD_LOGIC_VECTOR(byte_reg);
 
