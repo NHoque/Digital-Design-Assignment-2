@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\uart_rx_tx_stripped\UART\TEST_TOP.ncd
+OUTFILE=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\uart_rx_tx_stripped\UART\TEST_TOP.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\uart_rx_tx_stripped\UART
+LICENSE=WebPack
+USER_INFO=211244683_0_0_551

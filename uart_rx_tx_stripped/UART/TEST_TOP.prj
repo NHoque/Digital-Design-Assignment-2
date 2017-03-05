@@ -1,0 +1,4 @@
+vhdl work "UART_TX_CTRL.vhd"
+vhdl work "UART_RX_CTRL.vhd"
+vhdl work "control_unit_tst.vhd"
+vhdl work "test_top.vhd"

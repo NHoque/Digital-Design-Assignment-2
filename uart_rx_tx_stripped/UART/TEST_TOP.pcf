@@ -1,0 +1,47 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Feb 14 14:18:18 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rxdata" LOCATE = SITE "N17" LEVEL 1;
+COMP "clear" LOCATE = SITE "C9" LEVEL 1;
+COMP "reset" LOCATE = SITE "A8" LEVEL 1;
+COMP "txdata" LOCATE = SITE "N18" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "control/curState_FSM_FFd2" BEL
+        "control/curState_FSM_FFd1" BEL "tx/bitIndex_30" BEL "tx/bitIndex_29"
+        BEL "tx/bitIndex_28" BEL "tx/bitIndex_27" BEL "tx/bitIndex_26" BEL
+        "tx/bitIndex_25" BEL "tx/bitIndex_24" BEL "tx/bitIndex_23" BEL
+        "tx/bitIndex_22" BEL "tx/bitIndex_21" BEL "tx/bitIndex_20" BEL
+        "tx/bitIndex_19" BEL "tx/bitIndex_18" BEL "tx/bitIndex_17" BEL
+        "tx/bitIndex_16" BEL "tx/bitIndex_15" BEL "tx/bitIndex_14" BEL
+        "tx/bitIndex_13" BEL "tx/bitIndex_12" BEL "tx/bitIndex_11" BEL
+        "tx/bitIndex_10" BEL "tx/bitIndex_9" BEL "tx/bitIndex_8" BEL
+        "tx/bitIndex_7" BEL "tx/bitIndex_6" BEL "tx/bitIndex_5" BEL
+        "tx/bitIndex_4" BEL "tx/bitIndex_3" BEL "tx/bitIndex_2" BEL
+        "tx/bitIndex_1" BEL "tx/bitIndex_0" BEL "tx/txState_FSM_FFd1" BEL
+        "tx/txState_FSM_FFd2" BEL "tx/txBit" BEL "tx/txData_8" BEL
+        "tx/txData_7" BEL "tx/txData_6" BEL "tx/txData_5" BEL "tx/txData_4"
+        BEL "tx/txData_3" BEL "tx/txData_2" BEL "tx/txData_1" BEL
+        "rx/bitCount_3" BEL "rx/bitCount_2" BEL "rx/bitCount_1" BEL
+        "rx/bitCount_0" BEL "rx/currentState_FSM_FFd1" BEL
+        "rx/currentState_FSM_FFd2" BEL "rx/currentState_FSM_FFd3" BEL
+        "rx/bitTmr_10" BEL "rx/bitTmr_9" BEL "rx/bitTmr_8" BEL "rx/bitTmr_7"
+        BEL "rx/bitTmr_6" BEL "rx/bitTmr_5" BEL "rx/bitTmr_4" BEL
+        "rx/bitTmr_3" BEL "rx/bitTmr_2" BEL "rx/bitTmr_1" BEL "rx/bitTmr_0"
+        BEL "rx/rcvDataReg_7" BEL "rx/rcvDataReg_6" BEL "rx/rcvDataReg_5" BEL
+        "rx/rcvDataReg_4" BEL "rx/rcvDataReg_3" BEL "rx/rcvDataReg_2" BEL
+        "rx/rcvDataReg_1" BEL "rx/rcvDataReg_0" BEL "rx/rcvShiftReg_9" BEL
+        "rx/rcvShiftReg_8" BEL "rx/rcvShiftReg_7" BEL "rx/rcvShiftReg_6" BEL
+        "rx/rcvShiftReg_5" BEL "rx/rcvShiftReg_4" BEL "rx/rcvShiftReg_3" BEL
+        "rx/rcvShiftReg_2" BEL "rx/rcvShiftReg_1" BEL "rx/regFull" BEL
+        "rx/baudClkX8Count_2" BEL "rx/baudClkX8Count_1" BEL
+        "rx/baudClkX8Count_0" BEL "tx/bitTmr_0" BEL "rx/baudClkX8Count_3" BEL
+        "tx/bitTmr_13" BEL "tx/bitTmr_12" BEL "tx/bitTmr_11" BEL
+        "tx/bitTmr_10" BEL "tx/bitTmr_9" BEL "tx/bitTmr_8" BEL "tx/bitTmr_7"
+        BEL "tx/bitTmr_6" BEL "tx/bitTmr_5" BEL "tx/bitTmr_4" BEL
+        "tx/bitTmr_3" BEL "tx/bitTmr_2" BEL "tx/bitTmr_1" BEL
+        "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

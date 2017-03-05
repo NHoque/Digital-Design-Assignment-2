@@ -86,11 +86,11 @@ begin
   outputData : process(start)
   begin
     if start = '1' then
-      dataReady <= '1';
       byte_reg <= data_reg;
+      dataReady <= '1';      
     else
-      dataReady <= '0';
       byte_reg <= byte_reg;
+      dataReady <= '0';      
     end if;
   end process;
 
@@ -116,6 +116,7 @@ begin
         maxIndex <= (X"0", X"0", X"0");
         seqDone <= '0';
       else
+        numWords_reg <= numWords_bcd;
         if ctrlIn_edge = '1' then
           ctrlOut_reg <= NOT ctrlOut_reg;
           data_reg <= UNSIGNED(data);

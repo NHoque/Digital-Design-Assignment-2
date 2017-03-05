@@ -1,0 +1,352 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# OpenFile {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/DATA_PROCESSOR.mpf}
+# Loading project DATA_PROCESSOR
+# Compile of common_pack.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of dataConsume.vhd was successful.
+# Compile of tb_dataConsume_unsigned.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vmap -del unisim
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet -del unisim 
+# Removing reference to logical library unisim
+# Modifying C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/DATA_PROCESSOR.mpf
+vmap unisim {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/FULL_SYSTEM/unisim}
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet unisim C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/FULL_SYSTEM/unisim 
+# Modifying C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/DATA_PROCESSOR.mpf
+# Compile of common_pack.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of dataConsume.vhd was successful.
+# Compile of tb_dataConsume_unsigned.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.tb_datagenconsume(test)
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\DATA_PROCESSOR.mpf 
+# Start time: 15:22:57 on Mar 05,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.common_pack
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading ieee.numeric_std(body)
+# Loading work.dataconsume(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+add wave -position insertpoint  \
+sim:/tb_datagenconsume/dataConsume1/clk \
+sim:/tb_datagenconsume/dataConsume1/reset \
+sim:/tb_datagenconsume/dataConsume1/ctrlIn \
+sim:/tb_datagenconsume/dataConsume1/ctrlOut \
+sim:/tb_datagenconsume/dataConsume1/data \
+sim:/tb_datagenconsume/dataConsume1/start \
+sim:/tb_datagenconsume/dataConsume1/numWords_bcd \
+sim:/tb_datagenconsume/dataConsume1/dataReady \
+sim:/tb_datagenconsume/dataConsume1/byte \
+sim:/tb_datagenconsume/dataConsume1/maxIndex \
+sim:/tb_datagenconsume/dataConsume1/dataResults \
+sim:/tb_datagenconsume/dataConsume1/seqDone \
+sim:/tb_datagenconsume/dataConsume1/ctrlIn_edge \
+sim:/tb_datagenconsume/dataConsume1/numWords_int
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Naimul Hoque  Hostname: DESKTOP-MV6OCCK  ProcessID: 8112
+# 
+#           Attempting to use alternate WLF file "./wlft7x5j1n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft7x5j1n
+# 
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+add wave -position insertpoint sim:/tb_datagenconsume/dataConsume1/checkMaxByte/*
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 5000ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10040 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 5000ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/byte_reg
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/data_reg
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/data_max
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 5000ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/index
+restart -f
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10040 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (8'hXX) to the signal network.
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
