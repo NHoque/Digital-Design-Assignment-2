@@ -5,8 +5,8 @@ use work.common_pack.all;
 
 entity dataConsume is
     port (
-	    clk          : in std_logic;
-		reset        : in std_logic; -- synchronous reset
+	  clk          :	in std_logic;
+		reset        :	in std_logic; -- synchronous reset
 		start        : in std_logic; -- goes high to signal data transfer
 		numWords_bcd : in BCD_ARRAY_TYPE(2 downto 0);
 		ctrlIn       : in std_logic;
@@ -40,7 +40,7 @@ begin
         
         when S0 =>
 	        if numWords_int3 /= 0 AND start = '1' then 
-	            ctrlOut_reg <= NOT ctrlOut_reg;
+	          ctrlOut_reg <= NOT ctrlOut_reg;
 		        nextState <= S1;
 	        elsif numWords_int3 /= 0 AND start = '0' then
 		        nextState <= S0;
@@ -177,5 +177,3 @@ begin
   byte <= STD_LOGIC_VECTOR(byte_reg);
 
 end Behavioral;
-
-
