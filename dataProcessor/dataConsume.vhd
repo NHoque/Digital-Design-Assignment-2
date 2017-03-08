@@ -16,7 +16,7 @@ entity dataConsume is
         byte         : out std_logic_vector(7 downto 0);
         seqDone      : out std_logic;
         maxIndex     : out BCD_ARRAY_TYPE(2 downto 0);
-        dataResults  : out CHAR_ARRAY_TYPE(0 to RESULT_BYTE_NUM-1) -- index 3 holds the peak
+        dataResults  : out CHAR_ARRAY_TYPE(0 to 6) -- index 3 holds the peak
         );
 end dataConsume;    
 
@@ -26,7 +26,7 @@ architecture Behavioral of dataConsume is
 signal ctrlIn_reg, ctrlIn_edge, ctrlOut_reg, seqDone_reg, dataReady_reg : STD_LOGIC := '0';
 signal byte_reg, data_reg : UNSIGNED(7 downto 0);
 signal numWords_reg, maxIndex_reg : BCD_ARRAY_TYPE(2 downto 0);
-signal dataResults_reg : CHAR_ARRAY_TYPE(0 to RESULT_BYTE_NUM-1);
+signal dataResults_reg : CHAR_ARRAY_TYPE(0 to 6) := (X"00", X"00", X"00", X"00", X"00", X"00", X"00");
 signal index, index_max, numWords_int : INTEGER := 0;
 -----------------------------------------------------------
 begin
@@ -80,37 +80,38 @@ begin
   end process;
 -----------------------------------------------------------------------------
   -- Main process, will try to find the peak byte.
-  combi_detectPeak : process(byte_reg, index, seqDone_reg, dataReady_reg)
-  variable data_max : UNSIGNED(7 downto 0);
-  variable shiftValue : INTEGER;
-  variable holdValues : CHAR_ARRAY_TYPE(0 to RESULT_BYTE_NUM-1);
+  combi_detectPeak : process(byte_reg, seqDone_reg, dataReady_reg)
+  variable data_max : UNSIGNED(7 downto 0) := X"00";
+  variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
+  variable shiftValue : INTEGER := 0;
   begin
-    shiftValue := -1;
+    
     if seqDone_reg = '1' OR dataReady_reg = '0' then
       data_max := X"00";
-      dataResults_reg <= (X"00", X"00", X"00", X"00", X"00", X"00", X"00");
-      holdValues := (X"00", X"00", X"00", X"00", X"00", X"00", X"00");
-      shiftValue := -1;
+      dataResults_reg <= (others => X"00");
+      holdValues := (others => X"00");
+      index <= 0;
     elsif dataReady_reg = '1' then
+      index <= index + 1;
+      shiftValue := shiftValue + 1;
       holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg); 
     end if;
 
-    if (TO_INTEGER(byte_reg) > TO_INTEGER(data_max)) then
+    if (TO_INTEGER(byte_reg) >= TO_INTEGER(data_max)) then
       index_max <= index;
       data_max := byte_reg;
       dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
       dataResults_reg(2) <= holdValues(5);
       dataResults_reg(1) <= holdValues(4);
       dataResults_reg(0) <= holdValues(3);
-      shiftValue := -1;
-    else
-      shiftValue := shiftValue + 1;
+      shiftValue := 0;
+    elsif (TO_INTEGER(byte_reg) < TO_INTEGER(data_max)) then
       data_max := data_max;
       if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
         dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
       end if;
     end if;
-    
+
   end process;
 ---------------------------------------------------------------------------------
   combi_reg_byte : process(start, data_reg)
@@ -151,16 +152,10 @@ begin
     if rising_edge(clk) then
       if reset = '1' then
         ctrlOut_reg <= '1';
-        index <= 0;
       else
         ctrlIn_reg <= ctrlIn;
         if ctrlIn_edge = '1' then
           ctrlOut_reg <= NOT ctrlOut_reg;
-          if seqDone_reg = '1' then
-            index <= 0;
-          else
-            index <= index + 1;
-          end if;
         end if;  
       end if;
     end if;
