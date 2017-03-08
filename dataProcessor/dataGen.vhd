@@ -29,7 +29,6 @@ entity dataGen is
 end dataGen;
 
 architecture behav of dataGen is
-  
   signal ctrlIn_delayed, ctrlIn_detected, ctrlOut_reg: std_logic;
   signal index: integer range 0 to SEQ_LENGTH;
 begin
@@ -51,12 +50,12 @@ begin
         ctrlOut_reg <= '0';
       else
         if ctrlIn_detected = '1' then
-  	  ctrlOut_reg <= not ctrlOut_reg;
-  	  if index = SEQ_LENGTH then
+  	      ctrlOut_reg <= not ctrlOut_reg;
+  	      if index = SEQ_LENGTH then
             index <= 1;
       	  else
-             index <= index + 1;
-    	  end if;	
+            index <= index + 1;
+    	    end if;	
         end if;
       end if;
     end if;
