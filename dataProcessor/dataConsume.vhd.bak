@@ -80,64 +80,55 @@ begin
   end process;
 -----------------------------------------------------------------------------
   -- Main process, will try to find the peak byte.
-  combi_detectPeak : process(byte_reg, seqDone_reg, dataReady_reg)
+  combi_detectPeak : process(data_reg, reset, seqDone_reg, dataReady_reg, index)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
   begin
     
-    if seqDone_reg = '1' OR dataReady_reg = '0' then
+    if seqDone_reg = '1' OR dataReady_reg = '0' OR reset = '1' then
       data_max := X"00";
       dataResults_reg <= (others => X"00");
-      holdValues := (others => X"00");
-      index <= 0;
+      holdValues := (others => X"00");      
     elsif dataReady_reg = '1' then
-      index <= index + 1;
       shiftValue := shiftValue + 1;
-      holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg); 
+      holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg); 
     end if;
 
-    if (TO_INTEGER(byte_reg) >= TO_INTEGER(data_max)) then
+    if (data_reg >= data_max) then
       index_max <= index;
-      data_max := byte_reg;
+      data_max := data_reg;
       dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
       dataResults_reg(2) <= holdValues(5);
       dataResults_reg(1) <= holdValues(4);
       dataResults_reg(0) <= holdValues(3);
       shiftValue := 0;
-    elsif (TO_INTEGER(byte_reg) < TO_INTEGER(data_max)) then
+    elsif (data_reg < data_max) then
       data_max := data_max;
       if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
-        dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
+        dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
       end if;
-      
     end if;
 
   end process;
 ---------------------------------------------------------------------------------
-  combi_reg_byte : process(start, data_reg)
+  combi_reg_data : process(start, reset, data)
   begin
     if start = '1' then
-      byte_reg <= data_reg;
-      dataReady_reg <= '1';      
-    else
-      byte_reg <= byte_reg;
-      dataReady_reg <= '0';      
-    end if;
-  end process;
----------------------------------------------------------------------------------
-  combi_reg_data : process(ctrlIn_edge)
-  begin
-    if ctrlIn_edge = '1' then
       data_reg <= UNSIGNED(data);
-    else
-      data_reg <= data_reg;
+      byte_reg <= UNSIGNED(data);
+      index <= index + 1;
+      dataReady_reg <= '1';
+    elsif start = '0' OR reset = '1' then
+      data_reg <= X"00";
+      byte_reg <= X"00";
+      index <= 0;
+      dataReady_reg <= '0';
     end if;
   end process;
 ---------------------------------------------------------------------------------
   combi_seqDone : process(index, numWords_int)
   begin
-    seqDone_reg <= '0';
     if index = numWords_int then
       seqDone_reg <= '1';
     elsif index /= numWords_int then

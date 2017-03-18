@@ -33,110 +33,110 @@ begin
 ----------------------------------------------------------------------------
 -- by
 -- https://en.wikipedia.org/wiki/Double_dabble
-  convertIndexINTtoBCD: process(index_max)
+  convertIndexINTtoBCD: process(index_max, reset)
   variable index_hold : STD_LOGIC_VECTOR (11 downto 0);
   variable index_bcd : UNSIGNED (15 downto 0) := (others => '0');
   variable index_ones, index_tens, index_hundreds : STD_LOGIC_VECTOR(3 downto 0) := X"0";
   begin
-    index_bcd := X"0000";
-    index_hold(11 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(index_max, 12));
+    if reset = '1' then
+      maxIndex_reg <= ("0000", "0000", "0000");
+    else 
+      index_bcd := X"0000";
+      index_hold(11 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(index_max, 12));
     
-    for i in 0 to 11 loop
-      if index_bcd(3 downto 0) > 4 then 
-        index_bcd(3 downto 0) := index_bcd(3 downto 0) + 3;
-      end if;
+      for i in 0 to 11 loop
+        if index_bcd(3 downto 0) > 4 then 
+          index_bcd(3 downto 0) := index_bcd(3 downto 0) + 3;
+        end if;
 
-      if index_bcd(7 downto 4) > 4 then 
-        index_bcd(7 downto 4) := index_bcd(7 downto 4) + 3;
-      end if;
+        if index_bcd(7 downto 4) > 4 then 
+          index_bcd(7 downto 4) := index_bcd(7 downto 4) + 3;
+        end if;
 
-      if index_bcd(11 downto 8) > 4 then  
-        index_bcd(11 downto 8) := index_bcd(11 downto 8) + 3;
-      end if;
+        if index_bcd(11 downto 8) > 4 then  
+          index_bcd(11 downto 8) := index_bcd(11 downto 8) + 3;
+        end if;
 
-      index_bcd := index_bcd(14 downto 0) & index_hold(11);
-      index_hold := index_hold(10 downto 0) & '0';
-    end loop;
+        index_bcd := index_bcd(14 downto 0) & index_hold(11);
+        index_hold := index_hold(10 downto 0) & '0';
+      end loop;
     
-    index_ones := STD_LOGIC_VECTOR(index_bcd(3 downto 0));
-    index_tens := STD_LOGIC_VECTOR(index_bcd(7 downto 4));
-    index_hundreds := STD_LOGIC_VECTOR(index_bcd(11 downto 8));
-    maxIndex_reg <= (index_hundreds, index_tens, index_ones);
+      index_ones := STD_LOGIC_VECTOR(index_bcd(3 downto 0));
+      index_tens := STD_LOGIC_VECTOR(index_bcd(7 downto 4));
+      index_hundreds := STD_LOGIC_VECTOR(index_bcd(11 downto 8));
+      maxIndex_reg <= (index_hundreds, index_tens, index_ones);
+    end if;
   end process; 
 ----------------------------------------------------------------------------
   -- Takes numWords_bcd and converts it to an integer
-  comb_convertNumWordsBCDtoINT : process(numWords_reg)
+  comb_convertNumWordsBCDtoINT : process(numWords_reg, reset)
   variable numWord_0, numWord_1, numWord_2 : UNSIGNED(3 downto 0);
   variable numWord_int0, numWord_int1, numWord_int2, numWords_full_int : INTEGER;
   begin
-    numWord_0 := UNSIGNED(numWords_reg(0));
-    numWord_1 := UNSIGNED(numWords_reg(1));
-    numWord_2 := UNSIGNED(numWords_reg(2));
-    numWord_int0 := TO_INTEGER(numWord_0);
-    numWord_int1 := TO_INTEGER(numWord_1);
-    numWord_int2 := TO_INTEGER(numWord_2);
-    numWords_full_int := numWord_int2 * 100 + numWord_int1 * 10 + numWord_int0;
-    numWords_int <= numWords_full_int;
+    if reset = '1' then
+      numWords_int <= 0;
+    else 
+      numWord_0 := UNSIGNED(numWords_reg(0));
+      numWord_1 := UNSIGNED(numWords_reg(1));
+      numWord_2 := UNSIGNED(numWords_reg(2));
+      numWord_int0 := TO_INTEGER(numWord_0);
+      numWord_int1 := TO_INTEGER(numWord_1);
+      numWord_int2 := TO_INTEGER(numWord_2);
+      numWords_full_int := numWord_int2 * 100 + numWord_int1 * 10 + numWord_int0;
+      numWords_int <= numWords_full_int;
+    end if;
   end process;
 -----------------------------------------------------------------------------
   -- Main process, will try to find the peak byte.
-  combi_detectPeak : process(byte_reg, seqDone_reg, dataReady_reg)
+  combi_detectPeak : process(data_reg, reset, seqDone_reg, dataReady_reg, index)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
   begin
     
-    if seqDone_reg = '1' OR dataReady_reg = '0' then
+    if seqDone_reg = '1' OR dataReady_reg = '0' OR reset = '1' then
       data_max := X"00";
       dataResults_reg <= (others => X"00");
-      holdValues := (others => X"00");
-      index <= 0;
+      holdValues := (others => X"00");      
     elsif dataReady_reg = '1' then
-      index <= index + 1;
       shiftValue := shiftValue + 1;
-      holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg); 
+      holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg); 
     end if;
 
-    if (TO_INTEGER(byte_reg) >= TO_INTEGER(data_max)) then
+    if (data_reg >= data_max) then
       index_max <= index;
-      data_max := byte_reg;
+      data_max := data_reg;
       dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
       dataResults_reg(2) <= holdValues(5);
       dataResults_reg(1) <= holdValues(4);
       dataResults_reg(0) <= holdValues(3);
       shiftValue := 0;
-    elsif (TO_INTEGER(byte_reg) < TO_INTEGER(data_max)) then
+    elsif (data_reg < data_max) then
       data_max := data_max;
       if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
-        dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
+        dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
       end if;
     end if;
 
   end process;
 ---------------------------------------------------------------------------------
-  combi_reg_byte : process(start, data_reg)
+  combi_reg_data : process(start, reset, data)
   begin
     if start = '1' then
-      byte_reg <= data_reg;
-      dataReady_reg <= '1';      
-    else
-      byte_reg <= byte_reg;
-      dataReady_reg <= '0';      
-    end if;
-  end process;
----------------------------------------------------------------------------------
-  combi_reg_data : process(ctrlIn_edge)
-  begin
-    if ctrlIn_edge = '1' then
       data_reg <= UNSIGNED(data);
-    else
-      data_reg <= data_reg;
+      byte_reg <= UNSIGNED(data);
+      index <= index + 1;
+      dataReady_reg <= '1';
+    elsif start = '0' OR reset = '1' then
+      data_reg <= X"00";
+      byte_reg <= X"00";
+      index <= 0;
+      dataReady_reg <= '0';
     end if;
   end process;
 ---------------------------------------------------------------------------------
   combi_seqDone : process(index, numWords_int)
   begin
-    seqDone_reg <= '0';
     if index = numWords_int then
       seqDone_reg <= '1';
     elsif index /= numWords_int then

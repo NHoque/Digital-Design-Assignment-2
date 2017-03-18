@@ -10,11 +10,11 @@ package common_pack is
 
   type LOGICAL is (TRUE, FALSE);
 		
-	type CHAR_ARRAY_TYPE is array (integer range<>) of std_logic_vector(WORD_LENGTH-1 downto 0); -- unconstrained array
+  type CHAR_ARRAY_TYPE is array (integer range<>) of std_logic_vector(WORD_LENGTH-1 downto 0); -- unconstrained array
 	  
-	type BCD_ARRAY_TYPE is array (integer range<>) of std_logic_vector(BCD_WORD_LENGTH-1 downto 0); -- unconstrained array
+  type BCD_ARRAY_TYPE is array (integer range<>) of std_logic_vector(BCD_WORD_LENGTH-1 downto 0); -- unconstrained array
 		  
-	constant SEQ_LENGTH : integer := 500;
+  constant SEQ_LENGTH : integer := 500;
 	
 
   
