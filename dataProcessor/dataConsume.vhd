@@ -106,6 +106,7 @@ begin
     if (data_reg >= data_max) then
       index_max <= index;
       data_max := data_reg;
+	  byte_reg <= data_reg;
       dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
       dataResults_reg(2) <= holdValues(5);
       dataResults_reg(1) <= holdValues(4);
@@ -124,7 +125,6 @@ begin
   begin
     if start = '1' then
       data_reg <= UNSIGNED(data);
-      byte_reg <= UNSIGNED(data);
       index <= index + 1;
       dataReady_reg <= '1';
     elsif start = '0' OR reset = '1' then
