@@ -24,12 +24,12 @@ architecture Behavioral of dataConsume is
 
 ----------------------------------------------------------- ASSIGN SIGNALS
 type STATE_TYPE is (S0, S1, S2, S3, S4);
-signal curState, nextState : STATE_TYPE; 
-signal ctrlIn_reg, ctrlIn_edge, ctrlOut_reg, seqDone_reg, dataReady_reg, enable, reset_me : STD_LOGIC := '0';
+signal curState, nextState : STATE_TYPE;  
+signal ctrlIn_reg, ctrlIn_edge, ctrlOut_reg, seqDone_reg, dataReady_reg : STD_LOGIC := '0';
 signal byte_reg, data_reg : UNSIGNED(7 downto 0);
-signal numWords_reg, maxIndex_reg : BCD_ARRAY_TYPE(2 downto 0);
+signal numWords_reg : BCD_ARRAY_TYPE(2 downto 0);
 signal dataResults_reg : CHAR_ARRAY_TYPE(0 to 6) := (X"00", X"00", X"00", X"00", X"00", X"00", X"00");
-signal index, index_max, numWords_int, A_INT : INTEGER := 0;
+signal index, index_max, numWords_int : INTEGER := 0;
 -----------------------------------------------------------
 begin
 ----------------------------------------------------------------------------
@@ -41,7 +41,7 @@ begin
   variable index_ones, index_tens, index_hundreds : STD_LOGIC_VECTOR(3 downto 0) := X"0";
   begin
     if reset = '1' then
-      maxIndex_reg <= ("0000", "0000", "0000");
+      maxIndex <= ("0000", "0000", "0000");
     else 
       index_bcd := X"0000";
       index_hold(11 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(index_max, 12));
@@ -66,7 +66,7 @@ begin
       index_ones := STD_LOGIC_VECTOR(index_bcd(3 downto 0));
       index_tens := STD_LOGIC_VECTOR(index_bcd(7 downto 4));
       index_hundreds := STD_LOGIC_VECTOR(index_bcd(11 downto 8));
-      maxIndex_reg <= (index_hundreds, index_tens, index_ones);
+      maxIndex <= (index_hundreds, index_tens, index_ones);
     end if;
   end process; 
 ----------------------------------------------------------------------------
@@ -89,105 +89,119 @@ begin
     end if;
   end process;
 -----------------------------------------------------------------------------
-  state_machine_detect_peak : process(curState, start, seqDone_reg, data_reg, index, A_INT)
+  nextStateLogic: process(curState, start, data_reg, numWords_int, index)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
   begin
-  enable <= '0';
-  reset_me <= '0';
-  seqDone_reg <= '0';
     case curState is
-    when S0 => -- WAIT FOR START
-	  if start = '1' and numWords_int /= 0 then
-		reset_me <= '1';
-	    nextState <= S1;
-	  else
-	    nextState <= S0;
-	  end if;
+    when S0 =>
+      seqDone_reg <= '0';
+      dataReady_reg <= '0';
+      byte_reg <= X"00";
+      holdValues := (others => X"00");
+      data_max := X"00";
+      dataResults_reg <= (others => X"00");
+      nextState <= S1;
       
-    when S1 => -- COMPARE BYTE TO CURRENT MAX BYTE || CHECK IF SEQUENCE IS DONE 
-	  enable <= '1';
-		if start = '1' then
-	  if A_INT = 0 then
-	    nextState <= S2;
-	  elsif A_INT /= 0 then
-	    nextState <= S1;
-	  end if;
-	  else 
-	  nextState <= S0;
-	  end if;
-	  
-	  
-	when S2 => -- RESET
-	  seqDone_reg <= '1';
-	  nextState <= S0;
-	  
+    when S1 =>
+      if start = '1' then
+        dataReady_reg <= '1';
+        nextState <= S2;
+      else
+        dataReady_reg <= '0';
+        nextState <= S1;
+      end if;
+      
+    when S2 => 
+      if index = numWords_int then
+        nextState <= S3;
+      elsif index /= numWords_int then
+        byte_reg <= data_reg;
+        shiftValue := shiftValue + 1;
+        holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg);
+
+        if (data_reg >= data_max) then
+          index_max <= index;
+          data_max := data_reg;
+          dataResults_reg(3) <= STD_LOGIC_VECTOR(data_reg);
+          dataResults_reg(2) <= holdValues(5);
+          dataResults_reg(1) <= holdValues(4);
+          dataResults_reg(0) <= holdValues(3);
+          shiftValue := 0;
+          nextState <= S2;
+        elsif (data_reg < data_max) then
+          data_max := data_max;
+          if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
+            dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
+          end if;
+          nextState <= S2;
+        end if;
+      end if;
+    
+    when S3 =>
+      seqDone_reg <= '1';
+      nextState <= S0;
+    
     when others => 
       nextState <= S0;
     end case;
   end process;
 -----------------------------------------------------------------------------
-  countdown : process(reset_me, ctrlIn_edge, enable)
-  begin
-    if reset_me = '1' then
-	  A_INT <= numWords_int;
-	  index <= 0;
-	elsif CtrlIn_edge = '0' then
-	  if enable = '1' and A_INT /= 0 then
-	    A_INT <= A_INT - 1;
-		if index = numWords_int then
-		  index <= 0;
-		elsif index /= numWords_int then
-		  index <= index + 1;
-		end if;
-	  end if;
-	end if;
-  end process;
------------------------------------------------------------------------------
-  --Main process, will try to find the peak byte.
-  combi_detectPeak : process(A_INT, seqDone_reg)
-  variable data_max : UNSIGNED(7 downto 0) := X"00";
-  variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
-  variable shiftValue : INTEGER := 0;
-  begin
+  -- -- Main process, will try to find the peak byte.
+  -- combi_detectPeak : process(data_reg, reset, seqDone_reg, dataReady_reg, index)
+  -- variable data_max : UNSIGNED(7 downto 0) := X"00";
+  -- variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
+  -- variable shiftValue : INTEGER := 0;
+  -- begin
     
-    if seqDone_reg = '1' OR dataReady_reg = '0' OR reset = '1' then
-      data_max := X"00";
-      dataResults_reg <= (others => X"00");
-      holdValues := (others => X"00");      
-    elsif dataReady_reg = '1' then
-      shiftValue := shiftValue + 1;
-      holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg); 
-    end if;
+    -- if seqDone_reg = '1' OR dataReady_reg = '0' OR reset = '1' then
+      -- data_max := X"00";
+      -- dataResults_reg <= (others => X"00");
+      -- holdValues := (others => X"00");      
+    -- elsif dataReady_reg = '1' then
+      -- shiftValue := shiftValue + 1;
+      -- holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg); 
+    -- end if;
 
-    if (data_reg >= data_max) then
-      index_max <= index;
-      data_max := data_reg;
-      dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
-      dataResults_reg(2) <= holdValues(5);
-      dataResults_reg(1) <= holdValues(4);
-      dataResults_reg(0) <= holdValues(3);
-      shiftValue := 0;
-    elsif (data_reg < data_max) then
-      data_max := data_max;
-      if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
-        dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
-      end if;
-    end if;
+    -- if (data_reg >= data_max) then
+      -- index_max <= index;
+      -- data_max := data_reg;
+    -- byte_reg <= data_reg;
+      -- dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
+      -- dataResults_reg(2) <= holdValues(5);
+      -- dataResults_reg(1) <= holdValues(4);
+      -- dataResults_reg(0) <= holdValues(3);
+      -- shiftValue := 0;
+    -- elsif (data_reg < data_max) then
+      -- data_max := data_max;
+      -- if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
+        -- dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
+      -- end if;
+    -- end if;
 
-  end process;
+  -- end process;
 ---------------------------------------------------------------------------------
-  combi_reg_byte : process(start, data_reg)
-  begin
-    if start = '1' then
-	  dataReady_reg <= '1';
-	  byte_reg <= data_reg;
-	else
-	  dataReady_reg <= '0';
-	  byte_reg <= byte_reg;
-	end if;
-  end process;
+  -- combi_reg_data : process(start)
+  -- begin
+    -- if start = '1' then
+      -- index <= index + 1;
+      -- dataReady_reg <= '1';
+    -- elsif start = '0' OR reset = '1' then
+      -- byte_reg <= X"00";
+      -- index <= 0;
+      -- dataReady_reg <= '0';
+    -- end if;
+  -- end process;
+---------------------------------------------------------------------------------
+  -- combi_seqDone : process(index, numWords_int)
+  -- begin
+    -- if index = numWords_int then
+      -- seqDone_reg <= '1';
+    -- elsif index /= numWords_int then
+      -- seqDone_reg <= '0';
+    -- end if;
+  -- end process;
 ---------------------------------------------------------------------------------
   -- On reset, all outputs are set to zero except ctrlOut_reg 
   -- which is set to 1 to enable data acquisition.
@@ -197,12 +211,18 @@ begin
     if rising_edge(clk) then
       if reset = '1' then
         ctrlOut_reg <= '1';
-		curState <= S0;
+        index <= 0;
+        curState <= S0;
       else
-	    curState <= nextState;
+        curState <= nextState;
         ctrlIn_reg <= ctrlIn;
         if ctrlIn_edge = '1' then
-		  data_reg <= UNSIGNED(data);
+          if index = numWords_int then
+            index <= 0;
+          elsif start= '1' then
+            index <= index + 1;
+          end if;
+          data_reg <= UNSIGNED(data);
           ctrlOut_reg <= NOT ctrlOut_reg;
         end if;  
       end if;
@@ -214,7 +234,6 @@ begin
   ctrlOut <= ctrlOut_reg;
   
   dataReady <= dataReady_reg;
-  maxIndex <= maxIndex_reg;
   numWords_reg <= numWords_bcd;
   byte <= STD_LOGIC_VECTOR(byte_reg);
   dataResults <= dataResults_reg;
