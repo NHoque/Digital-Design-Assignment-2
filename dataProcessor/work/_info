@@ -11,91 +11,91 @@ dC:/Modeltech_pe_edu_10.4a/examples
 Pcommon_pack
 Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z2 w1489941814
-Z3 dC:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor
-8C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd
-FC:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd
+w1490041713
+Z2 dC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor
+8C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\common_pack.vhd
+FC:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\common_pack.vhd
 l0
 L4
-VQzZ]aAXUgKl]XIFKb]S4h0
-!s100 Rn@KN=fo]T0WLY;<ECg7P3
-Z4 OP;C;10.4a;61
+V`6RK@]Ql[[8PWOFz?h25H2
+!s100 >5lm8HnmZ@LdLN`WFfGO93
+Z3 OP;C;10.4a;61
 32
-!s110 1489941875
+Z4 !s110 1490041721
 !i10b 1
-!s108 1489941875.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd|
-!s107 C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd|
+Z5 !s108 1490041721.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\common_pack.vhd|
+!s107 C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\common_pack.vhd|
 !i113 1
-Z5 o-work work -2002 -explicit -O0
-Z6 tExplicit 1
+Z6 o-work work -2002 -explicit -O0
+Z7 tExplicit 1
 Edataconsume
-R2
-Z7 DPx4 work 11 common_pack 0 22 QzZ]aAXUgKl]XIFKb]S4h0
-Z8 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 w1490041814
+Z9 DPx4 work 11 common_pack 0 22 `6RK@]Ql[[8PWOFz?h25H2
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R0
 R1
-R3
-Z9 8C:\Users\Naimul\Google Drive\Uni Work\Year 2\Digital Design\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd
-Z10 FC:\Users\Naimul\Google Drive\Uni Work\Year 2\Digital Design\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd
+R2
+Z11 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd
+Z12 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd
 l0
 L6
 VJ7g2h[BBNIUQFBI?_K4eO0
 !s100 PRJMNJRfGj9;SlhIMA:0E3
-R4
-32
-Z11 !s110 1489941876
-!i10b 1
-Z12 !s108 1489941876.000000
-Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Naimul\Google Drive\Uni Work\Year 2\Digital Design\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd|
-Z14 !s107 C:\Users\Naimul\Google Drive\Uni Work\Year 2\Digital Design\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd|
-!i113 1
-R5
-R6
-Abehavioral
-R7
-R8
-R0
-R1
-DEx4 work 11 dataconsume 0 22 J7g2h[BBNIUQFBI?_K4eO0
-l32
-L23
-VM[Vk3>V_mj`3?9URd@<:@3
-!s100 PHPSccIWX8aFQea3`BFBE1
-R4
-32
-R11
-!i10b 1
-R12
-R13
-R14
-!i113 1
-R5
-R6
-Edatagen
-Z15 w1489525876
-R7
-R0
-R1
 R3
-Z16 8C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd
-Z17 FC:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd
+32
+Z13 !s110 1490041820
+!i10b 1
+Z14 !s108 1490041820.000000
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd|
+Z16 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd|
+!i113 1
+R6
+R7
+Abehavioral
+R9
+R10
+R0
+R1
+Z17 DEx4 work 11 dataconsume 0 22 J7g2h[BBNIUQFBI?_K4eO0
+l34
+L23
+VD<g>1L8:IaSCWE9mO`:523
+!s100 eVUDK_gbG<GCGF@c5j:T23
+R3
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R6
+R7
+Edatagen
+Z18 w1489005991
+R9
+R0
+R1
+R2
+Z19 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd
+Z20 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd
 l0
 L21
 V9m83::faZh6V7VET=iWY90
 !s100 2Uh6g>k8H::FcP_S_JJ_G2
-R4
+R3
 32
-R11
+R4
 !i10b 1
-R12
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd|
-Z19 !s107 C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd|
-!i113 1
 R5
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd|
+Z22 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd|
+!i113 1
 R6
-Abehav
 R7
+Abehav
+R9
 R0
 R1
 DEx4 work 7 datagen 0 22 9m83::faZh6V7VET=iWY90
@@ -103,56 +103,56 @@ l34
 L31
 V^_^8b]^]fX?^]jRYW9YKZ0
 !s100 Oinfook:1B^O@OK^]N9md2
-R4
+R3
 32
-R11
+R4
 !i10b 1
-R12
-R18
-R19
-!i113 1
 R5
+R21
+R22
+!i113 1
 R6
-Etb_datagenconsume
-Z20 w1488909663
 R7
-Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Etb_datagenconsume
+Z23 w1488300824
+R9
+Z24 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R0
 R1
-R3
-Z22 8C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd
-Z23 FC:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd
+R2
+Z25 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd
+Z26 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd
 l0
 L7
 Viacgz0eBAcPodZTE`7A?m0
 !s100 f<`BRhezggH93Nj8U3W^f3
-R4
+R3
 32
-R11
+R4
 !i10b 1
-R12
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd|
-Z25 !s107 C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd|
-!i113 1
 R5
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd|
+Z28 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd|
+!i113 1
 R6
-Atest
 R7
-R21
+Atest
+R9
+R24
 R0
 R1
-Z26 DEx4 work 17 tb_datagenconsume 0 22 iacgz0eBAcPodZTE`7A?m0
+DEx4 work 17 tb_datagenconsume 0 22 iacgz0eBAcPodZTE`7A?m0
 l79
 L10
-Z27 VMZ3]E4mC`>SMX_lT6Uz2_3
-Z28 !s100 _?o2;nf6jjo>aS4>N]7[H1
-R4
+VMZ3]E4mC`>SMX_lT6Uz2_3
+!s100 _?o2;nf6jjo>aS4>N]7[H1
+R3
 32
-R11
+R4
 !i10b 1
-R12
-R24
-R25
-!i113 1
 R5
+R27
+R28
+!i113 1
 R6
+R7
