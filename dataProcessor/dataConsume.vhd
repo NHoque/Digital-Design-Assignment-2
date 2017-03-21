@@ -98,11 +98,10 @@ begin
     when S0 =>
       seqDone_reg <= '0';
       dataReady_reg <= '0';
-      dataResults <= (others => X"00");
+	  dataResults <= (others => X"00");
       holdValues := (others => X"00");
       data_max := X"00";
-      index_max <= 0;
-      dataResults_reg <= (others => X"00");
+	  index_max <= 0;
       nextState <= S1;
       
     when S1 =>
@@ -135,9 +134,9 @@ begin
           if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
             dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
           elsif shiftValue >= 4 then
-            dataResults <= dataResults_reg;
-          end if;
-          nextState <= S2;
+		    dataResults <= dataResults_reg;
+		  end if;
+          nextState <= S1;
         end if;
       end if;
     
