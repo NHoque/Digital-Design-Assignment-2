@@ -26,9 +26,9 @@ architecture Behavioral of dataConsume is
 type STATE_TYPE is (S0, S1, S2, S3, S4);
 signal curState, nextState : STATE_TYPE;  
 signal ctrlIn_reg, ctrlIn_edge, ctrlOut_reg, seqDone_reg, dataReady_reg : STD_LOGIC := '0';
-signal byte_reg, data_reg : UNSIGNED(7 downto 0);
+signal byte_reg : UNSIGNED(7 downto 0);
 signal numWords_reg : BCD_ARRAY_TYPE(2 downto 0);
-signal dataResults_reg : CHAR_ARRAY_TYPE(0 to 6) := (X"00", X"00", X"00", X"00", X"00", X"00", X"00");
+signal dataResults_reg : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
 signal index, index_max, numWords_int : INTEGER := 0;
 -----------------------------------------------------------
 begin
@@ -89,7 +89,7 @@ begin
     end if;
   end process;
 -----------------------------------------------------------------------------
-  nextStateLogic: process(curState, start, data_reg, numWords_int, index)
+  nextStateLogic: process(curState, start, byte_reg, numWords_int, index)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
@@ -98,9 +98,10 @@ begin
     when S0 =>
       seqDone_reg <= '0';
       dataReady_reg <= '0';
-      byte_reg <= X"00";
+	  dataResults <= (others => X"00");
       holdValues := (others => X"00");
       data_max := X"00";
+	  index_max <= 0;
       dataResults_reg <= (others => X"00");
       nextState <= S1;
       
@@ -114,27 +115,28 @@ begin
       end if;
       
     when S2 => 
-      if index = numWords_int then
+      if index = numWords_int AND shiftValue >= 4 then
         nextState <= S3;
       elsif index /= numWords_int then
-        byte_reg <= data_reg;
         shiftValue := shiftValue + 1;
-        holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg);
+        holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg);
 
-        if (data_reg >= data_max) then
+        if (byte_reg >= data_max) then
           index_max <= index;
-          data_max := data_reg;
-          dataResults_reg(3) <= STD_LOGIC_VECTOR(data_reg);
+          data_max := byte_reg;
+          dataResults_reg(3) <= STD_LOGIC_VECTOR(byte_reg);
           dataResults_reg(2) <= holdValues(5);
           dataResults_reg(1) <= holdValues(4);
           dataResults_reg(0) <= holdValues(3);
           shiftValue := 0;
-          nextState <= S2;
-        elsif (data_reg < data_max) then
+          nextState <= S1;
+        elsif (byte_reg < data_max) then
           data_max := data_max;
           if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
-            dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
-          end if;
+            dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
+          elsif shiftValue >= 4 then
+		    dataResults <= dataResults_reg;
+		  end if;
           nextState <= S2;
         end if;
       end if;
@@ -148,61 +150,6 @@ begin
     end case;
   end process;
 -----------------------------------------------------------------------------
-  -- -- Main process, will try to find the peak byte.
-  -- combi_detectPeak : process(data_reg, reset, seqDone_reg, dataReady_reg, index)
-  -- variable data_max : UNSIGNED(7 downto 0) := X"00";
-  -- variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
-  -- variable shiftValue : INTEGER := 0;
-  -- begin
-    
-    -- if seqDone_reg = '1' OR dataReady_reg = '0' OR reset = '1' then
-      -- data_max := X"00";
-      -- dataResults_reg <= (others => X"00");
-      -- holdValues := (others => X"00");      
-    -- elsif dataReady_reg = '1' then
-      -- shiftValue := shiftValue + 1;
-      -- holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(data_reg); 
-    -- end if;
-
-    -- if (data_reg >= data_max) then
-      -- index_max <= index;
-      -- data_max := data_reg;
-    -- byte_reg <= data_reg;
-      -- dataResults_reg(3) <= STD_LOGIC_VECTOR(data_max);
-      -- dataResults_reg(2) <= holdValues(5);
-      -- dataResults_reg(1) <= holdValues(4);
-      -- dataResults_reg(0) <= holdValues(3);
-      -- shiftValue := 0;
-    -- elsif (data_reg < data_max) then
-      -- data_max := data_max;
-      -- if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
-        -- dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(data_reg);
-      -- end if;
-    -- end if;
-
-  -- end process;
----------------------------------------------------------------------------------
-  -- combi_reg_data : process(start)
-  -- begin
-    -- if start = '1' then
-      -- index <= index + 1;
-      -- dataReady_reg <= '1';
-    -- elsif start = '0' OR reset = '1' then
-      -- byte_reg <= X"00";
-      -- index <= 0;
-      -- dataReady_reg <= '0';
-    -- end if;
-  -- end process;
----------------------------------------------------------------------------------
-  -- combi_seqDone : process(index, numWords_int)
-  -- begin
-    -- if index = numWords_int then
-      -- seqDone_reg <= '1';
-    -- elsif index /= numWords_int then
-      -- seqDone_reg <= '0';
-    -- end if;
-  -- end process;
----------------------------------------------------------------------------------
   -- On reset, all outputs are set to zero except ctrlOut_reg 
   -- which is set to 1 to enable data acquisition.
   -- Else, run control lines and indexing.
@@ -212,6 +159,7 @@ begin
       if reset = '1' then
         ctrlOut_reg <= '1';
         index <= 0;
+		byte_reg <= X"00";
         curState <= S0;
       else
         curState <= nextState;
@@ -219,10 +167,10 @@ begin
         if ctrlIn_edge = '1' then
           if index = numWords_int then
             index <= 0;
-          elsif start= '1' then
+          elsif start = '1' then
             index <= index + 1;
           end if;
-          data_reg <= UNSIGNED(data);
+          byte_reg <= UNSIGNED(data);
           ctrlOut_reg <= NOT ctrlOut_reg;
         end if;  
       end if;
@@ -236,7 +184,6 @@ begin
   dataReady <= dataReady_reg;
   numWords_reg <= numWords_bcd;
   byte <= STD_LOGIC_VECTOR(byte_reg);
-  dataResults <= dataResults_reg;
   seqDone <= seqDone_reg;
   
 end Behavioral;
