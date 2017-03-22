@@ -1,18 +1,12 @@
-{C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd}
+{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package common_pack
-
-} {} {}} {C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
+-- Loading package std_logic_arith
 -- Loading package common_pack
--- Compiling entity dataGen
--- Compiling architecture behav of dataGen
+-- Compiling entity tb_dataGenConsume
+-- Compiling architecture test of tb_dataGenConsume
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/common_pack.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/common_pack.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -25,15 +19,25 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 End time: 19:24:25 on Mar 03,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul/Google Drive/Uni Work/Year 2/Digital Design/Digital-Design-Assignment-2/dataProcessor/tb_dataConsume_unsigned.vhd}
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/common_pack.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
+-- Compiling package common_pack
+
+} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 19:24:25 on Mar 03,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
 -- Loading package common_pack
--- Compiling entity tb_dataGenConsume
--- Compiling architecture test of tb_dataGenConsume
+-- Compiling entity dataGen
+-- Compiling architecture behav of dataGen
+End time: 19:24:25 on Mar 03,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataConsume.vhd}} {0 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataConsume.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -53,18 +57,24 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 End time: 19:24:26 on Mar 03,2017, Elapsed time: 0:00:00
 Errors: 3, Warnings: 0
 
-} {12.0 14.0 15.0 16.0} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd}
+} {12.0 14.0 15.0 16.0} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 19:24:25 on Mar 03,2017
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/dataGen.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package common_pack
+-- Compiling entity dataConsume
+-- Compiling architecture Behavioral of dataConsume
+
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataGen.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package common_pack
 -- Compiling entity dataGen
 -- Compiling architecture behav of dataGen
-End time: 19:24:25 on Mar 03,2017, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/tb_dataConsume_unsigned.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/tb_dataConsume_unsigned.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

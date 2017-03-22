@@ -1,0 +1,2 @@
+vhdl work "common_pack.vhd"
+vhdl work "../dataConsume.vhd"

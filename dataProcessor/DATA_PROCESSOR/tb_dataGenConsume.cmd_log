@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/DATA_PROCESSOR/tb_dataGenConsume.xst" -ofn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/dataProcessor/DATA_PROCESSOR/tb_dataGenConsume.syr" 

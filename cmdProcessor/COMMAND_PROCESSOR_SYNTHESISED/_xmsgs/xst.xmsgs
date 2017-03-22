@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 8: Cannot find &lt;<arg fmt="%s" index="1">vpkg</arg>&gt; in library &lt;<arg fmt="%s" index="2">unisim</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 11: Unit &lt;<arg fmt="%s" index="1">cmdproc</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="374" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 33: Entity &lt;<arg fmt="%s" index="1">cmdproc</arg>&gt; is not yet compiled.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 36: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 37: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 39: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="24" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 41: <arg fmt="%s" index="1">&quot;**&quot;</arg> expects <arg fmt="%d" index="2">2</arg> arguments
+</msg>
+
+<msg type="error" file="HDLCompiler" num="845" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 42: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 50: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 52: &lt;<arg fmt="%s" index="1">msb</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 53: &lt;<arg fmt="%s" index="1">lsb</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 54: &lt;<arg fmt="%s" index="1">hex_1</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 55: &lt;<arg fmt="%s" index="1">hex_2</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 49: &lt;<arg fmt="%s" index="1">byte</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 59: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 60: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 61: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 64: &lt;<arg fmt="%s" index="1">b1</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 65: &lt;<arg fmt="%s" index="1">b2</arg>&gt; is not declared.
+</msg>
+
+</messages>
+

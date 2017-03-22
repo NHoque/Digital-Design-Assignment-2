@@ -1,0 +1,568 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle
+ise -v 3 -s 3 -n 3 -fastpaths -xml dataConsume_preroute.twx dataConsume_map.ncd
+-o dataConsume_preroute.twr dataConsume.pcf
+
+Design file:              dataConsume_map.ncd
+Physical constraint file: dataConsume.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ctrlIn      |    2.772(R)|      SLOW  |   -0.895(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<0>     |    1.856(R)|      FAST  |   -1.532(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<1>     |    2.017(R)|      FAST  |   -1.693(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<2>     |    2.002(R)|      FAST  |   -1.678(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<3>     |    2.039(R)|      FAST  |   -1.715(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<4>     |    1.894(R)|      FAST  |   -1.584(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<5>     |    1.782(R)|      FAST  |   -1.472(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<6>     |    1.766(R)|      FAST  |   -1.456(R)|      SLOW  |clk_BUFGP         |   0.000|
+data<7>     |    1.764(R)|      FAST  |   -1.454(R)|      SLOW  |clk_BUFGP         |   0.000|
+start       |    2.339(R)|      SLOW  |   -1.245(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock numWords_bcd<0><0>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -1.967(F)|      FAST  |    3.216(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<0><1>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.149(F)|      FAST  |    4.805(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<0><2>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.152(F)|      FAST  |    4.817(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<0><3>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.265(F)|      FAST  |    4.888(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<1><0>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.183(F)|      FAST  |    6.492(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<1><1>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -3.264(F)|      FAST  |    6.538(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<1><2>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -3.184(F)|      FAST  |    6.663(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<1><3>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -3.519(F)|      FAST  |    6.566(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<2><0>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.908(F)|      FAST  |    7.528(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<2><1>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -2.881(F)|      FAST  |    7.537(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<2><2>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -3.099(F)|      FAST  |    7.521(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock numWords_bcd<2><3>
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -4.174(F)|      FAST  |    7.735(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Setup/Hold to clock reset
+------------+------------+------------+------------+------------+----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                            | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)           | Phase  |
+------------+------------+------------+------------+------------+----------------------------+--------+
+start       |   -1.868(F)|      FAST  |    4.463(F)|      SLOW  |curState[1]_PWR_6_o_Mux_71_o|   0.000|
+------------+------------+------------+------------+------------+----------------------------+--------+
+
+Clock clk to Pad
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination      |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+byte<0>          |         8.497(R)|      SLOW  |         6.722(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<1>          |         8.664(R)|      SLOW  |         6.889(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<2>          |         8.478(R)|      SLOW  |         6.703(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<3>          |         8.455(R)|      SLOW  |         6.680(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<4>          |         8.527(R)|      SLOW  |         6.732(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<5>          |         8.383(R)|      SLOW  |         6.588(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<6>          |         8.576(R)|      SLOW  |         6.781(R)|      FAST  |clk_BUFGP         |   0.000|
+byte<7>          |         8.578(R)|      SLOW  |         6.783(R)|      FAST  |clk_BUFGP         |   0.000|
+ctrlOut          |         8.367(R)|      SLOW  |         6.568(R)|      FAST  |clk_BUFGP         |   0.000|
+dataReady        |         7.726(R)|      SLOW  |         5.927(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><0>|         8.330(R)|      SLOW  |         6.555(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><1>|         8.312(R)|      SLOW  |         6.537(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><2>|         8.251(R)|      SLOW  |         6.476(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><3>|         8.232(R)|      SLOW  |         6.457(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><4>|         7.947(R)|      SLOW  |         6.157(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><5>|         8.042(R)|      SLOW  |         6.252(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><6>|         8.020(R)|      SLOW  |         6.230(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<0><7>|         8.015(R)|      SLOW  |         6.225(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><0>|         9.146(R)|      SLOW  |         7.371(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><1>|         9.141(R)|      SLOW  |         7.366(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><2>|         9.143(R)|      SLOW  |         7.368(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><3>|         8.584(R)|      SLOW  |         6.794(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><4>|         8.535(R)|      SLOW  |         6.745(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><5>|         8.524(R)|      SLOW  |         6.734(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><6>|         8.524(R)|      SLOW  |         6.734(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<1><7>|         8.547(R)|      SLOW  |         6.772(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><0>|         7.909(R)|      SLOW  |         6.119(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><1>|         8.062(R)|      SLOW  |         6.272(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><2>|         7.832(R)|      SLOW  |         6.042(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><3>|         7.832(R)|      SLOW  |         6.042(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><4>|         7.844(R)|      SLOW  |         6.069(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><5>|         7.844(R)|      SLOW  |         6.069(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><6>|         7.924(R)|      SLOW  |         6.149(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<2><7>|         7.924(R)|      SLOW  |         6.149(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><0>|         8.536(R)|      SLOW  |         6.761(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><1>|         8.520(R)|      SLOW  |         6.745(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><2>|         8.478(R)|      SLOW  |         6.703(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><3>|         8.455(R)|      SLOW  |         6.680(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><4>|         8.338(R)|      SLOW  |         6.563(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><5>|         8.428(R)|      SLOW  |         6.653(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><6>|         9.373(R)|      SLOW  |         7.598(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<3><7>|         9.373(R)|      SLOW  |         7.598(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><0>|         9.609(R)|      SLOW  |         7.834(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><1>|         9.589(R)|      SLOW  |         7.814(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><2>|         9.816(R)|      SLOW  |         8.041(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><3>|         9.729(R)|      SLOW  |         7.954(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><4>|         9.743(R)|      SLOW  |         7.968(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><5>|         9.599(R)|      SLOW  |         7.824(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><6>|         9.701(R)|      SLOW  |         7.926(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<4><7>|        10.028(R)|      SLOW  |         8.233(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><0>|         9.030(R)|      SLOW  |         7.255(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><1>|         9.012(R)|      SLOW  |         7.237(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><2>|         9.245(R)|      SLOW  |         7.470(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><3>|         9.222(R)|      SLOW  |         7.447(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><4>|         9.431(R)|      SLOW  |         7.656(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><5>|         9.300(R)|      SLOW  |         7.525(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><6>|         9.444(R)|      SLOW  |         7.669(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<5><7>|         9.392(R)|      SLOW  |         7.597(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><0>|         8.965(R)|      SLOW  |         7.190(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><1>|         8.821(R)|      SLOW  |         7.046(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><2>|         9.172(R)|      SLOW  |         7.397(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><3>|         9.143(R)|      SLOW  |         7.368(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><4>|         8.989(R)|      SLOW  |         7.214(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><5>|         8.851(R)|      SLOW  |         7.076(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><6>|         9.188(R)|      SLOW  |         7.413(R)|      FAST  |clk_BUFGP         |   0.000|
+dataResults<6><7>|         9.159(R)|      SLOW  |         7.384(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<0><0>   |        10.562(R)|      SLOW  |         8.711(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<0><1>   |        15.983(R)|      SLOW  |         8.387(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<0><2>   |        16.102(R)|      SLOW  |         8.717(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<0><3>   |        16.007(R)|      SLOW  |         8.414(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<1><0>   |        16.003(R)|      SLOW  |         8.296(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<1><1>   |        16.509(R)|      SLOW  |         8.622(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<1><2>   |        16.233(R)|      SLOW  |         8.629(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<1><3>   |        16.250(R)|      SLOW  |         8.709(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<2><0>   |        16.730(R)|      SLOW  |         8.997(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<2><1>   |        16.988(R)|      SLOW  |         9.975(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<2><2>   |        17.001(R)|      SLOW  |         9.993(R)|      FAST  |clk_BUFGP         |   0.000|
+maxIndex<2><3>   |        16.557(R)|      SLOW  |         9.509(R)|      FAST  |clk_BUFGP         |   0.000|
+seqDone          |         7.677(R)|      SLOW  |         5.902(R)|      FAST  |clk_BUFGP         |   0.000|
+-----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |    5.353|         |         |         |
+numWords_bcd<0><0>|    5.284|    8.855|         |         |
+numWords_bcd<0><1>|    6.922|    8.855|         |         |
+numWords_bcd<0><2>|    6.934|    8.855|         |         |
+numWords_bcd<0><3>|    7.005|    8.855|         |         |
+numWords_bcd<1><0>|    8.609|    8.855|         |         |
+numWords_bcd<1><1>|    8.655|    8.855|         |         |
+numWords_bcd<1><2>|    8.780|    8.855|         |         |
+numWords_bcd<1><3>|    8.683|    8.855|         |         |
+numWords_bcd<2><0>|    9.645|    9.645|         |         |
+numWords_bcd<2><1>|    9.654|    9.654|         |         |
+numWords_bcd<2><2>|    9.638|    9.638|         |         |
+numWords_bcd<2><3>|    9.852|    9.852|         |         |
+reset             |    6.580|    8.855|         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<0><0>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.467|    0.467|
+numWords_bcd<0><1>|         |         |    2.050|    2.050|
+numWords_bcd<0><2>|         |         |    2.062|    2.062|
+numWords_bcd<0><3>|         |         |    2.133|    2.133|
+numWords_bcd<1><0>|         |         |    3.737|    3.737|
+numWords_bcd<1><1>|         |         |    3.783|    3.783|
+numWords_bcd<1><2>|         |         |    3.908|    3.908|
+numWords_bcd<1><3>|         |         |    3.811|    3.811|
+numWords_bcd<2><0>|         |         |    4.773|    4.773|
+numWords_bcd<2><1>|         |         |    4.782|    4.782|
+numWords_bcd<2><2>|         |         |    4.766|    4.766|
+numWords_bcd<2><3>|         |         |    4.980|    4.980|
+reset             |         |         |    1.781|    1.781|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<0><1>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.285|    0.285|
+numWords_bcd<0><1>|         |         |    1.789|    1.789|
+numWords_bcd<0><2>|         |         |    1.801|    1.801|
+numWords_bcd<0><3>|         |         |    1.872|    1.872|
+numWords_bcd<1><0>|         |         |    3.476|    3.476|
+numWords_bcd<1><1>|         |         |    3.522|    3.522|
+numWords_bcd<1><2>|         |         |    3.647|    3.647|
+numWords_bcd<1><3>|         |         |    3.550|    3.550|
+numWords_bcd<2><0>|         |         |    4.512|    4.512|
+numWords_bcd<2><1>|         |         |    4.521|    4.521|
+numWords_bcd<2><2>|         |         |    4.505|    4.505|
+numWords_bcd<2><3>|         |         |    4.719|    4.719|
+reset             |         |         |    1.599|    1.599|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<0><2>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.282|    0.282|
+numWords_bcd<0><1>|         |         |    1.777|    1.777|
+numWords_bcd<0><2>|         |         |    1.789|    1.789|
+numWords_bcd<0><3>|         |         |    1.860|    1.860|
+numWords_bcd<1><0>|         |         |    3.464|    3.464|
+numWords_bcd<1><1>|         |         |    3.510|    3.510|
+numWords_bcd<1><2>|         |         |    3.635|    3.635|
+numWords_bcd<1><3>|         |         |    3.538|    3.538|
+numWords_bcd<2><0>|         |         |    4.500|    4.500|
+numWords_bcd<2><1>|         |         |    4.509|    4.509|
+numWords_bcd<2><2>|         |         |    4.493|    4.493|
+numWords_bcd<2><3>|         |         |    4.707|    4.707|
+reset             |         |         |    1.596|    1.596|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<0><3>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.169|    0.169|
+numWords_bcd<0><1>|         |         |    1.700|    1.700|
+numWords_bcd<0><2>|         |         |    1.712|    1.712|
+numWords_bcd<0><3>|         |         |    1.783|    1.783|
+numWords_bcd<1><0>|         |         |    3.387|    3.387|
+numWords_bcd<1><1>|         |         |    3.433|    3.433|
+numWords_bcd<1><2>|         |         |    3.558|    3.558|
+numWords_bcd<1><3>|         |         |    3.461|    3.461|
+numWords_bcd<2><0>|         |         |    4.423|    4.423|
+numWords_bcd<2><1>|         |         |    4.432|    4.432|
+numWords_bcd<2><2>|         |         |    4.416|    4.416|
+numWords_bcd<2><3>|         |         |    4.630|    4.630|
+reset             |         |         |    1.483|    1.483|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<1><0>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.251|    0.251|
+numWords_bcd<0><1>|         |         |    1.779|    1.779|
+numWords_bcd<0><2>|         |         |    1.791|    1.791|
+numWords_bcd<0><3>|         |         |    1.862|    1.862|
+numWords_bcd<1><0>|         |         |    3.466|    3.466|
+numWords_bcd<1><1>|         |         |    3.512|    3.512|
+numWords_bcd<1><2>|         |         |    3.637|    3.637|
+numWords_bcd<1><3>|         |         |    3.540|    3.540|
+numWords_bcd<2><0>|         |         |    4.502|    4.502|
+numWords_bcd<2><1>|         |         |    4.511|    4.511|
+numWords_bcd<2><2>|         |         |    4.495|    4.495|
+numWords_bcd<2><3>|         |         |    4.709|    4.709|
+reset             |         |         |    1.565|    1.565|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<1><1>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -0.830|   -0.830|
+numWords_bcd<0><1>|         |         |    0.635|    0.635|
+numWords_bcd<0><2>|         |         |    0.647|    0.647|
+numWords_bcd<0><3>|         |         |    0.718|    0.718|
+numWords_bcd<1><0>|         |         |    2.322|    2.322|
+numWords_bcd<1><1>|         |         |    2.368|    2.368|
+numWords_bcd<1><2>|         |         |    2.493|    2.493|
+numWords_bcd<1><3>|         |         |    2.396|    2.396|
+numWords_bcd<2><0>|         |         |    3.358|    3.358|
+numWords_bcd<2><1>|         |         |    3.367|    3.367|
+numWords_bcd<2><2>|         |         |    3.351|    3.351|
+numWords_bcd<2><3>|         |         |    3.565|    3.565|
+reset             |         |         |    0.484|    0.484|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<1><2>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -0.750|   -0.750|
+numWords_bcd<0><1>|         |         |    0.681|    0.681|
+numWords_bcd<0><2>|         |         |    0.693|    0.693|
+numWords_bcd<0><3>|         |         |    0.764|    0.764|
+numWords_bcd<1><0>|         |         |    2.368|    2.368|
+numWords_bcd<1><1>|         |         |    2.414|    2.414|
+numWords_bcd<1><2>|         |         |    2.539|    2.539|
+numWords_bcd<1><3>|         |         |    2.442|    2.442|
+numWords_bcd<2><0>|         |         |    3.404|    3.404|
+numWords_bcd<2><1>|         |         |    3.413|    3.413|
+numWords_bcd<2><2>|         |         |    3.397|    3.397|
+numWords_bcd<2><3>|         |         |    3.611|    3.611|
+reset             |         |         |    0.564|    0.564|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<1><3>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -1.085|   -1.085|
+numWords_bcd<0><1>|         |         |    0.380|    0.380|
+numWords_bcd<0><2>|         |         |    0.392|    0.392|
+numWords_bcd<0><3>|         |         |    0.463|    0.463|
+numWords_bcd<1><0>|         |         |    2.067|    2.067|
+numWords_bcd<1><1>|         |         |    2.113|    2.113|
+numWords_bcd<1><2>|         |         |    2.238|    2.238|
+numWords_bcd<1><3>|         |         |    2.141|    2.141|
+numWords_bcd<2><0>|         |         |    3.103|    3.103|
+numWords_bcd<2><1>|         |         |    3.112|    3.112|
+numWords_bcd<2><2>|         |         |    3.096|    3.096|
+numWords_bcd<2><3>|         |         |    3.310|    3.310|
+reset             |         |         |    0.229|    0.229|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<2><0>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -0.474|   -0.474|
+numWords_bcd<0><1>|         |         |    0.958|    0.958|
+numWords_bcd<0><2>|         |         |    0.970|    0.970|
+numWords_bcd<0><3>|         |         |    1.041|    1.041|
+numWords_bcd<1><0>|         |         |    2.645|    2.645|
+numWords_bcd<1><1>|         |         |    2.691|    2.691|
+numWords_bcd<1><2>|         |         |    2.816|    2.816|
+numWords_bcd<1><3>|         |         |    2.719|    2.719|
+numWords_bcd<2><0>|         |         |    3.681|    3.681|
+numWords_bcd<2><1>|         |         |    3.690|    3.690|
+numWords_bcd<2><2>|         |         |    3.674|    3.674|
+numWords_bcd<2><3>|         |         |    3.888|    3.888|
+reset             |         |         |    0.840|    0.840|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<2><1>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -0.447|   -0.447|
+numWords_bcd<0><1>|         |         |    1.003|    1.003|
+numWords_bcd<0><2>|         |         |    1.015|    1.015|
+numWords_bcd<0><3>|         |         |    1.086|    1.086|
+numWords_bcd<1><0>|         |         |    2.690|    2.690|
+numWords_bcd<1><1>|         |         |    2.736|    2.736|
+numWords_bcd<1><2>|         |         |    2.861|    2.861|
+numWords_bcd<1><3>|         |         |    2.764|    2.764|
+numWords_bcd<2><0>|         |         |    3.726|    3.726|
+numWords_bcd<2><1>|         |         |    3.735|    3.735|
+numWords_bcd<2><2>|         |         |    3.719|    3.719|
+numWords_bcd<2><3>|         |         |    3.933|    3.933|
+reset             |         |         |    0.867|    0.867|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<2><2>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -0.665|   -0.665|
+numWords_bcd<0><1>|         |         |    0.783|    0.783|
+numWords_bcd<0><2>|         |         |    0.795|    0.795|
+numWords_bcd<0><3>|         |         |    0.866|    0.866|
+numWords_bcd<1><0>|         |         |    2.470|    2.470|
+numWords_bcd<1><1>|         |         |    2.516|    2.516|
+numWords_bcd<1><2>|         |         |    2.641|    2.641|
+numWords_bcd<1><3>|         |         |    2.544|    2.544|
+numWords_bcd<2><0>|         |         |    3.506|    3.506|
+numWords_bcd<2><1>|         |         |    3.515|    3.515|
+numWords_bcd<2><2>|         |         |    3.499|    3.499|
+numWords_bcd<2><3>|         |         |    3.713|    3.713|
+reset             |         |         |    0.649|    0.649|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numWords_bcd<2><3>
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |   -1.740|   -1.740|
+numWords_bcd<0><1>|         |         |   -0.345|   -0.345|
+numWords_bcd<0><2>|         |         |   -0.342|   -0.342|
+numWords_bcd<0><3>|         |         |   -0.233|   -0.233|
+numWords_bcd<1><0>|         |         |    1.288|    1.288|
+numWords_bcd<1><1>|         |         |    1.334|    1.334|
+numWords_bcd<1><2>|         |         |    1.459|    1.459|
+numWords_bcd<1><3>|         |         |    1.362|    1.362|
+numWords_bcd<2><0>|         |         |    2.324|    2.324|
+numWords_bcd<2><1>|         |         |    2.333|    2.333|
+numWords_bcd<2><2>|         |         |    2.317|    2.317|
+numWords_bcd<2><3>|         |         |    2.531|    2.531|
+reset             |         |         |   -0.426|   -0.426|
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+clk               |         |         |   -0.914|         |
+numWords_bcd<0><0>|         |         |    0.719|    0.719|
+numWords_bcd<0><1>|         |         |    2.308|    2.308|
+numWords_bcd<0><2>|         |         |    2.320|    2.320|
+numWords_bcd<0><3>|         |         |    2.391|    2.391|
+numWords_bcd<1><0>|         |         |    3.995|    3.995|
+numWords_bcd<1><1>|         |         |    4.041|    4.041|
+numWords_bcd<1><2>|         |         |    4.166|    4.166|
+numWords_bcd<1><3>|         |         |    4.069|    4.069|
+numWords_bcd<2><0>|         |         |    5.031|    5.031|
+numWords_bcd<2><1>|         |         |    5.040|    5.040|
+numWords_bcd<2><2>|         |         |    5.024|    5.024|
+numWords_bcd<2><3>|         |         |    5.238|    5.238|
+reset             |         |         |    1.966|    1.966|
+------------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+reset          |maxIndex<0><0> |   12.055|
+reset          |maxIndex<0><1> |   12.305|
+reset          |maxIndex<0><2> |   12.397|
+reset          |maxIndex<0><3> |   12.237|
+reset          |maxIndex<1><0> |   12.158|
+reset          |maxIndex<1><1> |   11.723|
+reset          |maxIndex<1><2> |   11.847|
+reset          |maxIndex<1><3> |   11.721|
+reset          |maxIndex<2><0> |   12.091|
+reset          |maxIndex<2><1> |   12.034|
+reset          |maxIndex<2><2> |   12.047|
+reset          |maxIndex<2><3> |   11.881|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Mar 22 21:26:37 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 174 MB
+
+
+
