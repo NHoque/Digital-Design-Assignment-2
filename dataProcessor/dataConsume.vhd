@@ -89,7 +89,7 @@ begin
     end if;
   end process;
 -----------------------------------------------------------------------------
-  nextStateLogic: process(curState, start, byte_reg, numWords_int, index)
+  nextStateLogic: process(curState, byte_reg, numWords_int, index)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
@@ -98,29 +98,28 @@ begin
     when S0 =>
       seqDone_reg <= '0';
       dataReady_reg <= '0';
-	  dataResults <= (others => X"00");
+      dataResults_reg <= (others => X"00");
       holdValues := (others => X"00");
       data_max := X"00";
-	  index_max <= 0;
+      index_max <= 0;
       nextState <= S1;
       
     when S1 =>
       if start = '1' then
         dataReady_reg <= '1';
-        nextState <= S2;
+		nextState <= S2;
       else
         dataReady_reg <= '0';
         nextState <= S1;
       end if;
       
-    when S2 => 
-      if index = numWords_int AND shiftValue >= 4 then
-        nextState <= S3;
-      elsif index /= numWords_int then
+	when S2 =>
+	  if index = numWords_int then
+		nextState <= S3;
+      elsif index < numWords_int then
         shiftValue := shiftValue + 1;
         holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg);
-
-        if (byte_reg >= data_max) then
+        if (byte_reg > data_max) then
           index_max <= index;
           data_max := byte_reg;
           dataResults_reg(3) <= STD_LOGIC_VECTOR(byte_reg);
@@ -128,19 +127,16 @@ begin
           dataResults_reg(1) <= holdValues(4);
           dataResults_reg(0) <= holdValues(3);
           shiftValue := 0;
-          nextState <= S1;
-        elsif (byte_reg < data_max) then
+        elsif (byte_reg <= data_max) then
           data_max := data_max;
           if ((3 + shiftValue) mod 7 > 3) AND (shiftValue < 4) then
             dataResults_reg((3 + shiftValue) mod 7) <= STD_LOGIC_VECTOR(byte_reg);
-          elsif shiftValue >= 4 then
-		    dataResults <= dataResults_reg;
-		  end if;
-          nextState <= S1;
+          end if;
         end if;
+		nextState <= S1;
       end if;
-    
-    when S3 =>
+	  
+    when S3 => 
       seqDone_reg <= '1';
       nextState <= S0;
     
@@ -164,7 +160,7 @@ begin
         curState <= nextState;
         ctrlIn_reg <= ctrlIn;
         if ctrlIn_edge = '1' then
-          if index = numWords_int then
+          if index = numWords_int + 1 then
             index <= 0;
           elsif start = '1' then
             index <= index + 1;
@@ -179,7 +175,7 @@ begin
   ctrlIn_edge <= ctrlIn XOR ctrlIn_reg;
   
   ctrlOut <= ctrlOut_reg;
-  
+  dataResults <= dataResults_reg;
   dataReady <= dataReady_reg;
   numWords_reg <= numWords_bcd;
   byte <= STD_LOGIC_VECTOR(byte_reg);
