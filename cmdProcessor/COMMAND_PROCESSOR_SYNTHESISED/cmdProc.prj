@@ -1,2 +1,2 @@
-vhdl work "../common_pack.vhd"
-vhdl work "../cmdProc.vhd"
+vhdl work "common_pack.vhd"
+vhdl work "cmdProc.vhd"

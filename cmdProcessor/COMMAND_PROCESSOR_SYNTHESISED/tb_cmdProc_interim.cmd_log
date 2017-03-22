@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/COMMAND_PROCESSOR_SYNTHESISED/tb_cmdProc_interim.xst" -ofn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/COMMAND_PROCESSOR_SYNTHESISED/tb_cmdProc_interim.syr" 

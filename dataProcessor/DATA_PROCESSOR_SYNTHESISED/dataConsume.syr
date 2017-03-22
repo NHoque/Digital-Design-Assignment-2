@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: dataConsume.prj
 
@@ -119,7 +119,6 @@ Parsing architecture <Behavioral> of entity <dataconsume>.
 =========================================================================
 
 Elaborating entity <dataConsume> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd" Line 115. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -140,8 +139,8 @@ Synthesizing Unit <dataConsume>.
     Found 8-bit register for signal <dataResults_reg<4>>.
     Found 8-bit register for signal <dataResults_reg<5>>.
     Found 8-bit register for signal <dataResults_reg<6>>.
-    Found 8-bit register for signal <seq_detectPeak.data_max>.
     Found 32-bit register for signal <index_max>.
+    Found 8-bit register for signal <seq_detectPeak.data_max>.
     Found 1-bit register for signal <ctrlOut_reg>.
     Found 32-bit register for signal <index>.
     Found 8-bit register for signal <byte>.
@@ -149,35 +148,35 @@ Synthesizing Unit <dataConsume>.
     Found 1-bit register for signal <ctrlIn_reg>.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_1_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_4_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0334> created at line 1241.
+    Found 4-bit adder for signal <n0318> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_8_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_10_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0337> created at line 1241.
+    Found 4-bit adder for signal <n0321> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_14_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_16_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0340> created at line 1241.
+    Found 4-bit adder for signal <n0324> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_20_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_22_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0343> created at line 1241.
+    Found 4-bit adder for signal <n0327> created at line 1241.
     Found 4-bit adder for signal <index_max[8]_GND_5_o_add_26_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_28_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0346> created at line 1241.
+    Found 4-bit adder for signal <n0330> created at line 1241.
     Found 4-bit adder for signal <index_max[7]_GND_5_o_add_32_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_34_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0349> created at line 1241.
+    Found 4-bit adder for signal <n0333> created at line 1241.
     Found 4-bit adder for signal <index_max[6]_GND_5_o_add_38_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_40_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0352> created at line 1241.
+    Found 4-bit adder for signal <n0336> created at line 1241.
     Found 4-bit adder for signal <index_max[5]_GND_5_o_add_44_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_5_o_GND_5_o_add_46_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0355> created at line 1241.
+    Found 4-bit adder for signal <n0339> created at line 1241.
     Found 4-bit adder for signal <index_max[4]_GND_5_o_add_50_OUT> created at line 1241.
     Found 4-bit adder for signal <index_max[8]_GND_5_o_add_52_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0358> created at line 1241.
-    Found 12-bit adder for signal <n0549[11:0]> created at line 87.
-    Found 13-bit adder for signal <n0486> created at line 87.
-    Found 32-bit adder for signal <seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT> created at line 150.
-    Found 32-bit adder for signal <index[31]_GND_5_o_add_147_OUT> created at line 193.
+    Found 4-bit adder for signal <n0342> created at line 1241.
+    Found 12-bit adder for signal <n0533[11:0]> created at line 87.
+    Found 13-bit adder for signal <n0470> created at line 87.
+    Found 32-bit adder for signal <seq_detectPeak.shiftValue[31]_GND_5_o_add_80_OUT> created at line 152.
+    Found 32-bit adder for signal <index[31]_GND_5_o_add_149_OUT> created at line 196.
     Found 4x7-bit multiplier for signal <numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT> created at line 87.
     Found 4x4-bit multiplier for signal <numWords_reg[1][3]_PWR_5_o_MuLt_60_OUT> created at line 87.
     Found 1-bit 4-to-1 multiplexer for signal <curState[1]_GND_5_o_Mux_70_o> created at line 94.
@@ -212,15 +211,15 @@ WARNING:Xst:737 - Found 1-bit latch for signal <nextState<0>>. Latches may be ge
     Found 4-bit comparator greater for signal <GND_5_o_GND_5_o_LessThan_54_o> created at line 58
     Found 32-bit comparator equal for signal <numWords_int[31]_index[31]_equal_66_o> created at line 106
     Found 32-bit comparator greater for signal <numWords_int[31]_index[31]_LessThan_67_o> created at line 108
-    Found 8-bit comparator greater for signal <n0196> created at line 153
-    Found 32-bit comparator lessequal for signal <GND_5_o_seq_detectPeak.shiftValue[31]_LessThan_81_o> created at line 164
+    Found 8-bit comparator greater for signal <n0180> created at line 155
+    Found 32-bit comparator lessequal for signal <GND_5_o_seq_detectPeak.shiftValue[31]_LessThan_83_o> created at line 167
     Summary:
 	inferred   2 Multiplier(s).
 	inferred  31 Adder/Subtractor(s).
 	inferred 198 D-type flip-flop(s).
 	inferred   2 Latch(s).
 	inferred  31 Comparator(s).
-	inferred 118 Multiplexer(s).
+	inferred 120 Multiplexer(s).
 Unit <dataConsume> synthesized.
 
 =========================================================================
@@ -249,12 +248,12 @@ Macro Statistics
  32-bit comparator lessequal                           : 1
  4-bit comparator greater                              : 26
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 118
+# Multiplexers                                         : 120
  1-bit 2-to-1 multiplexer                              : 96
  1-bit 4-to-1 multiplexer                              : 1
  13-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 4
  4-bit 2-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 14
 # Xors                                                 : 1
@@ -266,51 +265,11 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2677 - Node <index_max_12> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_13> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_14> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_15> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_16> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_17> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_18> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_19> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_20> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_21> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_22> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_23> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_24> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_25> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_26> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_27> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_28> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_29> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_30> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_31> of sequential type is unconnected in block <dataConsume>.
 
 Synthesizing (advanced) Unit <dataConsume>.
 The following registers are absorbed into counter <index>: 1 register on signal <index>.
-	Multiplier <Mmult_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT> in block <dataConsume> and adder/subtractor <Madd_n0549[11:0]> in block <dataConsume> are combined into a MAC<Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT>.
+	Multiplier <Mmult_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT> in block <dataConsume> and adder/subtractor <Madd_n0533[11:0]> in block <dataConsume> are combined into a MAC<Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT>.
 Unit <dataConsume> synthesized (advanced).
-WARNING:Xst:2677 - Node <index_max_12> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_13> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_14> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_15> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_16> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_17> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_18> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_19> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_20> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_21> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_22> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_23> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_24> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_25> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_26> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_27> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_28> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_29> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_30> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_31> of sequential type is unconnected in block <dataConsume>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -336,12 +295,12 @@ Macro Statistics
  32-bit comparator lessequal                           : 1
  4-bit comparator greater                              : 26
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 118
+# Multiplexers                                         : 119
  1-bit 2-to-1 multiplexer                              : 96
  1-bit 4-to-1 multiplexer                              : 1
  13-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 14
 # Xors                                                 : 1
@@ -352,38 +311,16 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_0> 
+INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_1> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_2> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_2> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_3> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_3> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_4> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_4> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_5> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_5> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_6> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_6> 
 INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_7> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_7> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_0> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_1> 
 
 Optimizing unit <dataConsume> ...
-WARNING:Xst:1293 - FF/Latch <index_31> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_29> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_28> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_30> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_26> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_25> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_27> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_24> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_23> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_22> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_21> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_19> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_18> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_20> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_16> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_15> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_17> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_13> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_12> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_14> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_11> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <index_max_11> has a constant value of 0 in block <dataConsume>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -395,8 +332,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 148
- Flip-Flops                                            : 148
+# Registers                                            : 170
+ Flip-Flops                                            : 170
 
 =========================================================================
 
@@ -419,24 +356,24 @@ Top Level Output File Name         : dataConsume.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 458
+# BELS                             : 545
 #      GND                         : 1
 #      INV                         : 4
-#      LUT1                        : 52
-#      LUT2                        : 48
-#      LUT3                        : 39
-#      LUT4                        : 67
-#      LUT5                        : 52
-#      LUT6                        : 34
-#      MUXCY                       : 91
+#      LUT1                        : 42
+#      LUT2                        : 79
+#      LUT3                        : 42
+#      LUT4                        : 66
+#      LUT5                        : 65
+#      LUT6                        : 41
+#      MUXCY                       : 114
 #      MUXF7                       : 1
 #      VCC                         : 1
-#      XORCY                       : 68
-# FlipFlops/Latches                : 150
-#      FD                          : 4
-#      FDE                         : 123
+#      XORCY                       : 89
+# FlipFlops/Latches                : 172
+#      FD                          : 5
+#      FDE                         : 124
 #      FDR                         : 2
-#      FDRE                        : 19
+#      FDRE                        : 39
 #      LD                          : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -451,16 +388,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             150  out of  18224     0%  
- Number of Slice LUTs:                  296  out of   9112     3%  
-    Number used as Logic:               296  out of   9112     3%  
+ Number of Slice Registers:             172  out of  18224     0%  
+ Number of Slice LUTs:                  339  out of   9112     3%  
+    Number used as Logic:               339  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    302
-   Number with an unused Flip Flop:     152  out of    302    50%  
-   Number with an unused LUT:             6  out of    302     1%  
-   Number of fully used LUT-FF pairs:   144  out of    302    47%  
-   Number of unique control sets:         8
+ Number of LUT Flip Flop pairs used:    345
+   Number with an unused Flip Flop:     173  out of    345    50%  
+   Number with an unused LUT:             6  out of    345     1%  
+   Number of fully used LUT-FF pairs:   166  out of    345    48%  
+   Number of unique control sets:         7
 
 IO Utilization: 
  Number of IOs:                         103
@@ -490,8 +427,8 @@ Clock Information:
 -------------------------------------------------------------------+------------------------+-------+
 Clock Signal                                                       | Clock buffer(FF name)  | Load  |
 -------------------------------------------------------------------+------------------------+-------+
-clk                                                                | BUFGP                  | 148   |
 curState[1]_PWR_6_o_Mux_71_o(Mmux_curState[1]_PWR_6_o_Mux_71_o11:O)| NONE(*)(nextState_0)   | 2     |
+clk                                                                | BUFGP                  | 170   |
 -------------------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -506,10 +443,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.171ns (Maximum Frequency: 193.377MHz)
-   Minimum input arrival time before clock: 9.457ns
-   Maximum output required time after clock: 12.326ns
-   Maximum combinational path delay: 6.331ns
+   Minimum period: 5.270ns (Maximum Frequency: 189.738MHz)
+   Minimum input arrival time before clock: 10.519ns
+   Maximum output required time after clock: 14.808ns
+   Maximum combinational path delay: 6.612ns
 
 Timing Details:
 ---------------
@@ -517,66 +454,68 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.171ns (frequency: 193.377MHz)
-  Total number of paths / destination ports: 28706 / 291
+  Clock period: 5.270ns (frequency: 189.738MHz)
+  Total number of paths / destination ports: 49834 / 323
 -------------------------------------------------------------------------
-Delay:               5.171ns (Levels of Logic = 36)
-  Source:            seq_detectPeak.shiftValue_0 (FF)
-  Destination:       dataResults_reg_6_0 (FF)
+Delay:               5.270ns (Levels of Logic = 38)
+  Source:            index_17 (FF)
+  Destination:       index_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: seq_detectPeak.shiftValue_0 to dataResults_reg_6_0
+  Data Path: index_17 to index_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.447   0.579  seq_detectPeak.shiftValue_0 (seq_detectPeak.shiftValue_0)
-     INV:I->O              1   0.206   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_lut<0>_INV_0 (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<0> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<1> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<2> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<3> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<4> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<5> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<6> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<7> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<8> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<9> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<9>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<10> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<10>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<11> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<12> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<13> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<14> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<15> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<15>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<16> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<16>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<17> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<17>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<18> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<18>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<19> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<19>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<20> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<20>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<21> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<21>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<22> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<22>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<23> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<23>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<24> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<24>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<25> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<25>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<26> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<26>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<27> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<27>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<28> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<28>)
-     MUXCY:CI->O           1   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<29> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<29>)
-     MUXCY:CI->O           0   0.019   0.000  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<30> (Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_cy<30>)
-     XORCY:CI->O           3   0.180   0.995  Madd_seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT_xor<31> (seq_detectPeak.shiftValue[31]_GND_5_o_add_78_OUT<31>)
-     LUT5:I0->O            0   0.203   0.000  Mcompar__n0661_lutdi5 (Mcompar__n0661_lutdi5)
-     MUXCY:DI->O          24   0.339   1.173  Mcompar__n0661_cy<5> (_n0661)
-     LUT5:I4->O            1   0.205   0.000  dataResults_reg_4_0_dpot (dataResults_reg_4_0_dpot)
-     FDE:D                     0.102          dataResults_reg_4_0
+     FDRE:C->Q             4   0.447   1.048  index_17 (index_17)
+     LUT6:I0->O            1   0.203   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<5> (Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<5>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6>)
+     MUXCY:CI->O          36   0.019   1.349  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<7> (numWords_int[31]_index[31]_equal_66_o)
+     LUT2:I1->O            1   0.205   0.000  Mcount_index_lut<0> (Mcount_index_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_index_cy<0> (Mcount_index_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<1> (Mcount_index_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<2> (Mcount_index_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<3> (Mcount_index_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<4> (Mcount_index_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<5> (Mcount_index_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<6> (Mcount_index_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<7> (Mcount_index_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<8> (Mcount_index_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<9> (Mcount_index_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<10> (Mcount_index_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<11> (Mcount_index_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<12> (Mcount_index_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<13> (Mcount_index_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<14> (Mcount_index_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<15> (Mcount_index_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<16> (Mcount_index_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<17> (Mcount_index_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<18> (Mcount_index_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<19> (Mcount_index_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<20> (Mcount_index_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<21> (Mcount_index_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<22> (Mcount_index_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<23> (Mcount_index_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<24> (Mcount_index_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<25> (Mcount_index_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<26> (Mcount_index_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<27> (Mcount_index_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<28> (Mcount_index_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<29> (Mcount_index_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_index_cy<30> (Mcount_index_cy<30>)
+     XORCY:CI->O           1   0.180   0.580  Mcount_index_xor<31> (Mcount_index31)
+     LUT4:I3->O            1   0.205   0.000  index_31_glue_rst (index_31_glue_rst)
+     FD:D                      0.102          index_31
     ----------------------------------------
-    Total                      5.171ns (2.424ns logic, 2.747ns route)
-                                       (46.9% logic, 53.1% route)
+    Total                      5.270ns (2.294ns logic, 2.976ns route)
+                                       (43.5% logic, 56.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'curState[1]_PWR_6_o_Mux_71_o'
   Total number of paths / destination ports: 2086 / 2
 -------------------------------------------------------------------------
-Offset:              8.283ns (Levels of Logic = 21)
+Offset:              8.747ns (Levels of Logic = 18)
   Source:            numWords_bcd<2><3> (PAD)
   Destination:       nextState_1 (LATCH)
   Destination Clock: curState[1]_PWR_6_o_Mux_71_o falling
@@ -591,36 +530,33 @@ Offset:              8.283ns (Levels of Logic = 21)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<6> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<6>)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<7> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<7>)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<8> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<8>)
-     XORCY:CI->O           1   0.180   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_xor<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_9)
-     LUT1:I0->O            1   0.205   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>_rt (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>_rt)
-     MUXCY:S->O            1   0.172   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>)
-     XORCY:CI->O           1   0.180   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_xor<10> (n0549[11:0]<10>)
-     LUT1:I0->O            1   0.205   0.000  Madd_n0486_cy<10>_rt (Madd_n0486_cy<10>_rt)
-     MUXCY:S->O            1   0.172   0.000  Madd_n0486_cy<10> (Madd_n0486_cy<10>)
-     XORCY:CI->O           1   0.180   0.580  Madd_n0486_xor<11> (n0486<11>)
-     LUT2:I1->O            3   0.205   0.995  Mmux_numWords_int<12:0>31 (numWords_int<11>)
-     LUT6:I1->O            1   0.203   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<3> (Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<3> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<9>)
+     LUT1:I0->O            1   0.205   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>_rt (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>_rt)
+     MUXCY:S->O            1   0.366   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>)
+     LUT1:I0->O            1   0.205   0.000  Madd_n0470_cy<11>_rt (Madd_n0470_cy<11>_rt)
+     MUXCY:S->O            1   0.366   0.580  Madd_n0470_cy<11> (Madd_n0470_cy<11>)
+     LUT2:I1->O            3   0.205   1.015  Mmux_numWords_int<12:0>41 (numWords_int<12>)
+     LUT6:I0->O            1   0.203   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6>)
-     MUXCY:CI->O           3   0.213   0.755  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<7> (numWords_int[31]_index[31]_equal_66_o)
-     LUT4:I2->O            1   0.203   0.000  Mmux_curState[1]_GND_5_o_Mux_70_o11 (curState[1]_GND_5_o_Mux_70_o)
+     MUXCY:CI->O          36   0.019   1.349  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<7> (numWords_int[31]_index[31]_equal_66_o)
+     LUT4:I3->O            1   0.205   0.000  Mmux_curState[1]_GND_5_o_Mux_70_o11 (curState[1]_GND_5_o_Mux_70_o)
      LD:D                      0.037          nextState_1
     ----------------------------------------
-    Total                      8.283ns (4.038ns logic, 4.245ns route)
-                                       (48.7% logic, 51.3% route)
+    Total                      8.747ns (3.888ns logic, 4.859ns route)
+                                       (44.4% logic, 55.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 63797 / 50
+  Total number of paths / destination ports: 1367262 / 122
 -------------------------------------------------------------------------
-Offset:              9.457ns (Levels of Logic = 21)
+Offset:              10.519ns (Levels of Logic = 51)
   Source:            numWords_bcd<2><3> (PAD)
-  Destination:       index_1 (FF)
+  Destination:       index_31 (FF)
   Destination Clock: clk rising
 
-  Data Path: numWords_bcd<2><3> to index_1
+  Data Path: numWords_bcd<2><3> to index_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -630,70 +566,102 @@ Offset:              9.457ns (Levels of Logic = 21)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<6> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<6>)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<7> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<7>)
      MUXCY:CI->O           1   0.019   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<8> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<8>)
-     XORCY:CI->O           1   0.180   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_xor<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_9)
-     LUT1:I0->O            1   0.205   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>_rt (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>_rt)
-     MUXCY:S->O            1   0.172   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<9>)
-     XORCY:CI->O           1   0.180   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_xor<10> (n0549[11:0]<10>)
-     LUT1:I0->O            1   0.205   0.000  Madd_n0486_cy<10>_rt (Madd_n0486_cy<10>_rt)
-     MUXCY:S->O            1   0.172   0.000  Madd_n0486_cy<10> (Madd_n0486_cy<10>)
-     XORCY:CI->O           1   0.180   0.580  Madd_n0486_xor<11> (n0486<11>)
-     LUT2:I1->O            3   0.205   0.995  Mmux_numWords_int<12:0>31 (numWords_int<11>)
-     LUT6:I1->O            1   0.203   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<3> (Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<3> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<9> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd1_cy<9>)
+     LUT1:I0->O            1   0.205   0.000  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>_rt (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>_rt)
+     MUXCY:S->O            1   0.366   0.580  Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10> (Maddsub_numWords_reg[2][3]_PWR_5_o_MuLt_59_OUT_Madd_cy<10>)
+     LUT1:I0->O            1   0.205   0.000  Madd_n0470_cy<11>_rt (Madd_n0470_cy<11>_rt)
+     MUXCY:S->O            1   0.366   0.580  Madd_n0470_cy<11> (Madd_n0470_cy<11>)
+     LUT2:I1->O            3   0.205   1.015  Mmux_numWords_int<12:0>41 (numWords_int<12>)
+     LUT6:I0->O            1   0.203   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_lut<4>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<5>)
      MUXCY:CI->O           1   0.019   0.000  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6> (Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<6>)
-     MUXCY:CI->O           3   0.213   0.651  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<7> (numWords_int[31]_index[31]_equal_66_o)
-     LUT4:I3->O           11   0.205   0.882  Mcount_index_val1 (Mcount_index_val)
-     FDRE:R                    0.430          index_0
+     MUXCY:CI->O          36   0.019   1.349  Mcompar_numWords_int[31]_index[31]_equal_66_o_cy<7> (numWords_int[31]_index[31]_equal_66_o)
+     LUT2:I1->O            1   0.205   0.000  Mcount_index_lut<0> (Mcount_index_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_index_cy<0> (Mcount_index_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<1> (Mcount_index_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<2> (Mcount_index_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<3> (Mcount_index_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<4> (Mcount_index_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<5> (Mcount_index_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<6> (Mcount_index_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<7> (Mcount_index_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<8> (Mcount_index_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<9> (Mcount_index_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<10> (Mcount_index_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<11> (Mcount_index_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<12> (Mcount_index_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<13> (Mcount_index_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<14> (Mcount_index_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<15> (Mcount_index_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<16> (Mcount_index_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<17> (Mcount_index_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<18> (Mcount_index_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<19> (Mcount_index_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<20> (Mcount_index_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<21> (Mcount_index_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<22> (Mcount_index_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<23> (Mcount_index_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<24> (Mcount_index_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<25> (Mcount_index_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<26> (Mcount_index_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<27> (Mcount_index_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<28> (Mcount_index_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_index_cy<29> (Mcount_index_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_index_cy<30> (Mcount_index_cy<30>)
+     XORCY:CI->O           1   0.180   0.580  Mcount_index_xor<31> (Mcount_index31)
+     LUT4:I3->O            1   0.205   0.000  index_31_glue_rst (index_31_glue_rst)
+     FD:D                      0.102          index_31
     ----------------------------------------
-    Total                      9.457ns (4.433ns logic, 5.024ns route)
-                                       (46.9% logic, 53.1% route)
+    Total                     10.519ns (5.080ns logic, 5.439ns route)
+                                       (48.3% logic, 51.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 22512 / 79
+  Total number of paths / destination ports: 42382 / 79
 -------------------------------------------------------------------------
-Offset:              12.326ns (Levels of Logic = 8)
+Offset:              14.808ns (Levels of Logic = 10)
   Source:            index_max_9 (FF)
-  Destination:       maxIndex<1><3> (PAD)
+  Destination:       maxIndex<2><3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: index_max_9 to maxIndex<1><3>
+  Data Path: index_max_9 to maxIndex<2><3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              6   0.447   0.992  index_max_9 (index_max_9)
-     LUT4:I0->O           10   0.203   1.201  GND_5_o_GND_5_o_LessThan_14_o1 (Madd_GND_5_o_GND_5_o_add_22_OUT_cy<0>)
-     LUT6:I1->O            5   0.203   0.962  GND_5_o_GND_5_o_LessThan_20_o1 (GND_5_o_GND_5_o_LessThan_20_o)
-     LUT6:I2->O           10   0.203   0.961  Mmux_GND_5_o_GND_5_o_MUX_56_o121 (Madd_GND_5_o_GND_5_o_add_34_OUT_cy<0>)
-     LUT5:I3->O            7   0.203   1.118  GND_5_o_GND_5_o_LessThan_34_o1 (GND_5_o_GND_5_o_LessThan_34_o)
-     LUT6:I1->O            4   0.203   1.048  GND_5_o_GND_5_o_LessThan_40_o1 (GND_5_o_GND_5_o_LessThan_40_o)
-     LUT6:I0->O            4   0.203   1.028  Mmux_index_max[6]_GND_5_o_MUX_111_o111 (Madd_index_max[8]_GND_5_o_add_52_OUT_lut<2>)
-     LUT6:I1->O            1   0.203   0.579  Mmux_maxIndex<1>41 (maxIndex_1__3_OBUF)
-     OBUF:I->O                 2.571          maxIndex_1__3_OBUF (maxIndex<1><3>)
+     FDE:C->Q              9   0.447   1.174  index_max_9 (index_max_9)
+     LUT5:I0->O           11   0.203   1.130  GND_5_o_GND_5_o_LessThan_14_o1 (Madd_GND_5_o_GND_5_o_add_22_OUT_cy<0>)
+     LUT6:I2->O            8   0.203   1.031  Mmux_GND_5_o_GND_5_o_MUX_56_o11 (Madd_GND_5_o_GND_5_o_add_28_OUT_cy<0>)
+     LUT6:I3->O           11   0.205   1.111  Mmux_GND_5_o_GND_5_o_MUX_72_o11 (Madd_n0333_Madd_cy<0>)
+     LUT5:I2->O            3   0.205   0.995  Mmux_GND_5_o_GND_5_o_MUX_72_o111 (Madd_GND_5_o_GND_5_o_add_34_OUT_lut<3>)
+     LUT5:I0->O            3   0.203   1.015  Mmux_GND_5_o_GND_5_o_MUX_84_o111 (Madd_GND_5_o_GND_5_o_add_40_OUT_lut<3>)
+     LUT6:I0->O            4   0.203   0.912  Mmux_GND_5_o_GND_5_o_MUX_96_o11 (Madd_n0339_Madd_cy<0>)
+     LUT6:I3->O            3   0.205   1.015  GND_5_o_GND_5_o_LessThan_48_o (GND_5_o_GND_5_o_LessThan_48_o)
+     LUT6:I0->O            3   0.203   0.995  GND_5_o_GND_5_o_LessThan_54_o1 (GND_5_o_GND_5_o_LessThan_54_o)
+     LUT6:I1->O            1   0.203   0.579  Mmux_maxIndex<2>4 (maxIndex_2__3_OBUF)
+     OBUF:I->O                 2.571          maxIndex_2__3_OBUF (maxIndex<2><3>)
     ----------------------------------------
-    Total                     12.326ns (4.439ns logic, 7.887ns route)
-                                       (36.0% logic, 64.0% route)
+    Total                     14.808ns (4.851ns logic, 9.957ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Delay:               6.331ns (Levels of Logic = 3)
+Delay:               6.612ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       maxIndex<2><0> (PAD)
+  Destination:       maxIndex<2><3> (PAD)
 
-  Data Path: reset to maxIndex<2><0>
+  Data Path: reset to maxIndex<2><3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            39   1.222   1.756  reset_IBUF (reset_IBUF)
+     IBUF:I->O            69   1.222   2.037  reset_IBUF (reset_IBUF)
      LUT6:I0->O            1   0.203   0.579  Mmux_maxIndex<0>41 (maxIndex_0__3_OBUF)
      OBUF:I->O                 2.571          maxIndex_0__3_OBUF (maxIndex<0><3>)
     ----------------------------------------
-    Total                      6.331ns (3.996ns logic, 2.335ns route)
-                                       (63.1% logic, 36.9% route)
+    Total                      6.612ns (3.996ns logic, 2.616ns route)
+                                       (60.4% logic, 39.6% route)
 
 =========================================================================
 
@@ -705,7 +673,7 @@ Clock to Setup on destination clock clk
                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------+---------+---------+---------+---------+
-clk                         |    5.171|         |         |         |
+clk                         |    5.270|         |         |         |
 curState[1]_PWR_6_o_Mux_71_o|         |    1.179|         |         |
 ----------------------------+---------+---------+---------+---------+
 
@@ -714,20 +682,20 @@ Clock to Setup on destination clock curState[1]_PWR_6_o_Mux_71_o
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    3.089|         |
+clk            |         |         |    3.499|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.70 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.46 secs
  
 --> 
 
-Total memory usage is 250996 kilobytes
+Total memory usage is 250484 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   64 (   0 filtered)
+Number of warnings :   42 (  40 filtered)
 Number of infos    :    9 (   0 filtered)
 

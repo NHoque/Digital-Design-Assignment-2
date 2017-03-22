@@ -112,7 +112,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490217866" xil_pn:in_ck="-6184338690464332630" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5667547409492046999" xil_pn:start_ts="1490217854">
+    <transform xil_pn:end_ts="1490220363" xil_pn:in_ck="-6184338690464332630" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5667547409492046999" xil_pn:start_ts="1490220352">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -134,7 +134,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490217872" xil_pn:in_ck="7675346723839518856" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="255368657123961935" xil_pn:start_ts="1490217866">
+    <transform xil_pn:end_ts="1490220369" xil_pn:in_ck="7675346723839518856" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="255368657123961935" xil_pn:start_ts="1490220363">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -143,7 +143,7 @@
       <outfile xil_pn:name="dataConsume.ngd"/>
       <outfile xil_pn:name="dataConsume_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1490217908" xil_pn:in_ck="-8543904891536029413" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1490217872">
+    <transform xil_pn:end_ts="1490220399" xil_pn:in_ck="-8543904891536029413" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1490220369">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -156,7 +156,7 @@
       <outfile xil_pn:name="dataConsume_summary.xml"/>
       <outfile xil_pn:name="dataConsume_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1490217926" xil_pn:in_ck="-5541554177651528268" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1490217908">
+    <transform xil_pn:end_ts="1490220416" xil_pn:in_ck="-5541554177651528268" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1490220399">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -170,7 +170,7 @@
       <outfile xil_pn:name="dataConsume_pad.txt"/>
       <outfile xil_pn:name="dataConsume_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1490217926" xil_pn:in_ck="-8543904891536029545" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1490217919">
+    <transform xil_pn:end_ts="1490220416" xil_pn:in_ck="-8543904891536029545" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1490220410">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -179,7 +179,7 @@
       <outfile xil_pn:name="dataConsume.twr"/>
       <outfile xil_pn:name="dataConsume.twx"/>
     </transform>
-    <transform xil_pn:end_ts="1490217998" xil_pn:in_ck="-5541554177651528268" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791353" xil_pn:start_ts="1490217992">
+    <transform xil_pn:end_ts="1490220427" xil_pn:in_ck="-5541554177651528268" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791353" xil_pn:start_ts="1490220421">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -191,6 +191,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
   </transforms>

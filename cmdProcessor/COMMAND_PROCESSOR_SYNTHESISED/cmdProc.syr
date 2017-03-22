@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: cmdProc.prj
 
@@ -105,34 +105,34 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\common_pack.vhd" into library work
+Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\common_pack.vhd" into library work
 Parsing package <common_pack>.
-Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" into library work
-ERROR:HDLCompiler:104 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 8: Cannot find <vpkg> in library <unisim>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" into library work
+ERROR:HDLCompiler:104 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 8: Cannot find <vpkg> in library <unisim>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
 Parsing entity <cmdProc>.
-ERROR:HDLCompiler:854 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 11: Unit <cmdproc> ignored due to previous errors.
+ERROR:HDLCompiler:854 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 11: Unit <cmdproc> ignored due to previous errors.
 Parsing architecture <arch> of entity <cmdproc>.
-ERROR:HDLCompiler:374 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 33: Entity <cmdproc> is not yet compiled.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 36: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 37: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 39: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:24 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 41: "**" expects 2 arguments
-ERROR:HDLCompiler:845 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 42: Type of aggregate cannot be determined without context ; 0 visible types match here
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 50: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 52: <msb> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 53: <lsb> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 54: <hex_1> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 55: <hex_2> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 49: <byte> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 59: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 60: <integer> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 61: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 64: <b1> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" Line 65: <b2> is not declared.
+ERROR:HDLCompiler:374 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 33: Entity <cmdproc> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 36: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 37: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 39: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:24 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 41: "**" expects 2 arguments
+ERROR:HDLCompiler:845 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 42: Type of aggregate cannot be determined without context ; 0 visible types match here
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 50: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 52: <msb> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 53: <lsb> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 54: <hex_1> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 55: <hex_2> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 49: <byte> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 59: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 60: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 61: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 64: <b1> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\COMMAND_PROCESSOR_SYNTHESISED\cmdProc.vhd" Line 65: <b2> is not declared.
 Sorry, too many errors..
 --> 
 
-Total memory usage is 221308 kilobytes
+Total memory usage is 221884 kilobytes
 
 Number of errors   :   19 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
