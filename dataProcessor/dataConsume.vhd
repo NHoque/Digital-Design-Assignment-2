@@ -106,7 +106,9 @@ begin
       if index = numWords_int then
         nextState <= S3;
       elsif index < numWords_int then
-				nextState <= S1;
+        nextState <= S1;
+      else
+        nextState <= S2;
       end if;
     
     when S3 =>
@@ -115,65 +117,64 @@ begin
   end process;
 -----------------------------------------------------------------------------
   seq_setSeqDone : process(clk, curState)
-	begin
-	  if rising_edge(clk) then
-			if curState = S0 then
-			  seqDone_reg <= '0';
-		  elsif curState = S3 then
-			  seqDone_reg <= '1';
-			end if;
-		end if;
-	end process;
+    begin
+      if rising_edge(clk) then
+        if curState = S0 then
+          seqDone_reg <= '0';
+        elsif curState = S3 then
+          seqDone_reg <= '1';
+        end if;
+      end if;
+    end process;
 -----------------------------------------------------------------------------
   seq_setDataReady : process(clk, curState)
-	begin
-	  if rising_edge(clk) then
-		  if curState = S2 then
-			  dataReady_reg <= '0';
-		  elsif curState = S1 then
-			  dataReady_reg <= '1';
-			end if;
-		end if;
-	end process;
+    begin
+      if rising_edge(clk) then
+        if curState = S2 then
+          dataReady_reg <= '0';
+        elsif curState = S1 then
+          dataReady_reg <= '1';
+        end if;
+      end if;
+    end process;
 -----------------------------------------------------------------------------
-	seq_detectPeak : process(clk, curState)
-	variable data_max : UNSIGNED(7 downto 0) := X"00";
+  seq_detectPeak : process(clk, curState)
+  variable data_max : UNSIGNED(7 downto 0) := X"00";
   variable holdValues : CHAR_ARRAY_TYPE(0 to 6) := (others => X"00");
   variable shiftValue : INTEGER := 0;
-	begin
-	  if rising_edge(clk) then
-		  if curState = S0 then
-			  shiftValue := 0;
-				holdValues := (others => X"00");
-				dataResults_reg <= (others => X"00");
-				index_max <= 0;
-				data_max := X"00";
-		  elsif curState = S2 then
-			  shiftValue := shiftValue + 1;
-        holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg);
-
-        if (byte_reg >= data_max) then
-          index_max <= index;
-          data_max := byte_reg;
-					dataResults_reg(0 to 2) <= holdValues(3 to 5);
-          dataResults_reg(3) <= STD_LOGIC_VECTOR(byte_reg);
-          dataResults_reg(4 to 6) <= (others => X"00");
+    begin
+      if rising_edge(clk) then
+        if curState = S0 then
           shiftValue := 0;
+          holdValues := (others => X"00");
+          dataResults_reg <= (others => X"00");
+          index_max <= 0;
+          data_max := X"00";
+        elsif curState = S2 then
+          shiftValue := shiftValue + 1;
+          holdValues := holdValues(1 to 6) & STD_LOGIC_VECTOR(byte_reg);
 
-        else
-				  index_max <= index_max;
-          data_max := data_max;
-					dataResults_reg(0 to 3) <= dataResults_reg(0 to 3);
-					if(shiftValue < 4) then
-            dataResults_reg(4 to 6) <= dataResults_reg(5 to 6) & STD_LOGIC_VECTOR(byte_reg);
-					else
-					  dataResults_reg <= dataResults_reg;
-					end if;
-          
+          if (byte_reg >= data_max) then
+            index_max <= index;
+            data_max := byte_reg;
+            dataResults_reg(0 to 2) <= holdValues(3 to 5);
+            dataResults_reg(3) <= STD_LOGIC_VECTOR(byte_reg);
+            dataResults_reg(4 to 6) <= (others => X"00");
+            shiftValue := 0;
+
+          else
+            index_max <= index_max;
+            data_max := data_max;
+            dataResults_reg(0 to 3) <= dataResults_reg(0 to 3);
+            if(shiftValue < 4) then
+              dataResults_reg(4 to 6) <= dataResults_reg(5 to 6) & STD_LOGIC_VECTOR(byte_reg);
+            else
+              dataResults_reg <= dataResults_reg;
+            end if;
+          end if;
         end if;
-			end if;
-		end if;
-	end process;
+      end if;
+    end process;
 -----------------------------------------------------------------------------
   -- On reset, all outputs are set to zero except ctrlOut_reg 
   -- which is set to 1 to enable data acquisition.
@@ -184,7 +185,7 @@ begin
       if reset = '1' then
         ctrlOut_reg <= '1';
         index <= 0;
-				byte_reg <= X"00";
+        byte_reg <= X"00";
         curState <= S0;
       else
         curState <= nextState;
@@ -210,7 +211,7 @@ begin
   numWords_reg <= numWords_bcd;
   byte <= STD_LOGIC_VECTOR(byte_reg);
   dataResults <= dataResults_reg;
-	maxIndex <= maxIndex_reg;
+    maxIndex <= maxIndex_reg;
   seqDone <= seqDone_reg;
   
 end Behavioral;
