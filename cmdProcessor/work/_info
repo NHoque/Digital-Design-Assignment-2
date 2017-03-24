@@ -9,295 +9,361 @@ z2
 cModel Technology
 dC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 1/task5.5A
 Ecmdproc
-Z0 w1490197754
-Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z3 DPx6 unisim 4 vpkg 0 22 =E=Qil`0j3PcWN;Gd1E>l3
-Z4 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
-Z5 DPx4 work 11 common_pack 0 22 `6RK@]Ql[[8PWOFz?h25H2
-Z6 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z9 dC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor
-Z10 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd
-Z11 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd
+Z0 w1490313691
+Z1 DPx4 work 11 common_pack 0 22 `6RK@]Ql[[8PWOFz?h25H2
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor
+Z6 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd
+Z7 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd
 l0
-L11
-V7`9Sb:N3@[BGKfa:00=R]1
-!s100 KE]0a<H7kbGJ?[7gaQ_>32
-Z12 OP;C;10.4a;61
+L10
+VC86Hkan4HZOD;oQcT=NH13
+!s100 LmVQDFz<lzzHRCPK^^alK2
+Z8 OP;C;10.4a;61
 32
-Z13 !s110 1490221074
+Z9 !s110 1490313821
 !i10b 1
-Z14 !s108 1490221074.000000
-Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd|
-Z16 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd|
+Z10 !s108 1490313821.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd|
+Z12 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd|
 !i113 1
-Z17 o-work work -2002 -explicit -O0
-Z18 tExplicit 1
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
 Aarch
 R1
 R2
 R3
 R4
-R5
-R6
-R7
+DEx4 work 7 cmdproc 0 22 C86Hkan4HZOD;oQcT=NH13
+l46
+L32
+V9?<H9UDQgX[B`ko]4:6MH3
+!s100 bTn^b=ATVfKDI@U<3LMn:0
 R8
-DEx4 work 7 cmdproc 0 22 7`9Sb:N3@[BGKfa:00=R]1
-l47
-L33
-V;XWQIjh6Q1Rdz]B^eZ23l2
-!s100 nambo>ES6nJ_ehma<YKZI0
-R12
 32
-R13
-!i10b 1
-R14
-R15
-R16
-!i113 1
-R17
-R18
-Pcommon_pack
-R7
-R8
-w1490199651
 R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pcommon_pack
+R3
+R4
+w1490199651
+R5
 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/common_pack.vhd
 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/common_pack.vhd
 l0
 L4
 V`6RK@]Ql[[8PWOFz?h25H2
 !s100 >5lm8HnmZ@LdLN`WFfGO93
-R12
+R8
 32
-!s110 1490221073
+R9
 !i10b 1
-!s108 1490221073.000000
+R10
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/common_pack.vhd|
 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/common_pack.vhd|
 !i113 1
-R17
-R18
+R13
+R14
 Edataconsume
-Z19 w1490220336
+Z15 w1490313616
+R1
+R2
+R3
+R4
 R5
-R6
-R7
-R8
-R9
-Z20 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataConsume.vhd
-Z21 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataConsume.vhd
+Z16 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd
+Z17 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd
 l0
 L6
-VJ7g2h[BBNIUQFBI?_K4eO0
-!s100 PRJMNJRfGj9;SlhIMA:0E3
-R12
-32
-Z22 !s110 1490221075
-!i10b 1
-Z23 !s108 1490221075.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataConsume.vhd|
-Z25 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataConsume.vhd|
-!i113 1
-R17
-R18
-Abehavioral
-R5
-R6
-R7
+VWG]iSz[@M97BHV<m]_XFf0
+!s100 g@cm[<MDIXHMKXBFek2ST3
 R8
-Z26 DEx4 work 11 dataconsume 0 22 J7g2h[BBNIUQFBI?_K4eO0
+32
+Z18 !s110 1490313822
+!i10b 1
+Z19 !s108 1490313822.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd|
+Z21 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+Z22 DEx4 work 11 dataconsume 0 22 WG]iSz[@M97BHV<m]_XFf0
 l34
 L23
-Z27 Vd_Uk7V52JTUeCk7z:T0W>1
-Z28 !s100 >h2Q6h=FFE@5Y@MldoBo<3
-R12
+VI8JGQ>kO:[X]OMT:Yja7V3
+!s100 5TOTM8HJiWCA>XD5mgR9h2
+R8
 32
-R22
+R18
 !i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Astructural
+Z23 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z24 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z25 DPx6 unisim 4 vpkg 0 22 =E=Qil`0j3PcWN;Gd1E>l3
+Z26 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R1
+DEx4 work 11 dataconsume 0 22 1]?:=NG9XjX`LU2dGVoCI2
+l115
+L47
+VG^5nQo6n:XlBGeoWD7UPk3
+!s100 fflVoJRZngSmD3U:j9IY31
+R8
+32
+!s110 1490312016
+!i10b 1
+!s108 1490312016.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd|
+!s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd|
+!i113 1
+R13
+R14
+FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd
+Z28 w1490306352
+8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd
+Edataconsume_synthesised
+R28
 R23
 R24
 R25
-!i113 1
-R17
-R18
-Edatagen
-Z29 w1489005991
+Z29 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+R3
+R4
 R5
-R7
+Z30 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd
+Z31 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd
+l0
+L41
+Vm:EUE[15b1H<?D>k>84352
+!s100 1MI2O<ilK3Vk<T4QXjoi`2
 R8
-R9
-Z30 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd
-Z31 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd
+32
+Z32 !s110 1490312015
+!i10b 1
+Z33 !s108 1490312015.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd|
+Z35 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd|
+!i113 1
+R13
+R14
+Astructure
+R23
+R24
+R25
+R29
+R3
+R4
+DEx4 work 23 dataconsume_synthesised 0 22 m:EUE[15b1H<?D>k>84352
+l186
+L58
+V5;]a9;OkXLaZ`1jTDPNEH2
+!s100 XK]mbM[[K0bNJzL9Ig<Xa0
+R8
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R13
+R14
+Edatagen
+Z36 w1489005991
+R1
+R3
+R4
+R5
+Z37 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd
+Z38 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd
 l0
 L21
 V9m83::faZh6V7VET=iWY90
 !s100 2Uh6g>k8H::FcP_S_JJ_G2
-R12
-32
-R22
-!i10b 1
-R14
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd|
-Z33 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd|
-!i113 1
-R17
-R18
-Abehav
-R5
-R7
 R8
+32
+R18
+!i10b 1
+R19
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd|
+Z40 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/dataGen.vhd|
+!i113 1
+R13
+R14
+Abehav
+R1
+R3
+R4
 DEx4 work 7 datagen 0 22 9m83::faZh6V7VET=iWY90
 l34
 L31
 V^_^8b]^]fX?^]jRYW9YKZ0
 !s100 Oinfook:1B^O@OK^]N9md2
-R12
+R8
 32
-R22
-!i10b 1
-R14
-R32
-R33
-!i113 1
-R17
 R18
+!i10b 1
+R19
+R39
+R40
+!i113 1
+R13
+R14
 Etb_cmdproc_interim
-Z34 w1486667558
+Z41 w1486667558
+R23
+R24
+R25
+R29
 R1
 R2
 R3
 R4
 R5
-R6
-R7
-R8
-R9
-Z35 8C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\tb_CmdProcessor_Interim.vhd
-Z36 FC:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\tb_CmdProcessor_Interim.vhd
+Z42 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/tb_CmdProcessor_Interim.vhd
+Z43 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/tb_CmdProcessor_Interim.vhd
 l0
 L48
 Vc:W9GcZ<A`;jh`nADZHFY0
 !s100 :VUm<;=[L_<CTaAjilnUA2
-R12
+R8
 32
-R13
+R9
 !i10b 1
-R14
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\tb_CmdProcessor_Interim.vhd|
-Z38 !s107 C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\tb_CmdProcessor_Interim.vhd|
+R10
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/tb_CmdProcessor_Interim.vhd|
+Z45 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/tb_CmdProcessor_Interim.vhd|
 !i113 1
-R17
-R18
+R13
+R14
 Atestbench
+R23
+R24
+R25
+R29
 R1
 R2
 R3
 R4
-R5
-R6
-R7
-R8
 DEx4 work 18 tb_cmdproc_interim 0 22 c:W9GcZ<A`;jh`nADZHFY0
 l178
 L51
 VR4IeETKigYQ@2_NjhT]cb1
 !s100 @ALR35LZ9O09C;IGmf]6P0
-R12
-32
-R13
-!i10b 1
-R14
-R37
-R38
-!i113 1
-R17
-R18
-Euart_rx_ctrl
-Z39 w1490046775
-Z40 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z41 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-R7
 R8
+32
 R9
-Z42 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd
-Z43 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd
+!i10b 1
+R10
+R44
+R45
+!i113 1
+R13
+R14
+Euart_rx_ctrl
+Z46 w1490222639
+R26
+R27
+R3
+R4
+R5
+Z47 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd
+Z48 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd
 l0
 L70
-Vn`=6_jCLU]be9;IQcDPg[1
-!s100 EX7`TKI39SI`fn3a<I5dk1
-R12
-32
-R13
-!i10b 1
-R14
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd|
-Z45 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd|
-!i113 1
-R17
-R18
-Arcvr
-R40
-R41
-R7
+VjbbfbJAzmSFIJ6MN1b=Gi3
+!s100 aJP3[ag<^Ab@E::g8?n<:1
 R8
-DEx4 work 12 uart_rx_ctrl 0 22 n`=6_jCLU]be9;IQcDPg[1
+32
+R18
+!i10b 1
+R19
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd|
+Z50 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_RX_CTRL.vhd|
+!i113 1
+R13
+R14
+Arcvr
+R26
+R27
+R3
+R4
+DEx4 work 12 uart_rx_ctrl 0 22 jbbfbJAzmSFIJ6MN1b=Gi3
 l104
 L84
 VU:ABcA24i1S>ESPQcC?hU2
 !s100 IX>gQB=KlN4<ZEPaD_N4R2
-R12
-32
-R13
-!i10b 1
-R14
-R44
-R45
-!i113 1
-R17
-R18
-Euart_tx_ctrl
-R39
-R40
-R41
-R7
 R8
-R9
-Z46 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd
-Z47 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd
+32
+R18
+!i10b 1
+R19
+R49
+R50
+!i113 1
+R13
+R14
+Euart_tx_ctrl
+Z51 w1490046775
+R26
+R27
+R3
+R4
+R5
+Z52 8C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd
+Z53 FC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd
 l0
 L42
 V3JmI8=U>]jEBKT25A`cX=3
 !s100 @W[1k8]2mnEdb;IV:z9Fl1
-R12
-32
-R13
-!i10b 1
-R14
-Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd|
-Z49 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd|
-!i113 1
-R17
-R18
-Abehavioral
-R40
-R41
-R7
 R8
+32
+R18
+!i10b 1
+R19
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd|
+Z55 !s107 C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/UART_TX_CTRL.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R26
+R27
+R3
+R4
 DEx4 work 12 uart_tx_ctrl 0 22 3JmI8=U>]jEBKT25A`cX=3
 l76
 L50
 VL:in;lK^mgOHKK=X?CQzE2
 !s100 B>Fb5Xg8727nU<8z4BO3f3
-R12
+R8
 32
-R13
-!i10b 1
-R14
-R48
-R49
-!i113 1
-R17
 R18
+!i10b 1
+R19
+R54
+R55
+!i113 1
+R13
+R14

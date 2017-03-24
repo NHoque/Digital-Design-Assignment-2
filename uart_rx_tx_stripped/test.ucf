@@ -11,7 +11,7 @@ Net "rxdata" LOC = N17 | IOSTANDARD=LVTTL; #Bank = 1, pin name = IO_L48P_HDC_M1D
 Net "txdata" LOC = N18 | IOSTANDARD=LVTTL; #Bank = 1, pin name = IO_L48N_M1DQ9, Sch name = MCU-TX
 
 ## Buttons
-Net "clear" LOC = C9 | IOSTANDARD = LVTTL; #Bank = 0, pin name = IO_L33P, Sch name = BTNS
+#Net "clear" LOC = C9 | IOSTANDARD = LVTTL; #Bank = 0, pin name = IO_L33P, Sch name = BTNS
 Net "reset" LOC = A8 | IOSTANDARD = LVTTL; #Bank = 0, pin name = IO_L33N, Sch name = BTNU
 #Net "setGreen" LOC = D9 | IOSTANDARD = LVTTL; #Bank = 0, pin name = IO_L33P, Sch name = BTNS
 #Net "setUnderline" LOC = B8 | IOSTANDARD = LVTTL; #Bank = 0, pin name = IO_L33N, Sch name = BTNU

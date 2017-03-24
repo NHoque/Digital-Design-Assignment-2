@@ -3,10 +3,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.common_pack.all;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-use UNISIM.VPKG.ALL;
-
+-- library UNISIM;
+-- use UNISIM.VCOMPONENTS.ALL;
+-- use UNISIM.VPKG.ALL;
 
 entity cmdProc is 
     port (
@@ -47,7 +46,7 @@ architecture arch of cmdProc is
 begin
     
 	comb_byte : process(byte)
-		variable lsb, msb : std_logic_vector(3 downto 0);
+	variable lsb, msb : std_logic_vector(3 downto 0);
 	begin
 		msb := byte(7 downto 4);
 		lsb := byte(3 downto 0);
@@ -63,10 +62,8 @@ begin
 		
 		b1 := received_cmd(31 downto 24); --letter
 		b2 := to_integer(unsigned(received_cmd(23 downto 16))) ; --msb
-		b3 :=  to_integer(unsigned(received_cmd(15 downto 8)));
-		b4 :=  to_integer(unsigned(received_cmd(7 downto 0)));
-		
-		
+		b3 := to_integer(unsigned(received_cmd(15 downto 8)));
+		b4 := to_integer(unsigned(received_cmd(7 downto 0)));
 		
 		if b1 = "01000001" or b1 = "01100001" then  --'A' or 'a'
 			b1valid := '1';
@@ -121,7 +118,7 @@ begin
 				if cmd_is_valid = '1' then
 					next_state <= S2;
 				else
-				    received_cmd <= received_cmd(23 downto 0) & rxData;--Shift contents of recieved_cmd
+				  received_cmd <= received_cmd(23 downto 0) & rxData;--Shift contents of recieved_cmd
 					rxdone <= '1'; --We have now read the new data
 					next_state <= S0;
 				end if;
@@ -130,11 +127,9 @@ begin
 			when S2 =>    --the state to insert an one cycle high start signal and insert numWords
 				start <= '1';  
 				numWords_bcd(2) <= received_cmd(19 downto 16);  --Take off the 4 most significant bytes gives the bcd of the ascii
-		        numWords_bcd(1) <= received_cmd(11 downto 8);
-		        numWords_bcd(0) <= received_cmd(3 downto 0);
+				numWords_bcd(1) <= received_cmd(11 downto 8);
+				numWords_bcd(0) <= received_cmd(3 downto 0);
 				next_state <= S3; 
-
-			
 				
 			when S3 =>
 				if dataReady = '1' and txdone = '1' then
@@ -185,11 +180,9 @@ begin
 					next_state <= S7;
 				end if;
 		
-			
 			when others =>
 				next_state <= S0;
 				
-			
 		end case;
 				
 	end process;

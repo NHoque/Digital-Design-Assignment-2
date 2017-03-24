@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-14T14:19:36</DateModified>
+  <DateModified>2017-03-23T16:35:50</DateModified>
   <ModuleName>TEST_TOP</ModuleName>
   <SummaryTimeStamp>2017-02-14T14:18:21</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/uart_rx_tx_stripped/UART/iseconfig/TEST_TOP.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/uart_rx_tx_stripped/UART</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/uart_rx_tx_stripped/UART/iseconfig/TEST_TOP.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/uart_rx_tx_stripped/UART\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-14T14:03:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
