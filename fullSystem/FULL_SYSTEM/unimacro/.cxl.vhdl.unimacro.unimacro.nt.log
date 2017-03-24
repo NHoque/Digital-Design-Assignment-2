@@ -1,0 +1,55 @@
+Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+vmap unimacro C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro 
+Modifying C:\Modeltech_pe_edu_10.4a\modelsim.ini
+
+** Warning: (vcom-159) Mode option -32 is not supported in this context and will be ignored.
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 22:51:20 on Mar 22,2017
+vcom -source -93 -explicit -32 -work unimacro -f C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro/.cxl.vhdl.unimacro.unimacro.nt.cmf 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package VCOMPONENTS
+-- Compiling entity ADDMACC_MACRO
+-- Compiling architecture addmacc of ADDMACC_MACRO
+-- Compiling entity ADDSUB_MACRO
+-- Compiling architecture addsub of ADDSUB_MACRO
+-- Compiling entity BRAM_SDP_MACRO
+-- Compiling architecture bram_V of BRAM_SDP_MACRO
+-- Compiling entity BRAM_SINGLE_MACRO
+-- Compiling architecture bram_V of BRAM_SINGLE_MACRO
+-- Compiling entity BRAM_TDP_MACRO
+-- Compiling architecture bram_V of BRAM_TDP_MACRO
+-- Compiling entity COUNTER_LOAD_MACRO
+-- Compiling architecture counter of COUNTER_LOAD_MACRO
+-- Compiling entity COUNTER_TC_MACRO
+-- Compiling architecture count of COUNTER_TC_MACRO
+-- Compiling entity EQ_COMPARE_MACRO
+-- Compiling architecture compare of EQ_COMPARE_MACRO
+-- Compiling entity FIFO_DUALCLOCK_MACRO
+-- Compiling architecture fifo_V of FIFO_DUALCLOCK_MACRO
+-- Compiling entity FIFO_SYNC_MACRO
+-- Compiling architecture fifo_V of FIFO_SYNC_MACRO
+-- Compiling entity MACC_MACRO
+-- Compiling architecture macc of MACC_MACRO
+-- Compiling entity MULT_MACRO
+-- Compiling architecture mult of MULT_MACRO
+-- Compiling package VCOMPONENTS
+End time: 22:51:21 on Mar 22,2017, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+vmap unimacro C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro 
+Modifying C:\Modeltech_pe_edu_10.4a\modelsim.ini
+
+Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+vmap unimacro C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro 
+Modifying C:\Modeltech_pe_edu_10.4a\modelsim.ini
+
+Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+vmap unimacro C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro 
+Modifying C:\Modeltech_pe_edu_10.4a\modelsim.ini
+

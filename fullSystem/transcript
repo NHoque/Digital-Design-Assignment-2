@@ -1,0 +1,2410 @@
+# Reading C:/Modeltech_pe_edu_10.4a/tcl/vsim/pref.tcl
+# OpenFile {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/FULL_SYSTEM.mpf}
+# Loading project FULL_SYSTEM
+# Compile of UART_TX_CTRL.vhd was successful.
+# Compile of common_pack.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of dataConsume.vhd was successful.
+# Compile of UART_RX_CTRL.vhd was successful.
+# Compile of tb_dataGenConsume.vhd was successful.
+# Compile of cmdProc.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.tb_datagenconsume(test)
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM.mpf 
+# Start time: 18:20:49 on Mar 23,2017
+# ** WARNING: ModelSim PE Student Edition license key will expire as of (null).
+#   Please go to http://www.model.com and download the ModelSim PE Student Edition update.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.common_pack
+# Loading unisim.vcomponents
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading ieee.numeric_std(body)
+# Loading work.dataconsume(behavioral)
+# Loading work.cmdproc(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.uart_tx_ctrl(behavioral)
+# Loading work.uart_rx_ctrl(rcvr)
+# ** Warning: Design size of 17864 statements or 6 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/reset
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/start
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/numWords_bcd
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/ctrlIn
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/ctrlOut
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/data
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/dataReady
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/byte
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/seqDone
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/maxIndex
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/dataResults
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/curState
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/index
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Naimul Hoque  Hostname: DESKTOP-MV6OCCK  ProcessID: 13016
+# 
+#           Attempting to use alternate WLF file "./wlftw4xfez".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw4xfez
+# 
+run 60ms
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 2  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 2  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991505 ns  Iteration: 4  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 991515 ns  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2190505 ns  Iteration: 1  Instance: /tb_datagenconsume/cmdProc1
+# ** Note: Sequence No.0
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 10010010
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 11000111
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 01110001
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 3 should be 11111001
+# but is           01001101
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 10010011
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 10101000
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 01101000
+# but is           00000000
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# peak 0 should be {0000} {0000} {0111}
+# but is           {0000} {0000} {0001}
+#    Time: 3490545 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Break key hit
+# Simulation stop requested.
+# Compile of UART_TX_CTRL.vhd was successful.
+# Compile of common_pack.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of UART_RX_CTRL.vhd was successful.
+# Compile of tb_dataGenConsume.vhd was successful.
+# Compile of dataConsume_wrapper.vhd was successful.
+# Compile of cmdProc_wrapper.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart -f
+# Loading work.common_pack
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading work.dataconsume(structural)
+# ** Warning: (vsim-3473) Component instance "dataConsume_s1 : dataConsume_synthesised" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1 File: C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd
+# Loading work.cmdproc(structural)
+# Loading work.cmdproc_synthesised(structure)
+# Loading unisim.gnd(gnd_v)
+# Loading unisim.fdre(fdre_v)
+# Loading unisim.fdse(fdse_v)
+# Loading unisim.fds(fds_v)
+# Loading unisim.fdr(fdr_v)
+# Loading unisim.lut4(lut4_v)
+# Loading unisim.lut3(lut3_v)
+# Loading unisim.lut5(lut5_v)
+# Loading unisim.lut2(lut2_v)
+# Loading unisim.lut6(lut6_v)
+# Loading unisim.fd(fd_v)
+# Loading unisim.muxf7(muxf7_v)
+# Loading unisim.inv(inv_v)
+# Loading work.uart_tx_ctrl(behavioral)
+# Loading work.uart_rx_ctrl(rcvr)
+# ** Warning: Design size of 29057 statements or 338 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/ctrlOut, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/ctrl_consDriv.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/dataReady, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_dataReady.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(7), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(7).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(6), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(6).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(5), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(5).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(4), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(4).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(3), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(3).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(2), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(2).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(1), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(1).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/byte(0), and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_byte(0).
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_datagenconsume/dataConsume1/seqDone, and its initial value is not used.
+# 
+# Therefore, simulation behavior may occur that is not in compliance with
+# 
+# the VHDL standard as the initial values come from the base signal /tb_datagenconsume/sig_seqDone.
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_datagenconsume/dataConsume1/curState'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_datagenconsume/dataConsume1/index'. 
+run 60ms
+# Break key hit
+# Simulation stop requested.
+# Compile of common_pack.vhd was successful.
+# Compile of UART_TX_CTRL.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of UART_RX_CTRL.vhd was successful.
+# Compile of tb_dataGenConsume.vhd was successful.
+# Compile of dataConsume_wrapper.vhd was successful.
+# Compile of cmdProc_synthesis.vhd was successful.
+# Compile of cmdProc_wrapper.vhd was successful.
+# Compile of dataConsume_synthesis.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# Loading work.common_pack
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading work.dataconsume(structural)
+# Loading work.dataconsume_synthesised(structure)
+# Loading work.cmdproc(structural)
+# Loading work.cmdproc_synthesised(structure)
+# Loading work.uart_tx_ctrl(behavioral)
+# Loading work.uart_rx_ctrl(rcvr)
+# ** Warning: Design size of 42772 statements or 561 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 60ms
+# Break key hit
+# Simulation stop requested.
+restart -f
+# ** Warning: Design size of 30045 statements or 561 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# Compile of common_pack.vhd was successful.
+# Compile of UART_TX_CTRL.vhd was successful.
+# Compile of dataGen.vhd was successful.
+# Compile of UART_RX_CTRL.vhd was successful.
+# Compile of tb_dataGenConsume.vhd was successful.
+# Compile of cmdProc_synthesis.vhd was successful.
+# Compile of dataConsume_synthesis.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+run 60ms
+# Break key hit
+# Simulation stop requested.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.common_pack
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading work.dataconsume(behavioral)
+# Loading work.cmdproc(structural)
+# Loading work.cmdproc_synthesised(structure)
+# Loading work.uart_tx_ctrl(behavioral)
+# Loading work.uart_rx_ctrl(rcvr)
+# ** Warning: Design size of 36104 statements or 338 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 60ms
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Break key hit
+# Break key hit
+# Closing project C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/FULL_SYSTEM.mpf
+# reading C:\Modeltech_pe_edu_10.4a\modelsim.ini
+# Simulation stop requested.
+# Loading project DATA_PROCESSOR
+# WLF meta update error: 
+# Error while executing: run
+# No help for run available.
+vsim work.tb_datagenconsume(test)
+# vsim 
+# Start time: 20:54:18 on Mar 23,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.common_pack
+# Loading work.tb_datagenconsume(test)
+# Loading work.datagen(behav)
+# Loading ieee.numeric_std(body)
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10084 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/reset
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/start
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/numWords_bcd
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/ctrlIn
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/ctrlOut
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/data
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/dataReady
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/byte
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/seqDone
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/maxIndex
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/dataResults
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Naimul Hoque  Hostname: DESKTOP-MV6OCCK  ProcessID: 8112
+# 
+#           Attempting to use alternate WLF file "./wlftn69kbb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftn69kbb
+# 
+restart -f
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+add wave -position end  sim:/tb_datagenconsume/dataConsume1/index
+restart -f
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+add wave -position 11  sim:/tb_datagenconsume/dataConsume1/curState
+restart -f
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10146 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483567 is not in bounds of subtype NATURAL.
+#    Time: 3330 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3330 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483460 is not in bounds of subtype NATURAL.
+#    Time: 7610 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 7610 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483420 is not in bounds of subtype NATURAL.
+#    Time: 9210 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 9210 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10146 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# Compile of dataConsume.vhd failed with 3 errors.
+# Compile of dataConsume.vhd was successful.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10145 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10145 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd failed with 3 errors.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10145 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10146 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 10 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10144 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# peak 0 should be {0010} {0010} {1000}
+# but is           {0100} {0101} {0111}
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10141 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483647 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd failed with 3 errors.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10143 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10130 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/maxIndex(2)(3 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/maxIndex(1)(3 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/maxIndex(0)(3 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(0)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(1)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(2)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(3)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(4)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(5)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_datagenconsume/dataConsume1/dataResults(6)(7 downto 0) has no driver.
+# 
+# This port will contribute value (X) to the signal network.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 3 should be 11111110
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           XXXXXXXX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# peak 0 should be {0010} {0010} {1000}
+# but is           {XXXX} {XXXX} {XXXX}
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10140 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10140 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10140 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10128 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10142 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+# Compile of dataConsume.vhd failed with 3 errors.
+# Compile of dataConsume.vhd failed with 2 errors.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10140 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483643 is not in bounds of subtype NATURAL.
+#    Time: 290 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483641 is not in bounds of subtype NATURAL.
+#    Time: 370 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 370 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483567 is not in bounds of subtype NATURAL.
+#    Time: 3330 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 3330 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483460 is not in bounds of subtype NATURAL.
+#    Time: 7610 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 7610 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483420 is not in bounds of subtype NATURAL.
+#    Time: 9210 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 9210 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10141 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           XX0XXX0X
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00XXX00X
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           0XX0X000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 3 should be 11111110
+# but is           XXXXXXX0
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           X00X00X0
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           0XXXX0XX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           XXXX0000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# peak 0 should be {0010} {0010} {1000}
+# but is           {00X0} {00X0} {X000}
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10141 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           XX0XXX0X
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00XXX00X
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           0XX0X000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 3 should be 11111110
+# but is           XXXXXXX0
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           X00X00X0
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           0XXXX0XX
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           XXXX0000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# peak 0 should be {0010} {0010} {1000}
+# but is           {00X0} {00X0} {X000}
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10135 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+restart -f
+# Compile of dataConsume.vhd was successful.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10135 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10125 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd failed with 8 errors.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10120 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10120 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd failed with 2 errors.
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10116 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10125 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# Compile of dataConsume.vhd was successful.
+restart -f
+# Loading work.dataconsume(behavioral)
+# ** Warning: Design size of 10122 statements or 3 leaf instances exceeds ModelSim PE Student Edition recommended capacity.
+# Expect performance to be quite adversely affected.
+run 21us
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /tb_datagenconsume/dataConsume1
+# ** Note: Sequence No.0; Cycle count:1005
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 0 should be 11110000
+# but is           11011101
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 1 should be 01111011
+# but is           00111001
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 2 should be 10010010
+# but is           01101000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 4 should be 01101000
+# but is           10010010
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 5 should be 00111001
+# but is           01111011
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# ** Warning: Mismatch for seq 0:
+# byte 6 should be 11011101
+# but is           11110000
+#    Time: 20110 ns  Iteration: 2  Instance: /tb_datagenconsume
+# End time: 22:56:59 on Mar 23,2017, Elapsed time: 2:02:41
+# Errors: 77, Warnings: 597

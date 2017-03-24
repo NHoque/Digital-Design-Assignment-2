@@ -1,0 +1,17 @@
+CxlResult:C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim/.cxl.vhdl.secureip_vhdl_simprim.simprim.nt.rpt =
+	ExecutionPlatform = nt ,
+	SourceLibrary = secureip_vhdl_simprim ,
+	SourcePath = E:/Program Files/Xilinx ISE/14.7/ISE_DS/ISE/vhdl/src/simprims/secureip/mti ,
+	Simulator = mti_pe ,
+	SimulatorVersion = 10.4a ,
+	CompiledLibrary = simprim ,
+	CompiledPath = C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim ,
+	Timestamp = Wed Mar 22 22:49:32 2017 ,
+	Time = 1490222972 ,
+	Language = vhdl ,
+	XilinxBuildNumber = P.20131013 ,
+	XilinxVersion = 14.7 ,
+	LogFile = C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim/.cxl.vhdl.secureip_vhdl_simprim.simprim.nt.log ,
+	NumOfErrors = 0 ,
+	NumOfWarnings = 1 ,
+

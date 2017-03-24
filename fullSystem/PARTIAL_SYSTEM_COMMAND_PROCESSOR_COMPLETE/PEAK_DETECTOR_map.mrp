@@ -1,0 +1,490 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'PEAK_DETECTOR'
+
+Design Information
+------------------
+Command Line   : map -filter "C:/Users/Naimul Hoque/Documents/Uni Work/Year
+2/Digital Design/Assignment
+2/UART/Digital-Design-Assignment-2/fullSystem/PARTIAL_SYSTEM_COMMAND_PROCESSOR_C
+OMPLETE/iseconfig/filter.filter" -intstyle ise -p xc6slx16-csg324-3 -w
+-logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt
+off -mt off -ir off -pr off -lc off -power off -o PEAK_DETECTOR_map.ncd
+PEAK_DETECTOR.ngd PEAK_DETECTOR.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu Mar 23 18:45:39 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                   188 out of  18,224    1%
+    Number used as Flip Flops:                 145
+    Number used as Latches:                     43
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        284 out of   9,112    3%
+    Number used as logic:                      281 out of   9,112    3%
+      Number using O6 output only:             213
+      Number using O5 output only:              48
+      Number using O5 and O6:                   20
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:      3
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         3
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   113 out of   2,278    4%
+  Number of MUXCYs used:                        60 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:          343
+    Number with an unused Flip Flop:           158 out of     343   46%
+    Number with an unused LUT:                  59 out of     343   17%
+    Number of fully used LUT-FF pairs:         126 out of     343   36%
+    Number of unique control sets:              16
+    Number of slice register sites lost
+      to control set restrictions:              36 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         4 out of     232    1%
+    Number of LOCed IOBs:                        4 out of       4  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                4.24
+
+Peak Memory Usage:  307 MB
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net sig_start is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network data/dataArraySaved_0<7> has no load.
+INFO:LIT:395 - The above info message is repeated 23 more times for the
+   following (max. 5 shown):
+   data/dataArraySaved_0<6>,
+   data/dataArraySaved_0<5>,
+   data/dataArraySaved_0<4>,
+   data/dataArraySaved_0<3>,
+   data/dataArraySaved_0<2>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 131 block(s) removed
+   2 block(s) optimized away
+ 131 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "data/maxIndex_reg_2<3>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_2_3_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_2_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_2_3" (SFF) removed.
+The signal "data/maxIndex_reg_2<2>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_2_2_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_2_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_2_2" (SFF) removed.
+The signal "data/maxIndex_reg_2<1>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_2_1_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_2_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_2_1" (SFF) removed.
+The signal "data/maxIndex_reg_2<0>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_2_0_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_2_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_2_0" (SFF) removed.
+The signal "data/maxIndex_reg_1<3>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_1_3_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_1_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_1_3" (SFF) removed.
+The signal "data/maxIndex_reg_1<2>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_1_2_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_1_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_1_2" (SFF) removed.
+The signal "data/maxIndex_reg_1<1>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_1_1_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_1_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_1_1" (SFF) removed.
+The signal "data/maxIndex_reg_1<0>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_1_0_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_1_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_1_0" (SFF) removed.
+The signal "data/maxIndex_reg_0<3>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_0_3_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_0_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_0_3" (SFF) removed.
+The signal "data/maxIndex_reg_0<2>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_0_2_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_0_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_0_2" (SFF) removed.
+The signal "data/maxIndex_reg_0<1>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_0_1_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_0_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_0_1" (SFF) removed.
+The signal "data/maxIndex_reg_0<0>" is sourceless and has been removed.
+ Sourceless block "data/maxIndex_reg_0_0_dpot" (ROM) removed.
+  The signal "data/maxIndex_reg_0_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/maxIndex_reg_0_0" (SFF) removed.
+The signal "data/dataArraySaved_0<7>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<6>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<5>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<4>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<3>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<2>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<1>" is sourceless and has been removed.
+The signal "data/dataArraySaved_0<0>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<7>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<6>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<5>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<4>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<3>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<2>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<1>" is sourceless and has been removed.
+The signal "data/dataArraySaved_1<0>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<7>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<6>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<5>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<4>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<3>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<2>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<1>" is sourceless and has been removed.
+The signal "data/dataArraySaved_2<0>" is sourceless and has been removed.
+The signal "data/dataArraySaved_4<7>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_7_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_7_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_7" (SFF) removed.
+The signal "data/dataArraySaved_4<6>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_6_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_6_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_6" (SFF) removed.
+The signal "data/dataArraySaved_4<5>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_5_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_5_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_5" (SFF) removed.
+The signal "data/dataArraySaved_4<4>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_4_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_4_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_4" (SFF) removed.
+The signal "data/dataArraySaved_4<3>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_3_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_3" (SFF) removed.
+The signal "data/dataArraySaved_4<2>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_2_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_2" (SFF) removed.
+The signal "data/dataArraySaved_4<1>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_1_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_1" (SFF) removed.
+The signal "data/dataArraySaved_4<0>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_4_0_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_4_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_4_0" (SFF) removed.
+The signal "data/dataArraySaved_5<7>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_7_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_7_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_7" (SFF) removed.
+The signal "data/dataArraySaved_5<6>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_6_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_6_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_6" (SFF) removed.
+The signal "data/dataArraySaved_5<5>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_5_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_5_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_5" (SFF) removed.
+The signal "data/dataArraySaved_5<4>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_4_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_4_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_4" (SFF) removed.
+The signal "data/dataArraySaved_5<3>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_3_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_3" (SFF) removed.
+The signal "data/dataArraySaved_5<2>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_2_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_2" (SFF) removed.
+The signal "data/dataArraySaved_5<1>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_1_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_1" (SFF) removed.
+The signal "data/dataArraySaved_5<0>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_5_0_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_5_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_5_0" (SFF) removed.
+The signal "data/dataArraySaved_6<7>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_7_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_7_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_7" (SFF) removed.
+The signal "data/dataArraySaved_6<6>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_6_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_6_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_6" (SFF) removed.
+The signal "data/dataArraySaved_6<5>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_5_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_5_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_5" (SFF) removed.
+The signal "data/dataArraySaved_6<4>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_4_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_4_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_4" (SFF) removed.
+The signal "data/dataArraySaved_6<3>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_3_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_3_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_3" (SFF) removed.
+The signal "data/dataArraySaved_6<2>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_2_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_2_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_2" (SFF) removed.
+The signal "data/dataArraySaved_6<1>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_1_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_1_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_1" (SFF) removed.
+The signal "data/dataArraySaved_6<0>" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_6_0_dpot" (ROM) removed.
+  The signal "data/dataArraySaved_6_0_dpot" is sourceless and has been removed.
+   Sourceless block "data/dataArraySaved_6_0" (SFF) removed.
+The signal "data/_n0310_inv" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_1_0" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_1" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_2" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_3" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_4" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_5" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_6" (SFF) removed.
+ Sourceless block "data/dataArraySaved_1_7" (SFF) removed.
+The signal "data/_n0304_inv" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_0_0" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_1" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_2" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_3" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_4" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_5" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_6" (SFF) removed.
+ Sourceless block "data/dataArraySaved_0_7" (SFF) removed.
+The signal "data/_n0316_inv" is sourceless and has been removed.
+ Sourceless block "data/dataArraySaved_2_0" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_1" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_2" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_3" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_4" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_5" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_6" (SFF) removed.
+ Sourceless block "data/dataArraySaved_2_7" (SFF) removed.
+The signal "data/dataArrayCurrent_1<0>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_0" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<0>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_0" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<0>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<1>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_1" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<1>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_1" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<1>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<2>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_2" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<2>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_2" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<2>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<3>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_3" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<3>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_3" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<3>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<4>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_4" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<4>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_4" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<4>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<5>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_5" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<5>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_5" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<5>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<6>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_6" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<6>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_6" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<6>" is sourceless and has been removed.
+The signal "data/dataArrayCurrent_1<7>" is sourceless and has been removed.
+ Sourceless block "data/dataArrayCurrent_2_7" (SFF) removed.
+  The signal "data/dataArrayCurrent_2<7>" is sourceless and has been removed.
+   Sourceless block "data/dataArrayCurrent_3_7" (SFF) removed.
+    The signal "data/dataArrayCurrent_3<7>" is sourceless and has been removed.
+The signal "data/startUpdate_rstpot" is sourceless and has been removed.
+ Sourceless block "data/startUpdate" (FF) removed.
+  The signal "data/startUpdate" is sourceless and has been removed.
+   Sourceless block "data/_n0310_inv1" (ROM) removed.
+   Sourceless block "data/_n0304_inv1" (ROM) removed.
+   Sourceless block "data/_n0316_inv1" (ROM) removed.
+   Sourceless block "data/startUpdate_rstpot" (ROM) removed.
+   Sourceless block "data/updateCount_1_rstpot" (ROM) removed.
+    The signal "data/updateCount_1_rstpot" is sourceless and has been removed.
+     Sourceless block "data/updateCount_1" (FF) removed.
+      The signal "data/updateCount<1>" is sourceless and has been removed.
+   Sourceless block "data/updateCount_0_rstpot" (ROM) removed.
+    The signal "data/updateCount_0_rstpot" is sourceless and has been removed.
+     Sourceless block "data/updateCount_0" (FF) removed.
+      The signal "data/updateCount<0>" is sourceless and has been removed.
+The signal "data/Mcount_updateCount_val" is sourceless and has been removed.
+The signal "data/_n0324_inv1_rstpot" is sourceless and has been removed.
+Unused block "data/Mcount_updateCount_val1" (ROM) removed.
+Unused block "data/_n0324_inv1_rstpot" (ROM) removed.
+Unused block "data/dataArrayCurrent_1_0" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_1" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_2" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_3" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_4" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_5" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_6" (SFF) removed.
+Unused block "data/dataArrayCurrent_1_7" (SFF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| reset                              | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| rxdata                             | IOB              | INPUT     | LVTTL                |       |          |      |              |          |          |
+| txdata                             | IOB              | OUTPUT    | LVTTL                |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

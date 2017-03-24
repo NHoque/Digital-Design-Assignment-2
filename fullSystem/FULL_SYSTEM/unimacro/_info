@@ -1,0 +1,569 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/FULL_SYSTEM
+Eaddmacc_macro
+Z1 w1381677448
+Z2 DPx6 unisim 11 vcomponents 0 22 2L_N91<XgM:Bh8=P>9OR]0
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDMACC_MACRO.vhd
+Z9 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDMACC_MACRO.vhd
+l0
+L35
+ViYn?MV_F8Dd>g4=k?zaY_3
+!s100 X>jFNU6zOHXVDm9M9>Sbn0
+Z10 OP;C;10.4a;61
+31
+Z11 !s110 1490223080
+!i10b 1
+Z12 !s108 1490223080.000000
+Z13 !s90 -source|-93|-explicit|-32|-work|unimacro|-f|C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/unimacro/.cxl.vhdl.unimacro.unimacro.nt.cmf|
+Z14 !s107 E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\unimacro_VCOMP.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MULT_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MACC_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_SYNC_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_DUALCLOCK_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\EQ_COMPARE_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_TC_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_LOAD_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_TDP_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SINGLE_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SDP_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDSUB_MACRO.vhd|E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDMACC_MACRO.vhd|
+!i113 1
+Z15 o-source -93 -explicit -work unimacro -O0
+Z16 tExplicit 1
+Aaddmacc
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 addmacc_macro 0 22 iYn?MV_F8Dd>g4=k?zaY_3
+l283
+L58
+V1`8W5jHKU_PO2Sf;5GnnH0
+!s100 Mol;dGFI=5eHGzDTBKmi71
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eaddsub_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z17 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDSUB_MACRO.vhd
+Z18 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\ADDSUB_MACRO.vhd
+l0
+L36
+VJ7X5QaD:>I=:IX:@KQCmf2
+!s100 2oD@4WMH0jOf6Z@d^VbA:2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Aaddsub
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 12 addsub_macro 0 22 J7X5QaD:>I=:IX:@KQCmf2
+l193
+L61
+VD88L4nfkOCTQ^jBlPk[MG0
+!s100 LP_>_PfgfODYK_o@WH_:>2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ebram_sdp_macro
+R1
+R2
+R6
+R7
+R0
+Z19 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SDP_MACRO.vhd
+Z20 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SDP_MACRO.vhd
+l0
+L38
+VFda`EW=La^Y1:j^R]8QSK2
+!s100 YON]GoQ;VKD0PeU^?W0[I1
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Abram_v
+R2
+R6
+R7
+DEx4 work 14 bram_sdp_macro 0 22 Fda`EW=La^Y1:j^R]8QSK2
+l1349
+L217
+VSARAPLa@nN]YTBj9LD<0:1
+!s100 ;H4kEKgOMWhT_XF]h_ljW2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ebram_single_macro
+R1
+R2
+R6
+R7
+R0
+Z21 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SINGLE_MACRO.vhd
+Z22 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_SINGLE_MACRO.vhd
+l0
+L38
+VUGQ?g?_2k^P:I]chM42oF2
+!s100 RIgMbNEeY5b>LZk75llzO0
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Abram_v
+R2
+R6
+R7
+DEx4 work 17 bram_single_macro 0 22 UGQ?g?_2k^P:I]chM42oF2
+l1186
+L211
+VmEDNk<h_eV088F>]gTGHH2
+!s100 HfEzAKRzNUe49EJ>AaP5`1
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ebram_tdp_macro
+R1
+R2
+R6
+R7
+R0
+Z23 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_TDP_MACRO.vhd
+Z24 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\BRAM_TDP_MACRO.vhd
+l0
+L36
+VWjA^QI64Sb[nQe1A>NNU=2
+!s100 <S2;UaaPL;gROP4VJRbF?2
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Abram_v
+R2
+R6
+R7
+DEx4 work 14 bram_tdp_macro 0 22 WjA^QI64Sb[nQe1A>NNU=2
+l1426
+L224
+VQQWDV96i=W9LY=8WOhGhf3
+!s100 82og3OD^X3@<BfgKoe;mh3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ecounter_load_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z25 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_LOAD_MACRO.vhd
+Z26 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_LOAD_MACRO.vhd
+l0
+L34
+V0j=hPHWl_VZ9Qd6McCChj1
+!s100 nBDg0Qo?lE>aCd:8T`oUA1
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Acounter
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 18 counter_load_macro 0 22 0j=hPHWl_VZ9Qd6McCChj1
+l144
+L53
+VOI<PzKkF1=GY<YkW^PMjl3
+!s100 ;O``GWY37RVR`LWI8cFfj1
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ecounter_tc_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z27 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_TC_MACRO.vhd
+Z28 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\COUNTER_TC_MACRO.vhd
+l0
+L35
+VXPnI2ZQB[DTf;mfF@QBLh3
+!s100 zjEGlQ?`mnOhH`k930K=C3
+R10
+31
+Z29 !s110 1490223081
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Acount
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 16 counter_tc_macro 0 22 XPnI2ZQB[DTf;mfF@QBLh3
+l174
+L55
+VhOZ>Pn>DHTjoBkaE8X=[61
+!s100 B>Pbe;S:6QG3D_c^bkAPQ3
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eeq_compare_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z30 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\EQ_COMPARE_MACRO.vhd
+Z31 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\EQ_COMPARE_MACRO.vhd
+l0
+L34
+V5MgI:;cE=hQhEg_40R?7o2
+!s100 IS@8[Q@Q^8QVhAMFNH]Mm1
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Acompare
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 16 eq_compare_macro 0 22 5MgI:;cE=hQhEg_40R?7o2
+l201
+L55
+V`ACo9TI1`^YU9>1XQ=X:d3
+!s100 h^8RgTWn=z3XPU<8K<I_Q2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Efifo_dualclock_macro
+R1
+R2
+R5
+R6
+R7
+R0
+Z32 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_DUALCLOCK_MACRO.vhd
+Z33 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_DUALCLOCK_MACRO.vhd
+l0
+L34
+VdmeeOG33Y2R6][3_e4B373
+!s100 PDm_BQSXLQC3@EXFnDUSm3
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Afifo_v
+R2
+R5
+R6
+R7
+DEx4 work 20 fifo_dualclock_macro 0 22 dmeeOG33Y2R6][3_e4B373
+l594
+L68
+V]za[zk=V1iJo4LQX<?>bP1
+!s100 Je_6dEGePc0Fk9bC_^bdo2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Efifo_sync_macro
+R1
+R2
+R5
+R6
+R7
+R0
+Z34 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_SYNC_MACRO.vhd
+Z35 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\FIFO_SYNC_MACRO.vhd
+l0
+L34
+VRLW7907DFTcBiKE8>P9lC2
+!s100 Q27TIU<U4R9=clPkfF1fR2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Afifo_v
+R2
+R5
+R6
+R7
+DEx4 work 15 fifo_sync_macro 0 22 RLW7907DFTcBiKE8>P9lC2
+l594
+L67
+VZ=ibO9a94Hz7QCABAlliN0
+!s100 jzdVVhfgkm]?Pkh:l<Udm1
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emacc_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z36 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MACC_MACRO.vhd
+Z37 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MACC_MACRO.vhd
+l0
+L35
+VU3g[i_`1OY@f`SH7]H]O[0
+!s100 z9g;DPY]5h6H8gA=A[I2F2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Amacc
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 macc_macro 0 22 U3g[i_`1OY@f`SH7]H]O[0
+l268
+L58
+VB;Y5[A]WFEYSFXYJ;b^G22
+!s100 J1VgH8L8]K@?C1::W<ISl0
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emult_macro
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z38 8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MULT_MACRO.vhd
+Z39 FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\MULT_MACRO.vhd
+l0
+L36
+VNHIJ@kg=UG>a:RamZIfEW2
+!s100 ;K2f1m=6dm`hFR1Jn]PnG2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Amult
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 mult_macro 0 22 NHIJ@kg=UG>a:RamZIfEW2
+l267
+L55
+VciORd7][gS=k51PkTz4XB2
+!s100 Xbnz73cCZ;ZUoBChD`nMR2
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Pvcomponents
+R6
+R7
+R1
+R0
+8E:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\unimacro_VCOMP.vhd
+FE:\Program Files\Xilinx ISE\14.7\ISE_DS\ISE\vhdl\src\unimacro\unimacro_VCOMP.vhd
+l0
+L13
+Vlz1lj9IA?XKXDBg8N61J;0
+!s100 K=QcTVO?dI9?4YV::[]de1
+R10
+31
+R29
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

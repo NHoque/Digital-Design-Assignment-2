@@ -1,0 +1,6 @@
+vhdl work "../../dataProcessor/common_pack.vhd"
+vhdl work "../UART_TX_CTRL.vhd"
+vhdl work "../UART_RX_CTRL.vhd"
+vhdl work "../../dataProcessor/dataGen.vhd"
+vhdl work "../../dataProcessor/dataConsume.vhd"
+vhdl work "../test_top.vhd"
