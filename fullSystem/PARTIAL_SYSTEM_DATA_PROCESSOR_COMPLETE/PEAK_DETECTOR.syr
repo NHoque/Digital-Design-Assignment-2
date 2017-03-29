@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: PEAK_DETECTOR.prj
 
@@ -172,9 +172,9 @@ Synthesizing Unit <dataConsume>.
     Related source file is "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd".
     Found 1-bit register for signal <seqDone_reg>.
     Found 3-bit register for signal <seq_detectPeak.shiftValue>.
+    Found 8-bit register for signal <seq_detectPeak.holdValues<0>>.
     Found 8-bit register for signal <seq_detectPeak.holdValues<1>>.
     Found 8-bit register for signal <seq_detectPeak.holdValues<2>>.
-    Found 8-bit register for signal <seq_detectPeak.holdValues<3>>.
     Found 8-bit register for signal <dataResults_reg<0>>.
     Found 8-bit register for signal <dataResults_reg<1>>.
     Found 8-bit register for signal <dataResults_reg<2>>.
@@ -698,12 +698,12 @@ clk            |    7.151|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.27 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.35 secs
  
 --> 
 
-Total memory usage is 251680 kilobytes
+Total memory usage is 251488 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

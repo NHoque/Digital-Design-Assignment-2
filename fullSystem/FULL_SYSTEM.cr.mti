@@ -188,6 +188,16 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package common_pack
+-- Compiling entity dataConsume
+-- Compiling architecture Behavioral of dataConsume
+
 } {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd}
 Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
 -- Loading package STANDARD

@@ -17,7 +17,7 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">index_bcd_1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">data</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_indexCountBCD.index_tens_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataReady_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">data</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;enable_BCD&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataReady_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">data</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;enable_BCD&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">index_bcd_2_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">data</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_indexCountBCD.index_hundreds_0&gt; </arg>
@@ -74,7 +74,7 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">index_bcd_1_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_indexCountBCD.index_tens_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataReady_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;enable_BCD&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataReady_reg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;enable_BCD&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">index_bcd_2_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_indexCountBCD.index_hundreds_0&gt; </arg>
@@ -107,28 +107,28 @@
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">index_bcd_1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_indexCountBCD.index_tens_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_5&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_6&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_7&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dataResults_reg_3_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">dataConsume</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seq_detectPeak.data_max_7&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">gen/index_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PEAK_DETECTOR</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;gen/ctrlOut_reg&gt; </arg>

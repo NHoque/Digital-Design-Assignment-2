@@ -105,7 +105,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490792001" xil_pn:in_ck="-8571968299636492045" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2511675204635574167" xil_pn:start_ts="1490791989">
+    <transform xil_pn:end_ts="1490792705" xil_pn:in_ck="-8571968299636492045" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2511675204635574167" xil_pn:start_ts="1490792693">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -127,7 +127,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490792007" xil_pn:in_ck="6585028391823609549" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-257144484994002691" xil_pn:start_ts="1490792001">
+    <transform xil_pn:end_ts="1490792710" xil_pn:in_ck="6585028391823609549" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-257144484994002691" xil_pn:start_ts="1490792705">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PEAK_DETECTOR.bld"/>
@@ -136,7 +136,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1490792019" xil_pn:in_ck="-2182112088192851604" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1490792007">
+    <transform xil_pn:end_ts="1490792723" xil_pn:in_ck="-2182112088192851604" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1490792710">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PEAK_DETECTOR.pcf"/>
@@ -149,7 +149,7 @@
       <outfile xil_pn:name="PEAK_DETECTOR_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1490792036" xil_pn:in_ck="7389384750184367749" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1490792019">
+    <transform xil_pn:end_ts="1490792740" xil_pn:in_ck="7389384750184367749" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1490792723">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PEAK_DETECTOR.ncd"/>
@@ -163,7 +163,7 @@
       <outfile xil_pn:name="PEAK_DETECTOR_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1490792062" xil_pn:in_ck="-7778601251200369379" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6456494387431822541" xil_pn:start_ts="1490792046">
+    <transform xil_pn:end_ts="1490792770" xil_pn:in_ck="-7778601251200369379" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6456494387431822541" xil_pn:start_ts="1490792753">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PEAK_DETECTOR.ut"/>
@@ -175,11 +175,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1490792075" xil_pn:in_ck="-2919485134636997529" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1490792075">
+    <transform xil_pn:end_ts="1490792778" xil_pn:in_ck="-2919485134636997529" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1490792778">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1490792036" xil_pn:in_ck="-2182112088192851736" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1490792030">
+    <transform xil_pn:end_ts="1490792740" xil_pn:in_ck="-2182112088192851736" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1490792734">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -188,7 +188,7 @@
       <outfile xil_pn:name="PEAK_DETECTOR.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1490792044" xil_pn:in_ck="7389384750184367749" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791353" xil_pn:start_ts="1490792039">
+    <transform xil_pn:end_ts="1490792748" xil_pn:in_ck="7389384750184367749" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="722859607460791353" xil_pn:start_ts="1490792742">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="PEAK_DETECTOR_preroute.twr"/>

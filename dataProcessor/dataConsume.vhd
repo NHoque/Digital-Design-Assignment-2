@@ -98,20 +98,20 @@ begin
           data_max := X"00";
         elsif curState = S2 then
           shiftValue := shiftValue + 1;
-          holdValues := holdValues(1 to 3) & STD_LOGIC_VECTOR(byte_reg);
+          holdValues := STD_LOGIC_VECTOR(byte_reg) & holdValues(0 to 2)  ;
           if (byte_reg >= data_max) then
             maxIndex_reg <= index_bcd;
             data_max := byte_reg;
-            dataResults_reg(0 to 2) <= holdValues(0 to 2);
+            dataResults_reg(0 to 2) <= (others => X"00");
             dataResults_reg(3) <= STD_LOGIC_VECTOR(byte_reg);
-            dataResults_reg(4 to 6) <= (others => X"00");
+            dataResults_reg(4 to 6) <= holdValues(1 to 3);
             shiftValue := "000";
           else
             maxIndex_reg <= maxIndex_reg;
             data_max := data_max;
             dataResults_reg(0 to 3) <= dataResults_reg(0 to 3);
             if (shiftValue < "100") then
-              dataResults_reg(4 to 6) <= dataResults_reg(5 to 6) & STD_LOGIC_VECTOR(byte_reg);
+              dataResults_reg(0 to 2) <= STD_LOGIC_VECTOR(byte_reg) & dataResults_reg(0 to 1);
             else
 							shiftValue := "100";
               dataResults_reg <= dataResults_reg;
