@@ -33,14 +33,14 @@ signal dataResults_reg : CHAR_ARRAY_TYPE(0 to RESULT_BYTE_NUM-1) := (others => X
 -----------------------------------------------------------
 begin
 -----------------------------------------------------------------------------
-  nextStateLogic: process(curState, start_reg, numWords_bcd, index_bcd)
+  nextStateLogic: process(curState, dataReady_reg, numWords_bcd, index_bcd)
   begin
     case curState is
     when S0 =>
       nextState <= S1;
 
     when S1 =>
-      if start_reg = '1' then
+      if dataReady_reg = '1' then
         nextState <= S2;
       else
         nextState <= S1;
@@ -73,16 +73,16 @@ begin
       end if;
     end process;
 -----------------------------------------------------------------------------
-  seq_setDataReady : process(clk)
-    begin
-      if rising_edge(clk) then
-        if curState = S2 then
-          dataReady_reg <= '1';
-        else
-				  dataReady_reg <= '0';
-        end if;
-      end if;
-    end process;
+  -- seq_setDataReady : process(clk)
+    -- begin
+      -- if rising_edge(clk) then
+        -- if curState = S2 then
+          -- dataReady_reg <= '1';
+        -- else
+				  -- dataReady_reg <= '0';
+        -- end if;
+      -- end if;
+    -- end process;
 -----------------------------------------------------------------------------
   seq_detectPeak : process(clk, curState)
   variable data_max : UNSIGNED(7 downto 0) := X"00";
@@ -111,7 +111,7 @@ begin
             data_max := data_max;
             dataResults_reg(0 to 3) <= dataResults_reg(0 to 3);
             if (shiftValue < "100") then
-              dataResults_reg(3 + TO_INTEGER(shiftValue)) <= STD_LOGIC_VECTOR(byte_reg);
+              dataResults_reg(4 to 6) <= dataResults_reg(5 to 6) & STD_LOGIC_VECTOR(byte_reg);
             else
 							shiftValue := "100";
               dataResults_reg <= dataResults_reg;
@@ -153,6 +153,7 @@ begin
         ctrlOut_reg <= '0';
         curState <= S0;
 				start_reg <= '0';
+				dataReady_reg <= '0';
 				enable_BCD <= '0';
       else
         curState <= nextState;
@@ -163,9 +164,12 @@ begin
 				end if;
 				if ctrlIn_edge = '1' then
 					enable_BCD <= '1';
+					dataReady_reg <= '1';
 					byte_reg <= UNSIGNED(data);
 				else
+					dataReady_reg <= '0';
 					enable_BCD <= '0';
+					byte_reg <= byte_reg;
 				end if;
       end if;
     end if;

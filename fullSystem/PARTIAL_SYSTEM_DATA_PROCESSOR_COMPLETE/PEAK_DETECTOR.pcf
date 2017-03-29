@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Mar 29 13:23:47 2017
+// Written by: Map P.20131013 on Wed Mar 29 13:53:37 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -39,28 +39,15 @@ TIMEGRP sys_clk_pin = BEL "gen/index_7" BEL "gen/index_6" BEL "gen/index_8"
         "data/seq_detectPeak.holdValues_2_1" BEL
         "data/seq_detectPeak.holdValues_2_0" BEL "data/maxIndex_reg_0_3" BEL
         "data/maxIndex_reg_0_2" BEL "data/maxIndex_reg_0_1" BEL
-        "data/maxIndex_reg_0_0" BEL "data/maxIndex_reg_1_3" BEL
-        "data/maxIndex_reg_1_2" BEL "data/maxIndex_reg_1_1" BEL
-        "data/maxIndex_reg_1_0" BEL "data/seq_detectPeak.data_max_7" BEL
-        "data/seq_detectPeak.data_max_6" BEL "data/seq_detectPeak.data_max_5"
-        BEL "data/seq_detectPeak.data_max_4" BEL
-        "data/seq_detectPeak.data_max_3" BEL "data/seq_detectPeak.data_max_2"
-        BEL "data/seq_detectPeak.data_max_1" BEL
-        "data/seq_detectPeak.data_max_0" BEL "data/maxIndex_reg_2_3" BEL
+        "data/maxIndex_reg_0_0" BEL "data/maxIndex_reg_2_3" BEL
         "data/maxIndex_reg_2_2" BEL "data/maxIndex_reg_2_1" BEL
-        "data/maxIndex_reg_2_0" BEL "data/dataResults_reg_6_7" BEL
-        "data/dataResults_reg_6_6" BEL "data/dataResults_reg_6_5" BEL
-        "data/dataResults_reg_6_4" BEL "data/dataResults_reg_6_3" BEL
-        "data/dataResults_reg_6_2" BEL "data/dataResults_reg_6_1" BEL
-        "data/dataResults_reg_6_0" BEL "data/dataResults_reg_4_7" BEL
-        "data/dataResults_reg_4_6" BEL "data/dataResults_reg_4_5" BEL
-        "data/dataResults_reg_4_4" BEL "data/dataResults_reg_4_3" BEL
-        "data/dataResults_reg_4_2" BEL "data/dataResults_reg_4_1" BEL
-        "data/dataResults_reg_4_0" BEL "data/dataResults_reg_5_7" BEL
-        "data/dataResults_reg_5_6" BEL "data/dataResults_reg_5_5" BEL
-        "data/dataResults_reg_5_4" BEL "data/dataResults_reg_5_3" BEL
-        "data/dataResults_reg_5_2" BEL "data/dataResults_reg_5_1" BEL
-        "data/dataResults_reg_5_0" BEL "data/seq_detectPeak.holdValues_3_7"
+        "data/maxIndex_reg_2_0" BEL "data/maxIndex_reg_1_3" BEL
+        "data/maxIndex_reg_1_2" BEL "data/maxIndex_reg_1_1" BEL
+        "data/maxIndex_reg_1_0" BEL "data/dataResults_reg_3_7" BEL
+        "data/dataResults_reg_3_6" BEL "data/dataResults_reg_3_5" BEL
+        "data/dataResults_reg_3_4" BEL "data/dataResults_reg_3_3" BEL
+        "data/dataResults_reg_3_2" BEL "data/dataResults_reg_3_1" BEL
+        "data/dataResults_reg_3_0" BEL "data/seq_detectPeak.holdValues_3_7"
         BEL "data/seq_detectPeak.holdValues_3_6" BEL
         "data/seq_detectPeak.holdValues_3_5" BEL
         "data/seq_detectPeak.holdValues_3_4" BEL
@@ -70,48 +57,60 @@ TIMEGRP sys_clk_pin = BEL "gen/index_7" BEL "gen/index_6" BEL "gen/index_8"
         "data/seq_detectPeak.holdValues_3_0" BEL
         "data/seq_detectPeak.shiftValue_2" BEL
         "data/seq_detectPeak.shiftValue_1" BEL
-        "data/seq_detectPeak.shiftValue_0" BEL "data/dataReady_reg" BEL
-        "data/seqDone_reg" BEL "data/index_bcd_1_3" BEL "data/index_bcd_1_2"
-        BEL "data/index_bcd_1_1" BEL "data/index_bcd_1_0" BEL
-        "data/index_bcd_2_3" BEL "data/index_bcd_2_2" BEL "data/index_bcd_2_1"
-        BEL "data/index_bcd_2_0" BEL "data/index_bcd_0_3" BEL
-        "data/index_bcd_0_2" BEL "data/index_bcd_0_1" BEL "data/index_bcd_0_0"
-        BEL "data/enable_BCD" BEL "data/byte_reg_7" BEL "data/byte_reg_6" BEL
-        "data/byte_reg_5" BEL "data/byte_reg_4" BEL "data/byte_reg_3" BEL
-        "data/byte_reg_2" BEL "data/byte_reg_1" BEL "data/byte_reg_0" BEL
-        "data/start_reg" BEL "data/ctrlIn_reg" BEL "tx/bitIndex_30" BEL
-        "tx/bitIndex_29" BEL "tx/bitIndex_28" BEL "tx/bitIndex_27" BEL
-        "tx/bitIndex_26" BEL "tx/bitIndex_25" BEL "tx/bitIndex_24" BEL
-        "tx/bitIndex_23" BEL "tx/bitIndex_22" BEL "tx/bitIndex_21" BEL
-        "tx/bitIndex_20" BEL "tx/bitIndex_19" BEL "tx/bitIndex_18" BEL
-        "tx/bitIndex_17" BEL "tx/bitIndex_16" BEL "tx/bitIndex_15" BEL
-        "tx/bitIndex_14" BEL "tx/bitIndex_13" BEL "tx/bitIndex_12" BEL
-        "tx/bitIndex_11" BEL "tx/bitIndex_10" BEL "tx/bitIndex_9" BEL
-        "tx/bitIndex_8" BEL "tx/bitIndex_7" BEL "tx/bitIndex_6" BEL
-        "tx/bitIndex_5" BEL "tx/bitIndex_4" BEL "tx/bitIndex_3" BEL
-        "tx/bitIndex_2" BEL "tx/bitIndex_1" BEL "tx/bitIndex_0" BEL
-        "tx/bitTmr_13" BEL "tx/bitTmr_12" BEL "tx/bitTmr_11" BEL
-        "tx/bitTmr_10" BEL "tx/bitTmr_9" BEL "tx/bitTmr_8" BEL "tx/bitTmr_7"
-        BEL "tx/bitTmr_6" BEL "tx/bitTmr_5" BEL "tx/bitTmr_4" BEL
-        "tx/bitTmr_3" BEL "tx/bitTmr_2" BEL "tx/bitTmr_1" BEL "tx/bitTmr_0"
-        BEL "tx/txState_FSM_FFd1" BEL "tx/txState_FSM_FFd2" BEL "tx/txBit" BEL
-        "tx/txData_8" BEL "tx/txData_7" BEL "tx/txData_6" BEL "tx/txData_5"
-        BEL "tx/txData_4" BEL "tx/txData_3" BEL "tx/txData_2" BEL
-        "tx/txData_1" BEL "rx/bitCount_3" BEL "rx/bitCount_2" BEL
-        "rx/bitCount_1" BEL "rx/bitCount_0" BEL "rx/baudClkX8Count_3" BEL
-        "rx/baudClkX8Count_2" BEL "rx/baudClkX8Count_1" BEL
-        "rx/baudClkX8Count_0" BEL "rx/currentState_FSM_FFd2" BEL
-        "rx/currentState_FSM_FFd3" BEL "rx/currentState_FSM_FFd1" BEL
-        "rx/bitTmr_10" BEL "rx/bitTmr_9" BEL "rx/bitTmr_8" BEL "rx/bitTmr_7"
-        BEL "rx/bitTmr_6" BEL "rx/bitTmr_5" BEL "rx/bitTmr_4" BEL
-        "rx/bitTmr_3" BEL "rx/bitTmr_2" BEL "rx/bitTmr_1" BEL "rx/bitTmr_0"
-        BEL "rx/rcvDataReg_7" BEL "rx/rcvDataReg_6" BEL "rx/rcvDataReg_5" BEL
-        "rx/rcvDataReg_4" BEL "rx/rcvDataReg_3" BEL "rx/rcvDataReg_2" BEL
-        "rx/rcvDataReg_1" BEL "rx/rcvDataReg_0" BEL "rx/rcvShiftReg_9" BEL
-        "rx/rcvShiftReg_8" BEL "rx/rcvShiftReg_7" BEL "rx/rcvShiftReg_6" BEL
-        "rx/rcvShiftReg_5" BEL "rx/rcvShiftReg_4" BEL "rx/rcvShiftReg_3" BEL
-        "rx/rcvShiftReg_2" BEL "rx/rcvShiftReg_1" BEL "rx/regFull" BEL
-        "data/ctrlOut_reg" BEL "gen/index_0" BEL "clk_BUFGP/BUFG" BEL
+        "data/seq_detectPeak.shiftValue_0" BEL "data/seqDone_reg" BEL
+        "data/index_bcd_0_3" BEL "data/index_bcd_0_2" BEL "data/index_bcd_0_1"
+        BEL "data/index_bcd_0_0" BEL "data/index_bcd_1_3" BEL
+        "data/index_bcd_1_2" BEL "data/index_bcd_1_1" BEL "data/index_bcd_1_0"
+        BEL "data/index_bcd_2_3" BEL "data/index_bcd_2_2" BEL
+        "data/index_bcd_2_1" BEL "data/index_bcd_2_0" BEL "data/dataReady_reg"
+        BEL "data/byte_reg_7" BEL "data/byte_reg_6" BEL "data/byte_reg_5" BEL
+        "data/byte_reg_4" BEL "data/byte_reg_3" BEL "data/byte_reg_2" BEL
+        "data/byte_reg_1" BEL "data/byte_reg_0" BEL "data/start_reg" BEL
+        "data/ctrlIn_reg" BEL "tx/bitIndex_30" BEL "tx/bitIndex_29" BEL
+        "tx/bitIndex_28" BEL "tx/bitIndex_27" BEL "tx/bitIndex_26" BEL
+        "tx/bitIndex_25" BEL "tx/bitIndex_24" BEL "tx/bitIndex_23" BEL
+        "tx/bitIndex_22" BEL "tx/bitIndex_21" BEL "tx/bitIndex_20" BEL
+        "tx/bitIndex_19" BEL "tx/bitIndex_18" BEL "tx/bitIndex_17" BEL
+        "tx/bitIndex_16" BEL "tx/bitIndex_15" BEL "tx/bitIndex_14" BEL
+        "tx/bitIndex_13" BEL "tx/bitIndex_12" BEL "tx/bitIndex_11" BEL
+        "tx/bitIndex_10" BEL "tx/bitIndex_9" BEL "tx/bitIndex_8" BEL
+        "tx/bitIndex_7" BEL "tx/bitIndex_6" BEL "tx/bitIndex_5" BEL
+        "tx/bitIndex_4" BEL "tx/bitIndex_3" BEL "tx/bitIndex_2" BEL
+        "tx/bitIndex_1" BEL "tx/bitIndex_0" BEL "tx/bitTmr_13" BEL
+        "tx/bitTmr_12" BEL "tx/bitTmr_11" BEL "tx/bitTmr_10" BEL "tx/bitTmr_9"
+        BEL "tx/bitTmr_8" BEL "tx/bitTmr_7" BEL "tx/bitTmr_6" BEL
+        "tx/bitTmr_5" BEL "tx/bitTmr_4" BEL "tx/bitTmr_3" BEL "tx/bitTmr_2"
+        BEL "tx/bitTmr_1" BEL "tx/bitTmr_0" BEL "tx/txState_FSM_FFd1" BEL
+        "tx/txState_FSM_FFd2" BEL "tx/txBit" BEL "tx/txData_8" BEL
+        "tx/txData_7" BEL "tx/txData_6" BEL "tx/txData_5" BEL "tx/txData_4"
+        BEL "tx/txData_3" BEL "tx/txData_2" BEL "tx/txData_1" BEL
+        "rx/bitCount_3" BEL "rx/bitCount_2" BEL "rx/bitCount_1" BEL
+        "rx/bitCount_0" BEL "rx/baudClkX8Count_3" BEL "rx/baudClkX8Count_2"
+        BEL "rx/baudClkX8Count_1" BEL "rx/baudClkX8Count_0" BEL
+        "rx/currentState_FSM_FFd2" BEL "rx/currentState_FSM_FFd3" BEL
+        "rx/currentState_FSM_FFd1" BEL "rx/bitTmr_10" BEL "rx/bitTmr_9" BEL
+        "rx/bitTmr_8" BEL "rx/bitTmr_7" BEL "rx/bitTmr_6" BEL "rx/bitTmr_5"
+        BEL "rx/bitTmr_4" BEL "rx/bitTmr_3" BEL "rx/bitTmr_2" BEL
+        "rx/bitTmr_1" BEL "rx/bitTmr_0" BEL "rx/rcvDataReg_7" BEL
+        "rx/rcvDataReg_6" BEL "rx/rcvDataReg_5" BEL "rx/rcvDataReg_4" BEL
+        "rx/rcvDataReg_3" BEL "rx/rcvDataReg_2" BEL "rx/rcvDataReg_1" BEL
+        "rx/rcvDataReg_0" BEL "rx/rcvShiftReg_9" BEL "rx/rcvShiftReg_8" BEL
+        "rx/rcvShiftReg_7" BEL "rx/rcvShiftReg_6" BEL "rx/rcvShiftReg_5" BEL
+        "rx/rcvShiftReg_4" BEL "rx/rcvShiftReg_3" BEL "rx/rcvShiftReg_2" BEL
+        "rx/rcvShiftReg_1" BEL "rx/regFull" BEL "data/ctrlOut_reg" BEL
+        "gen/index_0" BEL "data/dataResults_reg_4_7" BEL
+        "data/dataResults_reg_4_6" BEL "data/dataResults_reg_4_5" BEL
+        "data/dataResults_reg_4_4" BEL "data/dataResults_reg_4_3" BEL
+        "data/dataResults_reg_4_2" BEL "data/dataResults_reg_4_1" BEL
+        "data/dataResults_reg_4_0" BEL "data/dataResults_reg_5_7" BEL
+        "data/dataResults_reg_5_6" BEL "data/dataResults_reg_5_5" BEL
+        "data/dataResults_reg_5_4" BEL "data/dataResults_reg_5_3" BEL
+        "data/dataResults_reg_5_2" BEL "data/dataResults_reg_5_1" BEL
+        "data/dataResults_reg_5_0" BEL "data/dataResults_reg_6_7" BEL
+        "data/dataResults_reg_6_6" BEL "data/dataResults_reg_6_5" BEL
+        "data/dataResults_reg_6_4" BEL "data/dataResults_reg_6_3" BEL
+        "data/dataResults_reg_6_2" BEL "data/dataResults_reg_6_1" BEL
+        "data/dataResults_reg_6_0" BEL "clk_BUFGP/BUFG" BEL
         "cmd/reg_maxIndex_2_0" BEL "cmd/reg_maxIndex_2_1" BEL
         "cmd/reg_maxIndex_2_2" BEL "cmd/reg_maxIndex_2_3" BEL
         "cmd/reg_maxIndex_1_0" BEL "cmd/reg_maxIndex_1_1" BEL
