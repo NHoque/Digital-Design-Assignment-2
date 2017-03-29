@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: PEAK_DETECTOR.prj
@@ -116,7 +116,7 @@ Parsing architecture <RCVR> of entity <uart_rx_ctrl>.
 Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\dataGen.vhd" into library work
 Parsing entity <dataGen>.
 Parsing architecture <behav> of entity <datagen>.
-Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd" into library work
+Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\dataConsume.vhd" into library work
 Parsing entity <dataConsume>.
 Parsing architecture <Behavioral> of entity <dataconsume>.
 Parsing VHDL file "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\cmdProcessor\cmdProc.vhd" into library work
@@ -174,7 +174,7 @@ Synthesizing Unit <dataGen>.
 Unit <dataGen> synthesized.
 
 Synthesizing Unit <dataConsume>.
-    Related source file is "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd".
+    Related source file is "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\dataConsume.vhd".
     Found 1-bit register for signal <dataReady_reg>.
     Found 32-bit register for signal <seq_detectPeak.shiftValue>.
     Found 8-bit register for signal <seq_detectPeak.holdValues<4>>.
@@ -201,7 +201,7 @@ Synthesizing Unit <dataConsume>.
     | States             | 4                                              |
     | Transitions        | 7                                              |
     | Inputs             | 3                                              |
-    | Outputs            | 4                                              |
+    | Outputs            | 3                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
     | Reset type         | synchronous                                    |
@@ -212,35 +212,35 @@ Synthesizing Unit <dataConsume>.
     -----------------------------------------------------------------------
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_1_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_4_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0312> created at line 1241.
+    Found 4-bit adder for signal <n0309> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_8_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_10_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0315> created at line 1241.
+    Found 4-bit adder for signal <n0312> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_14_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_16_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0318> created at line 1241.
+    Found 4-bit adder for signal <n0315> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_20_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_22_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0321> created at line 1241.
+    Found 4-bit adder for signal <n0318> created at line 1241.
     Found 4-bit adder for signal <index_max[8]_GND_7_o_add_26_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_28_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0324> created at line 1241.
+    Found 4-bit adder for signal <n0321> created at line 1241.
     Found 4-bit adder for signal <index_max[7]_GND_7_o_add_32_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_34_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0327> created at line 1241.
+    Found 4-bit adder for signal <n0324> created at line 1241.
     Found 4-bit adder for signal <index_max[6]_GND_7_o_add_38_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_40_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0330> created at line 1241.
+    Found 4-bit adder for signal <n0327> created at line 1241.
     Found 4-bit adder for signal <index_max[5]_GND_7_o_add_44_OUT> created at line 1241.
     Found 4-bit adder for signal <GND_7_o_GND_7_o_add_46_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0333> created at line 1241.
+    Found 4-bit adder for signal <n0330> created at line 1241.
     Found 4-bit adder for signal <index_max[4]_GND_7_o_add_50_OUT> created at line 1241.
     Found 4-bit adder for signal <index_max[8]_GND_7_o_add_52_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0336> created at line 1241.
-    Found 12-bit adder for signal <n0528[11:0]> created at line 76.
-    Found 13-bit adder for signal <n0531[12:0]> created at line 76.
-    Found 32-bit adder for signal <seq_detectPeak.shiftValue[31]_GND_7_o_add_81_OUT> created at line 143.
-    Found 32-bit adder for signal <index[31]_GND_7_o_add_152_OUT> created at line 188.
+    Found 4-bit adder for signal <n0333> created at line 1241.
+    Found 12-bit adder for signal <n0525[11:0]> created at line 76.
+    Found 13-bit adder for signal <n0528[12:0]> created at line 76.
+    Found 32-bit adder for signal <seq_detectPeak.shiftValue[31]_GND_7_o_add_79_OUT> created at line 142.
+    Found 32-bit adder for signal <index[31]_GND_7_o_add_150_OUT> created at line 184.
     Found 4x7-bit multiplier for signal <numWords_reg[2][3]_PWR_8_o_MuLt_62_OUT> created at line 76.
     Found 4x4-bit multiplier for signal <numWords_reg[1][3]_PWR_8_o_MuLt_63_OUT> created at line 76.
     Found 3-bit comparator greater for signal <PWR_8_o_index_max[11]_LessThan_1_o> created at line 47
@@ -270,16 +270,16 @@ Synthesizing Unit <dataConsume>.
     Found 4-bit comparator greater for signal <GND_7_o_index_max[4]_LessThan_50_o> created at line 47
     Found 4-bit comparator greater for signal <GND_7_o_index_max[8]_LessThan_52_o> created at line 51
     Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_54_o> created at line 55
-    Found 32-bit comparator greater for signal <numWords_int[31]_index[31]_LessThan_72_o> created at line 96
-    Found 8-bit comparator greater for signal <n0174> created at line 147
-    Found 32-bit comparator lessequal for signal <GND_7_o_seq_detectPeak.shiftValue[31]_LessThan_84_o> created at line 160
-    Found 32-bit comparator equal for signal <numWords_int[31]_index[31]_equal_152_o> created at line 185
+    Found 32-bit comparator greater for signal <numWords_int[31]_index[31]_LessThan_72_o> created at line 95
+    Found 8-bit comparator greater for signal <n0171> created at line 144
+    Found 32-bit comparator lessequal for signal <GND_7_o_seq_detectPeak.shiftValue[31]_LessThan_82_o> created at line 156
+    Found 32-bit comparator equal for signal <numWords_int[31]_index[31]_equal_150_o> created at line 181
     Summary:
 	inferred   2 Multiplier(s).
 	inferred  31 Adder/Subtractor(s).
 	inferred 204 D-type flip-flop(s).
 	inferred  31 Comparator(s).
-	inferred 115 Multiplexer(s).
+	inferred 114 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <dataConsume> synthesized.
 
@@ -469,13 +469,13 @@ Macro Statistics
  32-bit comparator lessequal                           : 1
  4-bit comparator greater                              : 26
  8-bit comparator greater                              : 7
-# Multiplexers                                         : 142
+# Multiplexers                                         : 141
  1-bit 10-to-1 multiplexer                             : 1
  1-bit 2-to-1 multiplexer                              : 105
  11-bit 2-to-1 multiplexer                             : 2
  14-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 3
  4-bit 2-to-1 multiplexer                              : 2
  8-bit 2-to-1 multiplexer                              : 26
 # FSMs                                                 : 4
@@ -503,7 +503,7 @@ Unit <UART_TX_CTRL> synthesized (advanced).
 
 Synthesizing (advanced) Unit <dataConsume>.
 The following registers are absorbed into counter <index>: 1 register on signal <index>.
-	Multiplier <Mmult_numWords_reg[2][3]_PWR_8_o_MuLt_62_OUT> in block <dataConsume> and adder/subtractor <Madd_n0528[11:0]> in block <dataConsume> are combined into a MAC<Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_62_OUT>.
+	Multiplier <Mmult_numWords_reg[2][3]_PWR_8_o_MuLt_62_OUT> in block <dataConsume> and adder/subtractor <Madd_n0525[11:0]> in block <dataConsume> are combined into a MAC<Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_62_OUT>.
 Unit <dataConsume> synthesized (advanced).
 
 Synthesizing (advanced) Unit <dataGen>.
@@ -652,6 +652,7 @@ INFO:Xst:2261 - The FF/Latch <gen/index_0> in Unit <PEAK_DETECTOR> is equivalent
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block PEAK_DETECTOR, actual ratio is 4.
+FlipFlop gen/index_0 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -659,8 +660,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 161
- Flip-Flops                                            : 161
+# Registers                                            : 163
+ Flip-Flops                                            : 163
 
 =========================================================================
 
@@ -683,25 +684,24 @@ Top Level Output File Name         : PEAK_DETECTOR.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 639
+# BELS                             : 635
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 63
-#      LUT2                        : 54
-#      LUT3                        : 26
-#      LUT4                        : 29
-#      LUT5                        : 41
-#      LUT6                        : 127
-#      MUXCY                       : 127
-#      MUXF7                       : 36
-#      MUXF8                       : 16
+#      INV                         : 9
+#      LUT1                        : 94
+#      LUT2                        : 27
+#      LUT3                        : 18
+#      LUT4                        : 28
+#      LUT5                        : 44
+#      LUT6                        : 162
+#      MUXCY                       : 129
+#      MUXF7                       : 11
 #      VCC                         : 1
 #      XORCY                       : 111
-# FlipFlops/Latches                : 204
-#      FD                          : 8
+# FlipFlops/Latches                : 206
+#      FD                          : 32
 #      FDE                         : 22
-#      FDR                         : 24
-#      FDRE                        : 89
+#      FDR                         : 26
+#      FDRE                        : 65
 #      FDSE                        : 18
 #      LD                          : 43
 # Clock Buffers                    : 2
@@ -718,15 +718,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             204  out of  18224     1%  
- Number of Slice LUTs:                  347  out of   9112     3%  
-    Number used as Logic:               347  out of   9112     3%  
+ Number of Slice Registers:             206  out of  18224     1%  
+ Number of Slice LUTs:                  382  out of   9112     4%  
+    Number used as Logic:               382  out of   9112     4%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    397
-   Number with an unused Flip Flop:     193  out of    397    48%  
-   Number with an unused LUT:            50  out of    397    12%  
-   Number of fully used LUT-FF pairs:   154  out of    397    38%  
+ Number of LUT Flip Flop pairs used:    434
+   Number with an unused Flip Flop:     228  out of    434    52%  
+   Number with an unused LUT:            52  out of    434    11%  
+   Number of fully used LUT-FF pairs:   154  out of    434    35%  
    Number of unique control sets:        16
 
 IO Utilization: 
@@ -757,7 +757,7 @@ Clock Information:
 -----------------------------------+-------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
-clk                                | BUFGP                         | 161   |
+clk                                | BUFGP                         | 163   |
 sig_rxdone(cmd/Mmux_rxdone11:O)    | BUFG(*)(cmd/received_cmd_31)  | 31    |
 sig_start(cmd/cur_state_start1:O)  | NONE(*)(cmd/numWords_bcd<2>_0)| 12    |
 -----------------------------------+-------------------------------+-------+
@@ -774,8 +774,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.192ns (Maximum Frequency: 161.500MHz)
-   Minimum input arrival time before clock: 4.544ns
+   Minimum period: 5.784ns (Maximum Frequency: 172.900MHz)
+   Minimum input arrival time before clock: 5.366ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -785,30 +785,29 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.192ns (frequency: 161.500MHz)
-  Total number of paths / destination ports: 23616 / 343
+  Clock period: 5.784ns (frequency: 172.900MHz)
+  Total number of paths / destination ports: 5684 / 328
 -------------------------------------------------------------------------
-Delay:               6.192ns (Levels of Logic = 6)
-  Source:            gen/index_4 (FF)
+Delay:               5.784ns (Levels of Logic = 5)
+  Source:            gen/index_3 (FF)
   Destination:       data/data_reg_7 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: gen/index_4 to data/data_reg_7
+  Data Path: gen/index_3 to data/data_reg_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             6   0.447   1.089  gen/index_4 (gen/index_4)
-     LUT6:I1->O           11   0.203   0.883  gen/Msub_GND_5_o_GND_5_o_sub_8_OUT<8:0>_xor<6>111 (gen/Msub_GND_5_o_GND_5_o_sub_8_OUT<8:0>_xor<6>11)
-     LUT2:I1->O           32   0.205   1.291  gen/Msub_GND_5_o_GND_5_o_sub_8_OUT<8:0>_xor<6>12 (gen/GND_5_o_GND_5_o_sub_8_OUT<6>)
-     MUXF7:S->O            1   0.148   0.000  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT_f7 (gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT_f7)
-     MUXF8:I1->O           1   0.152   0.684  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT_f8 (gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT_f8)
-     LUT3:I1->O            1   0.203   0.580  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT215 (gen/GND_5_o_X_5_o_wide_mux_8_OUT<0>)
-     LUT5:I4->O            1   0.205   0.000  gen/Mmux_data11 (sig_data<0>)
-     FDE:D                     0.102          data/data_reg_0
+     FDRE:C->Q             7   0.447   1.002  gen/index_3 (gen/index_3)
+     LUT4:I1->O           64   0.205   1.868  gen/Msub_GND_5_o_GND_5_o_sub_8_OUT<8:0>_xor<3>11 (gen/GND_5_o_GND_5_o_sub_8_OUT<3>)
+     LUT6:I3->O            1   0.205   0.827  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT72 (gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT72)
+     LUT6:I2->O            1   0.203   0.000  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT81_G (gen_N15)
+     MUXF7:I1->O           1   0.140   0.580  gen_Mram_GND_5_o_X_5_o_wide_mux_8_OUT81 (gen/GND_5_o_X_5_o_wide_mux_8_OUT<2>)
+     LUT5:I4->O            1   0.205   0.000  gen/Mmux_data31 (sig_data<2>)
+     FDE:D                     0.102          data/data_reg_2
     ----------------------------------------
-    Total                      6.192ns (1.665ns logic, 4.527ns route)
-                                       (26.9% logic, 73.1% route)
+    Total                      5.784ns (1.507ns logic, 4.277ns route)
+                                       (26.1% logic, 73.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sig_rxdone'
@@ -833,23 +832,25 @@ Delay:               1.185ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 100 / 100
+  Total number of paths / destination ports: 104 / 104
 -------------------------------------------------------------------------
-Offset:              4.544ns (Levels of Logic = 2)
+Offset:              5.366ns (Levels of Logic = 4)
   Source:            reset (PAD)
-  Destination:       data/data_reg_7 (FF)
+  Destination:       data/index_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to data/data_reg_7
+  Data Path: reset to data/index_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            83   1.222   1.994  reset_IBUF (reset_IBUF)
-     LUT3:I0->O            8   0.205   0.802  data/_n0717_inv11 (data/_n0717_inv)
-     FDE:CE                    0.322          data/data_reg_0
+     IBUF:I->O            55   1.222   1.580  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.206   0.000  data/Mcount_index_val1_lut1_INV_0 (data/Mcount_index_val1_lut1)
+     MUXCY:S->O           31   0.411   1.642  data/Mcount_index_val1_cy1 (data/Mcount_index_val)
+     LUT6:I0->O            1   0.203   0.000  data/index_0_rstpot (data/index_0_rstpot)
+     FD:D                      0.102          data/index_0
     ----------------------------------------
-    Total                      4.544ns (1.749ns logic, 2.795ns route)
-                                       (38.5% logic, 61.5% route)
+    Total                      5.366ns (2.144ns logic, 3.222ns route)
+                                       (40.0% logic, 60.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -880,9 +881,9 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.192|         |         |         |
+clk            |    5.784|         |         |         |
 sig_rxdone     |         |    7.836|         |         |
-sig_start      |         |    9.010|         |         |
+sig_start      |         |    7.791|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sig_rxdone
@@ -905,12 +906,12 @@ sig_rxdone     |         |         |    1.185|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.99 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.44 secs
  
 --> 
 
-Total memory usage is 253152 kilobytes
+Total memory usage is 253600 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  204 ( 139 filtered)

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.60 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.61 secs
  
 --> Reading design: PEAK_DETECTOR.prj
 
@@ -81,14 +81,14 @@ Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 1
+Optimization Effort                : 2
 Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
 RTL Output                         : Yes
 Global Optimization                : AllClockNets
 Read Cores                         : YES
-Write Timing Constraints           : NO
+Write Timing Constraints           : YES
 Cross Clock Analysis               : NO
 Hierarchy Separator                : /
 Bus Delimiter                      : <>
@@ -172,10 +172,10 @@ Synthesizing Unit <dataConsume>.
     Related source file is "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\dataProcessor\dataConsume.vhd".
     Found 1-bit register for signal <seqDone_reg>.
     Found 1-bit register for signal <dataReady_reg>.
-    Found 32-bit register for signal <seq_detectPeak.shiftValue>.
-    Found 8-bit register for signal <seq_detectPeak.holdValues<4>>.
-    Found 8-bit register for signal <seq_detectPeak.holdValues<5>>.
-    Found 8-bit register for signal <seq_detectPeak.holdValues<6>>.
+    Found 3-bit register for signal <seq_detectPeak.shiftValue>.
+    Found 8-bit register for signal <seq_detectPeak.holdValues<1>>.
+    Found 8-bit register for signal <seq_detectPeak.holdValues<2>>.
+    Found 8-bit register for signal <seq_detectPeak.holdValues<3>>.
     Found 8-bit register for signal <dataResults_reg<0>>.
     Found 8-bit register for signal <dataResults_reg<1>>.
     Found 8-bit register for signal <dataResults_reg<2>>.
@@ -183,18 +183,28 @@ Synthesizing Unit <dataConsume>.
     Found 8-bit register for signal <dataResults_reg<4>>.
     Found 8-bit register for signal <dataResults_reg<5>>.
     Found 8-bit register for signal <dataResults_reg<6>>.
-    Found 32-bit register for signal <index_max>.
+    Found 4-bit register for signal <maxIndex_reg<2>>.
+    Found 4-bit register for signal <maxIndex_reg<1>>.
+    Found 4-bit register for signal <maxIndex_reg<0>>.
     Found 8-bit register for signal <seq_detectPeak.data_max>.
-    Found 32-bit register for signal <index>.
-    Found 1-bit register for signal <ctrlOut_reg>.
-    Found 8-bit register for signal <byte_reg>.
-    Found 2-bit register for signal <curState>.
+    Found 4-bit register for signal <seq_indexCountBCD.index_hundreds>.
+    Found 4-bit register for signal <seq_indexCountBCD.index_tens>.
+    Found 4-bit register for signal <seq_indexCountBCD.index_ones>.
+    Found 4-bit register for signal <index_bcd<2>>.
+    Found 4-bit register for signal <index_bcd<1>>.
+    Found 4-bit register for signal <index_bcd<0>>.
     Found 1-bit register for signal <ctrlIn_reg>.
+    Found 8-bit register for signal <byte_reg>.
+    Found 1-bit register for signal <ctrlOut_reg>.
+    Found 2-bit register for signal <curState>.
+    Found 1-bit register for signal <start_reg>.
+    Found 1-bit register for signal <enable_BCD>.
+    Found 1-bit register for signal <reset_BCD>.
     Found finite state machine <FSM_0> for signal <curState>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
-    | Transitions        | 7                                              |
-    | Inputs             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
     | Outputs            | 4                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | reset (positive)                               |
@@ -204,76 +214,21 @@ Synthesizing Unit <dataConsume>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_1_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_4_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0314> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_8_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_10_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0317> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_14_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_16_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0320> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_20_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_22_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0323> created at line 1241.
-    Found 4-bit adder for signal <index_max[8]_GND_7_o_add_26_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_28_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0326> created at line 1241.
-    Found 4-bit adder for signal <index_max[7]_GND_7_o_add_32_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_34_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0329> created at line 1241.
-    Found 4-bit adder for signal <index_max[6]_GND_7_o_add_38_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_40_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0332> created at line 1241.
-    Found 4-bit adder for signal <index_max[5]_GND_7_o_add_44_OUT> created at line 1241.
-    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_46_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0335> created at line 1241.
-    Found 4-bit adder for signal <index_max[4]_GND_7_o_add_50_OUT> created at line 1241.
-    Found 4-bit adder for signal <index_max[8]_GND_7_o_add_52_OUT> created at line 1241.
-    Found 4-bit adder for signal <n0338> created at line 1241.
-    Found 12-bit adder for signal <n0529[11:0]> created at line 87.
-    Found 13-bit adder for signal <n0467> created at line 87.
-    Found 32-bit adder for signal <seq_detectPeak.shiftValue[31]_GND_7_o_add_76_OUT> created at line 154.
-    Found 32-bit adder for signal <index[31]_GND_7_o_add_144_OUT> created at line 186.
-    Found 4x7-bit multiplier for signal <numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT> created at line 87.
-    Found 4x4-bit multiplier for signal <numWords_reg[1][3]_PWR_8_o_MuLt_60_OUT> created at line 87.
-    Found 3-bit comparator greater for signal <PWR_8_o_index_max[11]_LessThan_1_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_4_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_6_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_8_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_10_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_12_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_14_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_16_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_18_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_20_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_22_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_24_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[8]_LessThan_26_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_28_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_30_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[7]_LessThan_32_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_34_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_36_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[6]_LessThan_38_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_40_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_42_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[5]_LessThan_44_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_46_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_48_o> created at line 58
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[4]_LessThan_50_o> created at line 50
-    Found 4-bit comparator greater for signal <GND_7_o_index_max[8]_LessThan_52_o> created at line 54
-    Found 4-bit comparator greater for signal <GND_7_o_GND_7_o_LessThan_54_o> created at line 58
-    Found 32-bit comparator greater for signal <numWords_int[31]_index[31]_LessThan_67_o> created at line 108
-    Found 8-bit comparator greater for signal <n0176> created at line 157
-    Found 32-bit comparator lessequal for signal <GND_7_o_seq_detectPeak.shiftValue[31]_LessThan_79_o> created at line 169
-    Found 32-bit comparator equal for signal <numWords_int[31]_index[31]_equal_144_o> created at line 183
+    Found 3-bit adder for signal <n0271> created at line 1241.
+    Found 3-bit adder for signal <GND_7_o_seq_detectPeak.shiftValue[2]_add_16_OUT> created at line 114.
+    Found 4-bit adder for signal <seq_indexCountBCD.index_ones[3]_GND_7_o_add_93_OUT> created at line 1241.
+    Found 4-bit adder for signal <seq_indexCountBCD.index_tens[3]_GND_7_o_add_95_OUT> created at line 1241.
+    Found 4-bit adder for signal <seq_indexCountBCD.index_hundreds[3]_GND_7_o_add_97_OUT> created at line 1241.
+    Found 4-bit comparator equal for signal <numWords_bcd[0][3]_index_bcd[0][3]_equal_2_o> created at line 50
+    Found 4-bit comparator equal for signal <numWords_bcd[1][3]_index_bcd[1][3]_equal_3_o> created at line 50
+    Found 4-bit comparator equal for signal <numWords_bcd[2][3]_index_bcd[2][3]_equal_4_o> created at line 50
+    Found 8-bit comparator greater for signal <n0015> created at line 102
+    Found 3-bit comparator greater for signal <seq_detectPeak.shiftValue[2]_PWR_8_o_LessThan_16_o> created at line 113
     Summary:
-	inferred   2 Multiplier(s).
-	inferred  31 Adder/Subtractor(s).
-	inferred 196 D-type flip-flop(s).
-	inferred  31 Comparator(s).
-	inferred 118 Multiplexer(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 142 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  34 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <dataConsume> synthesized.
 
@@ -295,9 +250,9 @@ Synthesizing Unit <UART_TX_CTRL>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 14-bit adder for signal <bitTmr[13]_GND_24_o_add_7_OUT> created at line 112.
-    Found 31-bit adder for signal <bitIndex[30]_GND_24_o_add_14_OUT> created at line 127.
-    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_22_o_Mux_22_o> created at line 147.
+    Found 14-bit adder for signal <bitTmr[13]_GND_10_o_add_7_OUT> created at line 112.
+    Found 31-bit adder for signal <bitIndex[30]_GND_10_o_add_14_OUT> created at line 127.
+    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_10_o_Mux_22_o> created at line 147.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  56 D-type flip-flop(s).
@@ -328,9 +283,9 @@ Synthesizing Unit <UART_RX_CTRL>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <baudClkX8Count[3]_GND_25_o_add_16_OUT> created at line 186.
-    Found 11-bit adder for signal <bitTmr[10]_GND_25_o_add_17_OUT> created at line 188.
-    Found 4-bit adder for signal <bitCount[3]_GND_25_o_add_29_OUT> created at line 207.
+    Found 4-bit adder for signal <baudClkX8Count[3]_GND_11_o_add_16_OUT> created at line 186.
+    Found 11-bit adder for signal <bitTmr[10]_GND_11_o_add_17_OUT> created at line 188.
+    Found 4-bit adder for signal <bitCount[3]_GND_11_o_add_29_OUT> created at line 207.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  38 D-type flip-flop(s).
@@ -344,46 +299,36 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  512x8-bit single-port Read Only RAM                   : 1
-# Multipliers                                          : 2
- 4x4-bit multiplier                                    : 1
- 7x4-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 38
+# Adders/Subtractors                                   : 12
  11-bit adder                                          : 1
- 12-bit adder                                          : 1
- 13-bit adder                                          : 1
  14-bit adder                                          : 1
+ 3-bit adder                                           : 2
  31-bit adder                                          : 1
- 32-bit adder                                          : 2
- 4-bit adder                                           : 29
+ 4-bit adder                                           : 5
  9-bit adder                                           : 1
  9-bit subtractor                                      : 1
-# Registers                                            : 32
- 1-bit register                                        : 8
+# Registers                                            : 42
+ 1-bit register                                        : 11
  10-bit register                                       : 2
  11-bit register                                       : 1
  14-bit register                                       : 1
+ 3-bit register                                        : 1
  31-bit register                                       : 1
- 32-bit register                                       : 3
- 4-bit register                                        : 2
+ 4-bit register                                        : 11
  8-bit register                                        : 13
  9-bit register                                        : 1
-# Comparators                                          : 31
+# Comparators                                          : 5
  3-bit comparator greater                              : 1
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
- 32-bit comparator lessequal                           : 1
- 4-bit comparator greater                              : 26
+ 4-bit comparator equal                                : 3
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 127
+# Multiplexers                                         : 43
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 97
+ 1-bit 2-to-1 multiplexer                              : 2
  11-bit 2-to-1 multiplexer                             : 2
- 13-bit 2-to-1 multiplexer                             : 1
  14-bit 2-to-1 multiplexer                             : 1
- 16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 4
- 4-bit 2-to-1 multiplexer                              : 5
- 8-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 3
+ 4-bit 2-to-1 multiplexer                              : 16
+ 8-bit 2-to-1 multiplexer                              : 18
 # FSMs                                                 : 3
 # Xors                                                 : 2
  1-bit xor2                                            : 2
@@ -396,28 +341,21 @@ Macro Statistics
 
 Reading core <../../../../Netlist files for Xilinx/cmdProc.ngc>.
 Loading core <cmdProc> for timing and area information for instance <cmd>.
+INFO:Xst:2261 - The FF/Latch <seqDone_reg> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <reset_BCD> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_0> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_1> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_2> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_3> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_3> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_0> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_1> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_2> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_3> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_3> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_0> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_1> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_2> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_3> in Unit <data> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_3> 
 WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <tx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <txData_9> (without init value) has a constant value of 1 in block <tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <index_max_12> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_13> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_14> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_15> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_16> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_17> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_18> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_19> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_20> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_21> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_22> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_23> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_24> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_25> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_26> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_27> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_28> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_29> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_30> of sequential type is unconnected in block <data>.
-WARNING:Xst:2677 - Node <index_max_31> of sequential type is unconnected in block <data>.
 
 Synthesizing (advanced) Unit <UART_RX_CTRL>.
 The following registers are absorbed into counter <baudClkX8Count>: 1 register on signal <baudClkX8Count>.
@@ -428,11 +366,6 @@ Synthesizing (advanced) Unit <UART_TX_CTRL>.
 The following registers are absorbed into counter <bitTmr>: 1 register on signal <bitTmr>.
 The following registers are absorbed into counter <bitIndex>: 1 register on signal <bitIndex>.
 Unit <UART_TX_CTRL> synthesized (advanced).
-
-Synthesizing (advanced) Unit <dataConsume>.
-The following registers are absorbed into counter <index>: 1 register on signal <index>.
-	Multiplier <Mmult_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT> in block <dataConsume> and adder/subtractor <Madd_n0529[11:0]> in block <dataConsume> are combined into a MAC<Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT>.
-Unit <dataConsume> synthesized (advanced).
 
 Synthesizing (advanced) Unit <dataGen>.
 The following registers are absorbed into counter <index>: 1 register on signal <index>.
@@ -448,26 +381,6 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_GND_5_o_X_5_o_wide_mux_8_OUT> will b
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <dataGen> synthesized (advanced).
-WARNING:Xst:2677 - Node <index_max_12> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_13> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_14> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_15> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_16> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_17> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_18> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_19> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_20> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_21> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_22> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_23> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_24> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_25> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_26> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_27> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_28> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_29> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_30> of sequential type is unconnected in block <dataConsume>.
-WARNING:Xst:2677 - Node <index_max_31> of sequential type is unconnected in block <dataConsume>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -475,41 +388,29 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  512x8-bit single-port distributed Read Only RAM       : 1
-# MACs                                                 : 1
- 7x4-to-12-bit MAC                                     : 1
-# Multipliers                                          : 1
- 4x4-bit multiplier                                    : 1
-# Adders/Subtractors                                   : 31
+# Adders/Subtractors                                   : 7
  11-bit adder                                          : 1
- 13-bit adder                                          : 1
- 3-bit adder                                           : 9
- 32-bit adder                                          : 1
- 4-bit adder                                           : 18
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 3
  9-bit subtractor                                      : 1
-# Counters                                             : 6
+# Counters                                             : 5
  14-bit up counter                                     : 1
  31-bit up counter                                     : 1
- 32-bit up counter                                     : 1
  4-bit up counter                                      : 2
  9-bit up counter                                      : 1
-# Registers                                            : 187
- Flip-Flops                                            : 187
-# Comparators                                          : 31
+# Registers                                            : 185
+ Flip-Flops                                            : 185
+# Comparators                                          : 5
  3-bit comparator greater                              : 1
- 32-bit comparator equal                               : 1
- 32-bit comparator greater                             : 1
- 32-bit comparator lessequal                           : 1
- 4-bit comparator greater                              : 26
+ 4-bit comparator equal                                : 3
  8-bit comparator greater                              : 1
-# Multiplexers                                         : 123
+# Multiplexers                                         : 57
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 97
+ 1-bit 2-to-1 multiplexer                              : 22
  11-bit 2-to-1 multiplexer                             : 2
- 13-bit 2-to-1 multiplexer                             : 1
- 16-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 3
- 4-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 15
+ 3-bit 2-to-1 multiplexer                              : 3
+ 4-bit 2-to-1 multiplexer                              : 13
+ 8-bit 2-to-1 multiplexer                              : 16
 # FSMs                                                 : 3
 # Xors                                                 : 2
  1-bit xor2                                            : 2
@@ -521,6 +422,19 @@ Macro Statistics
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txData_9> (without init value) has a constant value of 1 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <seqDone_reg> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <reset_BCD> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_2> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_1_3> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_tens_3> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_2> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_2_3> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_hundreds_3> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_0> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_1> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_2> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_2> 
+INFO:Xst:2261 - The FF/Latch <index_bcd_0_3> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_indexCountBCD.index_ones_3> 
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <data/FSM_0> on signal <curState[1:2]> with user encoding.
 -------------------
@@ -552,14 +466,6 @@ Optimizing FSM <rx/FSM_2> on signal <currentState[1:3]> with user encoding.
  recv_data      | 100
  data_ready     | 101
 ----------------------------
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_0> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_0> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_1> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_1> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_2> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_2> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_3> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_3> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_4> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_4> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_5> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_5> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_6> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_6> 
-INFO:Xst:2261 - The FF/Latch <dataResults_reg_3_7> in Unit <dataConsume> is equivalent to the following FF/Latch, which will be removed : <seq_detectPeak.data_max_7> 
 
 Optimizing unit <PEAK_DETECTOR> ...
 
@@ -571,10 +477,18 @@ Optimizing unit <UART_TX_CTRL> ...
 
 Optimizing unit <UART_RX_CTRL> ...
 INFO:Xst:2261 - The FF/Latch <gen/index_0> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <gen/ctrlOut_reg> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_0> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_0> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_1> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_1> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_2> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_2> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_3> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_3> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_4> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_4> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_5> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_5> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_6> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_6> 
+INFO:Xst:2261 - The FF/Latch <data/seq_detectPeak.data_max_7> in Unit <PEAK_DETECTOR> is equivalent to the following FF/Latch, which will be removed : <data/dataResults_reg_3_7> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block PEAK_DETECTOR, actual ratio is 8.
+Found area constraint ratio of 100 (+ 5) on block PEAK_DETECTOR, actual ratio is 6.
 
 Final Macro Processing ...
 
@@ -582,8 +496,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 277
- Flip-Flops                                            : 277
+# Registers                                            : 230
+ Flip-Flops                                            : 230
 
 =========================================================================
 
@@ -606,24 +520,23 @@ Top Level Output File Name         : PEAK_DETECTOR.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1094
+# BELS                             : 628
 #      GND                         : 1
-#      INV                         : 12
-#      LUT1                        : 94
-#      LUT2                        : 97
-#      LUT3                        : 93
-#      LUT4                        : 88
-#      LUT5                        : 142
-#      LUT6                        : 205
-#      MUXCY                       : 165
-#      MUXF7                       : 37
-#      MUXF8                       : 16
+#      INV                         : 7
+#      LUT1                        : 51
+#      LUT2                        : 47
+#      LUT3                        : 54
+#      LUT4                        : 78
+#      LUT5                        : 57
+#      LUT6                        : 193
+#      MUXCY                       : 51
+#      MUXF7                       : 34
 #      VCC                         : 1
-#      XORCY                       : 143
-# FlipFlops/Latches                : 422
-#      FD                          : 43
-#      FDE                         : 132
-#      FDR                         : 38
+#      XORCY                       : 54
+# FlipFlops/Latches                : 375
+#      FD                          : 21
+#      FDE                         : 103
+#      FDR                         : 42
 #      FDRE                        : 88
 #      FDS                         : 3
 #      FDSE                        : 118
@@ -640,16 +553,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             422  out of  18224     2%  
- Number of Slice LUTs:                  731  out of   9112     8%  
-    Number used as Logic:               731  out of   9112     8%  
+ Number of Slice Registers:             375  out of  18224     2%  
+ Number of Slice LUTs:                  487  out of   9112     5%  
+    Number used as Logic:               487  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    864
-   Number with an unused Flip Flop:     442  out of    864    51%  
-   Number with an unused LUT:           133  out of    864    15%  
-   Number of fully used LUT-FF pairs:   289  out of    864    33%  
-   Number of unique control sets:        25
+ Number of LUT Flip Flop pairs used:    642
+   Number with an unused Flip Flop:     267  out of    642    41%  
+   Number with an unused LUT:           155  out of    642    24%  
+   Number of fully used LUT-FF pairs:   220  out of    642    34%  
+   Number of unique control sets:        27
 
 IO Utilization: 
  Number of IOs:                           4
@@ -679,7 +592,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 422   |
+clk                                | BUFGP                  | 375   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -690,8 +603,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.567ns (Maximum Frequency: 132.159MHz)
-   Minimum input arrival time before clock: 6.595ns
+   Minimum period: 7.151ns (Maximum Frequency: 139.839MHz)
+   Minimum input arrival time before clock: 5.553ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
@@ -701,73 +614,53 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.567ns (frequency: 132.159MHz)
-  Total number of paths / destination ports: 118688 / 854
+  Clock period: 7.151ns (frequency: 139.839MHz)
+  Total number of paths / destination ports: 9548 / 778
 -------------------------------------------------------------------------
-Delay:               7.567ns (Levels of Logic = 19)
-  Source:            cmd/reg_numWords_bcd_2_3 (FF)
-  Destination:       data/curState_FSM_FFd1 (FF)
+Delay:               7.151ns (Levels of Logic = 7)
+  Source:            cmd/byteCount_2 (FF)
+  Destination:       tx/txData_5 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: cmd/reg_numWords_bcd_2_3 to data/curState_FSM_FFd1
+  Data Path: cmd/byteCount_2 to tx/txData_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDSE:C->Q             3   0.447   0.755  reg_numWords_bcd_2_3 (numWords_bcd<2><3>)
-     end scope: 'cmd:numWords_bcd<2><3>'
-     LUT2:I0->O            1   0.203   0.000  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd1_lut<5> (data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd1_lut<5>)
-     MUXCY:S->O            1   0.172   0.000  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd1_cy<5> (data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd1_cy<5>)
-     XORCY:CI->O           1   0.180   0.580  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd1_xor<6> (data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_6)
-     LUT5:I4->O            1   0.205   0.000  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd_lut<6> (data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd_lut<6>)
-     MUXCY:S->O            1   0.172   0.000  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd_cy<6> (data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd_cy<6>)
-     XORCY:CI->O           1   0.180   0.580  data/Maddsub_numWords_reg[2][3]_PWR_8_o_MuLt_59_OUT_Madd_xor<7> (data/n0529[11:0]<7>)
-     LUT1:I0->O            1   0.205   0.000  data/Madd_n0467_cy<7>_rt (data/Madd_n0467_cy<7>_rt)
-     MUXCY:S->O            1   0.172   0.000  data/Madd_n0467_cy<7> (data/Madd_n0467_cy<7>)
-     XORCY:CI->O           1   0.180   0.580  data/Madd_n0467_xor<8> (data/n0467<8>)
-     LUT2:I1->O            3   0.205   0.651  data/Mmux_numWords_int<12:0>121 (data/numWords_int<8>)
-     LUT6:I5->O            1   0.205   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_lut<2> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<2> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<3> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<4> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<5> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<6> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<6>)
-     MUXCY:CI->O          34   0.019   1.321  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<7> (data/numWords_int[31]_index[31]_equal_144_o)
-     LUT5:I4->O            1   0.205   0.000  data/index_30_rstpot (data/index_30_rstpot)
-     FD:D                      0.102          data/index_30
+     FDRE:C->Q            20   0.447   1.437  byteCount_2 (byteCount<2>)
+     LUT5:I0->O            2   0.203   0.721  Mmux_n036662 (Mmux_n036661)
+     LUT3:I1->O            3   0.203   0.898  Mmux_n036663 (n0366<5>)
+     LUT6:I2->O            2   0.203   0.617  GND_8_o_PWR_8_o_LessThan_182_o1 (GND_8_o_PWR_8_o_LessThan_182_o)
+     LUT5:I4->O            3   0.205   0.879  Mmux__n043771 (_n0437<6>)
+     LUT6:I3->O            1   0.205   0.827  Mmux_txData52 (Mmux_txData51)
+     LUT6:I2->O            1   0.203   0.000  Mmux_txData53 (txData<4>)
+     end scope: 'cmd:txData<4>'
+     FDE:D                     0.102          tx/txData_5
     ----------------------------------------
-    Total                      7.567ns (3.100ns logic, 4.467ns route)
-                                       (41.0% logic, 59.0% route)
+    Total                      7.151ns (1.771ns logic, 5.380ns route)
+                                       (24.8% logic, 75.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 686 / 260
+  Total number of paths / destination ports: 228 / 228
 -------------------------------------------------------------------------
-Offset:              6.595ns (Levels of Logic = 12)
+Offset:              5.553ns (Levels of Logic = 4)
   Source:            reset (PAD)
-  Destination:       data/curState_FSM_FFd1 (FF)
+  Destination:       cmd/nibbleCount_2 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to data/curState_FSM_FFd1
+  Data Path: reset to cmd/nibbleCount_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           195   1.222   2.153  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            3   0.203   0.879  data/Mmux_numWords_int<12:0>14 (data/numWords_int<0>)
-     LUT6:I3->O            1   0.205   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_lut<0> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<0> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<1> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<2> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<3> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<4> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<5> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<6> (data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<6>)
-     MUXCY:CI->O          34   0.019   1.321  data/Mcompar_numWords_int[31]_index[31]_equal_144_o_cy<7> (data/numWords_int[31]_index[31]_equal_144_o)
-     LUT5:I4->O            1   0.205   0.000  data/index_30_rstpot (data/index_30_rstpot)
-     FD:D                      0.102          data/index_30
+     IBUF:I->O           177   1.222   2.033  reset_IBUF (reset_IBUF)
+     begin scope: 'cmd:reset'
+     LUT2:I1->O            1   0.205   0.808  Mcount_nibbleCount_val_SW0 (N15)
+     LUT6:I3->O            3   0.205   0.650  Mcount_nibbleCount_val (Mcount_nibbleCount_val)
+     FDRE:R                    0.430          nibbleCount_0
     ----------------------------------------
-    Total                      6.595ns (2.242ns logic, 4.353ns route)
-                                       (34.0% logic, 66.0% route)
+    Total                      5.553ns (2.062ns logic, 3.491ns route)
+                                       (37.1% logic, 62.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -798,20 +691,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.567|         |         |         |
+clk            |    7.151|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.71 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.33 secs
  
 --> 
 
-Total memory usage is 253408 kilobytes
+Total memory usage is 252640 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
-Number of infos    :   10 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :   36 (   0 filtered)
 

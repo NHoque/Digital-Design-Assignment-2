@@ -1,17 +1,17 @@
 {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:55 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:51 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling package common_pack
-End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:00
+End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_wrapper.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_wrapper.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:55 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:51 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_wrapper.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -24,11 +24,11 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Loading package VPKG
 -- Compiling entity cmdProc
 -- Compiling architecture structural of cmdProc
-End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:00
+End time: 10:54:51 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd} {1 {vcom -work work -2002 -explicit -source -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -38,8 +38,8 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling architecture RCVR of UART_RX_CTRL
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_synthesis.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_synthesis.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:55 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:51 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_synthesis.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -50,12 +50,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Loading package VPKG
 -- Compiling entity cmdProc_synthesised
 -- Compiling architecture Structure of cmdProc_synthesised
-End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:00
+End time: 10:54:51 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:55 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:52 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_RX_CTRL.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -64,12 +64,22 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity UART_RX_CTRL
 -- Compiling architecture RCVR of UART_RX_CTRL
-End time: 13:54:56 on Mar 21,2017, Elapsed time: 0:00:01
+End time: 10:54:53 on Mar 24,2017, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
 
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity UART_TX_CTRL
+-- Compiling architecture Behavioral of UART_TX_CTRL
+
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:54 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:53 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -78,12 +88,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity UART_TX_CTRL
 -- Compiling architecture Behavioral of UART_TX_CTRL
-End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:01
+End time: 10:54:53 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:56 on Mar 21,2017
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:52 on Mar 24,2017
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -95,40 +105,8 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Loading package VPKG
 -- Compiling entity tb_dataGenConsume
 -- Compiling architecture test of tb_dataGenConsume
-End time: 13:54:56 on Mar 21,2017, Elapsed time: 0:00:00
+End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
-
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd} {1 {vcom -work work -2002 -explicit -source -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/UART_TX_CTRL.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity UART_TX_CTRL
--- Compiling architecture Behavioral of UART_TX_CTRL
-
-} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
-Start time: 13:54:55 on Mar 21,2017
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package common_pack
--- Compiling entity dataGen
--- Compiling architecture behav of dataGen
-End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
-
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd} {1 {vcom -work work -2002 -explicit -source -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package common_pack
--- Compiling entity dataGen
--- Compiling architecture behav of dataGen
 
 } {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -144,15 +122,60 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 End time: 13:54:55 on Mar 21,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd} {1 {vcom -work work -2002 -explicit -source -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package common_pack
+-- Loading package common_pack
+-- Compiling entity dataGen
+-- Compiling architecture behav of dataGen
 
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_synthesis.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/cmdProc_synthesis.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:52 on Mar 24,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataGen.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package common_pack
+-- Compiling entity dataGen
+-- Compiling architecture behav of dataGen
+End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/cmdProcessor/cmdProc.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package common_pack
+-- Compiling entity cmdProc
+-- Compiling architecture arch of cmdProc
+
+} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:52 on Mar 24,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_wrapper.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package common_pack
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package VITAL_Timing
+-- Loading package VITAL_Primitives
+-- Loading package VPKG
+-- Compiling entity dataConsume
+-- Compiling architecture structural of dataConsume
+End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:54:52 on Mar 24,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/dataConsume_synthesis.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -160,11 +183,30 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package VITAL_Timing
 -- Loading package VITAL_Primitives
 -- Loading package VPKG
--- Compiling entity cmdProc_synthesised
--- Compiling architecture Structure of cmdProc_synthesised
+-- Compiling entity dataConsume_synthesised
+-- Compiling architecture Structure of dataConsume_synthesised
+End time: 10:54:52 on Mar 24,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd} {1 {vcom -work work -2002 -explicit -source -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package common_pack
+-- Compiling entity dataConsume
+-- Compiling architecture Behavioral of dataConsume
+
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/common_pack.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package common_pack
+
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/test_top.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/test_top.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -173,6 +215,15 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package VITAL_Timing
 -- Loading package VITAL_Primitives
 -- Loading package VPKG
+-- Compiling entity PEAK_DETECTOR
+-- Compiling architecture STRUCT of PEAK_DETECTOR
+
+} {} {}} {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/fullSystem/tb_dataGenConsume.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package common_pack
 -- Compiling entity tb_dataGenConsume
 -- Compiling architecture test of tb_dataGenConsume
 
@@ -188,6 +239,20 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Docume
 -- Compiling entity dataConsume
 -- Compiling architecture Behavioral of dataConsume
 End time: 21:56:15 on Mar 20,2017, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd}
+Model Technology ModelSim PE vcom 10.5a Compiler 2016.04 Apr  5 2016
+Start time: 10:47:27 on Mar 24,2017
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/Digital-Design-Assignment-2/dataProcessor/dataConsume.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package common_pack
+-- Compiling entity dataConsume
+-- Compiling architecture Behavioral of dataConsume
+End time: 10:47:27 on Mar 24,2017, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}}

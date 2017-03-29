@@ -7,7 +7,7 @@ run
 -p xc6slx16-3-csg324
 -top PEAK_DETECTOR
 -opt_mode Speed
--opt_level 1
+-opt_level 2
 -power NO
 -iuc NO
 -keep_hierarchy No
@@ -16,7 +16,7 @@ run
 -glob_opt AllClockNets
 -read_cores YES
 -sd {"../../../../Netlist files for Xilinx"  }
--write_timing_constraints NO
+-write_timing_constraints YES
 -cross_clock_analysis NO
 -hierarchy_separator /
 -bus_delimiter <>

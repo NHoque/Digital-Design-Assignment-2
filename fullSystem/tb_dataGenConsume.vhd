@@ -37,8 +37,8 @@ library ieee;
 use ieee.std_logic_1164.all;
 use work.common_pack.all;
 library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-use UNISIM.VPKG.ALL;
+--use UNISIM.VCOMPONENTS.ALL;
+--use UNISIM.VPKG.ALL;
 
 entity tb_dataGenConsume is 
 end;

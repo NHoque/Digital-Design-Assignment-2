@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Mar 24 00:17:25 2017
+// Written by: Map P.20131013 on Fri Mar 24 14:26:00 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10,29 +10,21 @@ COMP "txdata" LOCATE = SITE "N18" LEVEL 1;
 TIMEGRP sys_clk_pin = BEL "gen/index_7" BEL "gen/index_6" BEL "gen/index_8"
         BEL "gen/index_4" BEL "gen/index_3" BEL "gen/index_5" BEL
         "gen/index_1" BEL "gen/index_2" BEL "gen/ctrlIn_delayed" BEL
-        "data/curState_FSM_FFd1" BEL "data/index_30" BEL "data/index_29" BEL
-        "data/index_28" BEL "data/index_27" BEL "data/index_26" BEL
-        "data/index_25" BEL "data/index_24" BEL "data/index_23" BEL
-        "data/index_22" BEL "data/index_21" BEL "data/index_20" BEL
-        "data/index_19" BEL "data/index_18" BEL "data/index_17" BEL
-        "data/index_16" BEL "data/index_15" BEL "data/index_14" BEL
-        "data/index_13" BEL "data/index_12" BEL "data/index_11" BEL
-        "data/index_10" BEL "data/index_9" BEL "data/index_8" BEL
-        "data/index_7" BEL "data/index_6" BEL "data/index_5" BEL
-        "data/index_4" BEL "data/index_3" BEL "data/index_2" BEL
-        "data/index_1" BEL "data/index_0" BEL "data/curState_FSM_FFd2" BEL
-        "data/seq_detectPeak.holdValues_6_7" BEL
+        "data/curState_FSM_FFd1" BEL "data/curState_FSM_FFd2" BEL
+        "data/index_30" BEL "data/index_28" BEL "data/index_27" BEL
+        "data/index_29" BEL "data/index_26" BEL "data/index_25" BEL
+        "data/index_24" BEL "data/seq_detectPeak.holdValues_6_7" BEL
         "data/seq_detectPeak.holdValues_6_6" BEL
         "data/seq_detectPeak.holdValues_6_5" BEL
         "data/seq_detectPeak.holdValues_6_4" BEL
         "data/seq_detectPeak.holdValues_6_3" BEL
         "data/seq_detectPeak.holdValues_6_2" BEL
         "data/seq_detectPeak.holdValues_6_1" BEL
-        "data/seq_detectPeak.holdValues_6_0" BEL "data/data_reg_7" BEL
-        "data/data_reg_6" BEL "data/data_reg_5" BEL "data/data_reg_4" BEL
-        "data/data_reg_3" BEL "data/data_reg_2" BEL "data/data_reg_1" BEL
-        "data/data_reg_0" BEL "cmd/cur_state_FSM_FFd2" BEL
-        "cmd/cur_state_FSM_FFd3" BEL "cmd/cur_state_FSM_FFd1" BEL
+        "data/seq_detectPeak.holdValues_6_0" BEL "data/dataReady_reg" BEL
+        "data/data_reg_7" BEL "data/data_reg_6" BEL "data/data_reg_5" BEL
+        "data/data_reg_4" BEL "data/data_reg_3" BEL "data/data_reg_2" BEL
+        "data/data_reg_1" BEL "data/data_reg_0" BEL "cmd/cur_state_FSM_FFd2"
+        BEL "cmd/cur_state_FSM_FFd3" BEL "cmd/cur_state_FSM_FFd1" BEL
         "tx/bitIndex_30" BEL "tx/bitIndex_29" BEL "tx/bitIndex_28" BEL
         "tx/bitIndex_27" BEL "tx/bitIndex_26" BEL "tx/bitIndex_25" BEL
         "tx/bitIndex_24" BEL "tx/bitIndex_23" BEL "tx/bitIndex_22" BEL
@@ -65,7 +57,16 @@ TIMEGRP sys_clk_pin = BEL "gen/index_7" BEL "gen/index_6" BEL "gen/index_8"
         "rx/rcvShiftReg_4" BEL "rx/rcvShiftReg_3" BEL "rx/rcvShiftReg_2" BEL
         "rx/rcvShiftReg_1" BEL "data/index_31" BEL "data/ctrlOut_reg" BEL
         "rx/regFull" BEL "gen/index_0" BEL "data/seqDone_reg" BEL
-        "data/dataReady_reg" BEL "data/ctrlIn_reg" BEL "clk_BUFGP/BUFG";
+        "data/ctrlIn_reg" BEL "data/index_0" BEL "data/index_11" BEL
+        "data/index_10" BEL "data/index_8" BEL "data/index_7" BEL
+        "data/index_9" BEL "data/index_5" BEL "data/index_4" BEL
+        "data/index_6" BEL "data/index_2" BEL "data/index_1" BEL
+        "data/index_3" BEL "data/index_12" BEL "data/index_13" BEL
+        "data/index_14" BEL "data/index_15" BEL "data/index_16" BEL
+        "data/index_17" BEL "data/index_18" BEL "data/index_19" BEL
+        "data/index_20" BEL "data/index_21" BEL "data/index_22" BEL
+        "data/index_23" BEL "gen/index_0_1" BEL "gen/index_0_2" BEL
+        "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
 SCHEMATIC END;
 
