@@ -1,7 +1,0 @@
-vhdl work "../common_pack.vhd"
-vhdl work "../UART_TX_CTRL.vhd"
-vhdl work "../UART_RX_CTRL.vhd"
-vhdl work "../dataGen.vhd"
-vhdl work "../dataConsume.vhd"
-vhdl work "../../cmdProcessor/cmdProc.vhd"
-vhdl work "../test_top.vhd"

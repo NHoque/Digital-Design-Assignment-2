@@ -1,3 +1,0 @@
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vlib "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/xilinxcorelib"
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vmap xilinxcorelib "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/xilinxcorelib"
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom -source -93 -explicit -32 -work xilinxcorelib -f "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/xilinxcorelib/.cxl.vhdl.xilinxcorelib.xilinxcorelib.nt.cmf"

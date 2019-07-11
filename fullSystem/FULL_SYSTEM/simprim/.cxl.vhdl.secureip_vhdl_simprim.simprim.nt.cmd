@@ -1,3 +1,0 @@
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vlib "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim"
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vmap simprim "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim"
-C:/Modeltech_pe_edu_10.4a/win32pe_edu/vcom -source -93 -explicit -32 -work simprim -f "C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\FULL_SYSTEM/simprim/.cxl.vhdl.secureip_vhdl_simprim.simprim.nt.cmf"

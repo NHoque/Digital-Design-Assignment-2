@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\PARTIAL_SYSTEM_DATA_PROCESSOR_COMPLETE\PEAK_DETECTOR.ncd
-OUTFILE=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\PARTIAL_SYSTEM_DATA_PROCESSOR_COMPLETE\PEAK_DETECTOR.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\Naimul Hoque\Documents\Uni Work\Year 2\Digital Design\Assignment 2\UART\Digital-Design-Assignment-2\fullSystem\PARTIAL_SYSTEM_DATA_PROCESSOR_COMPLETE
-LICENSE=WebPack
-USER_INFO=211244683_0_0_551
