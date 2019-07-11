@@ -48,8 +48,6 @@ begin
     when S2 =>
       if index_bcd(0) = numWords_bcd(0) AND index_bcd(1) = numWords_bcd(1) AND index_bcd(2) = numWords_bcd(2) then
         nextState <= S3;
-      elsif index_bcd(0) /= numWords_bcd(0) AND index_bcd(1) /= numWords_bcd(1) AND index_bcd(2) /= numWords_bcd(2) then
-        nextState <= S1;
 			else
 			  nextState <= S1;
       end if;

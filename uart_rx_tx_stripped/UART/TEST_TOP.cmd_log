@@ -1,7 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/uart_rx_tx_stripped/UART/TEST_TOP.xst" -ofn "C:/Users/Naimul Hoque/Documents/Uni Work/Year 2/Digital Design/Assignment 2/UART/uart_rx_tx_stripped/UART/TEST_TOP.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx16-csg324-3 "TEST_TOP.ngc" TEST_TOP.ngd  
-map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TEST_TOP_map.ncd TEST_TOP.ngd TEST_TOP.pcf 
-trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_TOP_preroute.twx TEST_TOP_map.ncd -o TEST_TOP_preroute.twr TEST_TOP.pcf -ucf test.ucf 
-par -w -intstyle ise -ol high -mt off TEST_TOP_map.ncd TEST_TOP.ncd TEST_TOP.pcf 
-trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml TEST_TOP.twx TEST_TOP.ncd -o TEST_TOP.twr TEST_TOP.pcf -ucf test.ucf 
-bitgen -intstyle ise -f TEST_TOP.ut TEST_TOP.ncd 

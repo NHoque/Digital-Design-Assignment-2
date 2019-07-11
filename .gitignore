@@ -1,1 +1,16 @@
-*.qpg
+**/*.qpg
+**/*.git
+**/*.svn
+**/*.hg
+**/CVS
+**/*.DS_Store
+**/*.[Pp][Nn][Gg]
+**/*.mpf
+**/*.mti
+**/*.wlf
+**/*.bak
+**/wlft*
+**/work
+**/*_SYNTHESISED
+uart_rx_tx_stripped
+fullSystem/*_SYSTEM*
